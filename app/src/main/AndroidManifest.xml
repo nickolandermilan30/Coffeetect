@@ -19,9 +19,9 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@drawable/coffeetect_logo"
+        android:icon="@drawable/coffeetect_icon"
         android:label="Coffeetect"
-        android:roundIcon="@drawable/coffeetect_logo"
+        android:roundIcon="@drawable/coffeetect_icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.CoffeeTech"
         tools:targetApi="31">
