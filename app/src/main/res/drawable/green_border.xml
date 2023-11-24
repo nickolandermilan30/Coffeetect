@@ -1,0 +1,8 @@
+<!-- res/drawable/green_border.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke
+        android:width="4dp"
+        android:color="#01BB7D" /> <!-- Green border color -->
+    <solid android:color="@android:color/transparent" /> <!-- Transparent background -->
+    <corners android:radius="14dp" /> <!-- CardView corner radius -->
+</shape>

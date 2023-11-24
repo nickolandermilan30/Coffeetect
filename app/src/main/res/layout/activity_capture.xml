@@ -1,0 +1,76 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bckg"
+    tools:context=".Capture">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
+        android:layout_width="match_parent"
+        android:layout_height="623dp" />
+
+    <ImageButton
+        android:id="@+id/captureButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Capture"
+        android:onClick="onCaptureButtonClick"
+        android:background="@drawable/design5"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp" />
+    <View
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/captureButton"
+        android:background="@drawable/wht_des4"
+        android:layout_marginBottom="570dp"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:id="@+id/markerLayout"
+        android:layout_width="335dp"
+        android:layout_height="332dp"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent">
+
+        <ImageView
+            android:id="@+id/markerImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:background="@drawable/frame_background"
+            android:scaleType="fitXY" />
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/diseaseTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/captureButton"
+        android:layout_marginBottom="580dp"
+        android:text="Detected Disease: Not available"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+
+
+    <ImageButton
+        android:id="@+id/customDialogButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/btn" />
+
+</RelativeLayout>

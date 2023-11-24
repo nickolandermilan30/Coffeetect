@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_3"
+    tools:context=".SOOTY_MOLD">
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="521dp"
+        android:layout_height="477dp"
+        android:background="@drawable/so_info"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.007"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="363dp"
+        android:layout_height="406dp"
+        android:background="@drawable/login_white_backg12"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="50dp"
+        android:layout_height="51dp"
+        android:background="@drawable/back"
+        android:backgroundTint="@color/black"
+
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.418"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="@+id/imageView11"
+        app:layout_constraintVertical_bias="0.169" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="295dp"
+        android:layout_height="205dp"
+        android:layout_marginStart="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.021"
+        app:layout_constraintStart_toStartOf="@+id/imageView11"
+        app:layout_constraintTop_toTopOf="@+id/imageView11"
+        app:layout_constraintVertical_bias="0.901">
+
+        <TextView
+            android:layout_width="279dp"
+            android:layout_height="wrap_content"
+            android:text="Coffee leaf sooty mold is a fungal disease that affects coffee plants. It is caused by the growth of black or dark-colored fungi on the surface of leaves. The fungi colonize on the sugary substance called honeydew, which is excreted by certain insects such as aphids, whiteflies, mealybugs, or scale insects that feed on the sap of coffee plants.
+The honeydew excreted by these insects serves as a food source for the sooty mold fungi. As the fungi grow, they form a dark, powdery coating on the surface of the leaves, giving them a sooty or black appearance. This mold does not directly attack or harm the coffee plant, but it can interfere with photosynthesis by blocking sunlight and reduce the plant's overall vigor.
+The presence of coffee leaf sooty mold is an indicator of an underlying insect infestation. Controlling the insects that produce the honeydew is crucial to managing sooty mold. Once the insect infestation is addressed, the sooty mold can gradually fade away as new, unaffected leaves grow.
+To treat coffee leaf sooty mold, it is important to address the insect infestation causing the honeydew production. This can be done through the use of insecticides, natural predators of the insects, or by implementing cultural practices that discourage insect populations.
+Additionally, improving cultural practices such as proper pruning, maintaining good airflow, and practicing good hygiene by removing and destroying infected leaves can help reduce the spread of sooty mold and prevent future infestations.
+Regular monitoring of the coffee plants is essential to detect the presence of both the insects and sooty mold at an early stage. Consultation with agricultural specialists or entomologists can provide specific recommendations for controlling the insect infestation and managing coffee leaf sooty mold effectively.
+"
+            android:textColor="#000000"
+            android:justificationMode="inter_word"
+            android:textStyle="bold" />
+
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="197dp"
+        android:layout_height="39dp"
+        android:fontFamily="@font/hammersmith_one"
+        android:gravity="left"
+        android:text="SOOTY MOLD"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView11"
+        app:layout_constraintHorizontal_bias="0.259"
+        app:layout_constraintStart_toStartOf="@+id/imageView11"
+        app:layout_constraintTop_toTopOf="@+id/imageView11"
+        app:layout_constraintVertical_bias="0.704"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:background="@drawable/login_white_backg7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints">
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/button_selector"
+            android:backgroundTint="#017550" />
+
+        <ImageButton
+            android:id="@+id/leaf"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/button_selector2" />
+
+        <ImageButton
+            android:id="@+id/cam"
+            android:layout_width="50dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/button_selector3" />
+
+        <ImageButton
+            android:id="@+id/history"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/button_selector4" />
+
+        <ImageButton
+            android:id="@+id/cal"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/button_selector5" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="50dp"
+        android:layout_height="19dp"
+        android:background="@drawable/login_white_backg13"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="@+id/textView9"
+        app:layout_constraintHorizontal_bias="0.863"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0.76"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="50dp"
+        android:layout_height="19dp"
+        android:background="@drawable/login_white_backg9"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="@+id/textView9"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0.76"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="50dp"
+        android:layout_height="19dp"
+        android:background="@drawable/login_white_backg8"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="@+id/textView9"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0.75"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="13dp"
+        android:fontFamily="@font/baloo_bhai_2"
+        android:text="Critical"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView19"
+        app:layout_constraintEnd_toEndOf="@+id/imageView19"
+        app:layout_constraintStart_toStartOf="@+id/imageView19"
+        app:layout_constraintTop_toTopOf="@+id/imageView19"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="49dp"
+        android:layout_height="14dp"
+        android:fontFamily="@font/baloo_bhai_2"
+        android:text="Moderate"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView18"
+        app:layout_constraintEnd_toEndOf="@+id/imageView18"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView18"
+        app:layout_constraintTop_toTopOf="@+id/imageView18"
+        app:layout_constraintVertical_bias="0.4"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="13dp"
+        android:fontFamily="@font/baloo_bhai_2"
+        android:text="Mild"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView17"
+        app:layout_constraintEnd_toEndOf="@+id/imageView17"
+        app:layout_constraintStart_toStartOf="@+id/imageView17"
+        app:layout_constraintTop_toTopOf="@+id/imageView17"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

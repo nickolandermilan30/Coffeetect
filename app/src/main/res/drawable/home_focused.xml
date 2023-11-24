@@ -1,0 +1,10 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Set the fill color of the shape (background) to green when focused -->
+    <solid android:color="#01BB7D" /> <!-- Replace #01BB7D with your desired green color -->
+
+    <!-- Set the corner radius for rounded corners -->
+    <corners android:radius="8dp" /> <!-- Adjust the radius to control the corner rounding -->
+
+</shape>

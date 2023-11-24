@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/aref_ruqaa</item>
+        <item>@font/baloo_bhai_2</item>
+        <item>@font/hammersmith_one</item>
+        <item>@font/nunito_bold</item>
+        <item>@font/nunito_semi_bold</item>
+    </array>
+</resources>

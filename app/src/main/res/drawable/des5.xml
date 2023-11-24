@@ -1,0 +1,50 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Rounded Rectangle Shape -->
+    <item>
+        <shape android:shape="rectangle">
+            <!-- Set the fill color of the shape (background) to white -->
+            <solid android:color="@android:color/white" />
+
+            <!-- Set the corner radius for rounded corners -->
+            <corners
+                android:bottomRightRadius="20dp"
+                android:bottomLeftRadius="20dp"
+                android:topRightRadius="20dp"
+                android:topLeftRadius="20dp" />
+
+            <!-- Set the stroke (border) properties -->
+            <stroke
+                android:width="2dp"
+                android:color="#D8D8D8" />
+        </shape>
+    </item>
+
+    <!-- Image -->
+    <item
+
+        android:drawable="@drawable/arrow_right_"
+        android:left="200dp"
+         android:top="4dp"
+         android:right="4dp"
+         android:bottom="4dp"
+    />
+
+    <!-- Green Corner Shape -->
+    <item android:left="7dp"
+        android:top="7dp"
+        android:right="197dp"
+        android:bottom="7dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#017550" /> <!-- Green color for the corner -->
+            <corners android:radius="10dp" /> <!-- Add small corner radius, adjust the value as needed -->
+        </shape>
+    </item>
+
+    <!-- Original Drawable (ce) -->
+    <item android:left="10dp"
+        android:top="10dp"
+        android:right="200dp"
+        android:bottom="10dp">
+        <bitmap android:src="@drawable/mi" /> <!-- Replace 'ce' with your original drawable -->
+    </item>
+</layer-list>

@@ -1,0 +1,22 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Rounded Rectangle Shape -->
+    <item>
+        <shape android:shape="rectangle">
+               <solid android:color="#FFFFFF" />
+
+            <!-- Set the corner radius for rounded corners -->
+            <corners
+                android:bottomRightRadius="400dp"
+                android:bottomLeftRadius="400dp"
+                android:topRightRadius="400dp"
+                android:topLeftRadius="400dp" />
+
+            <!-- Set the stroke (border) properties -->
+            <stroke
+                android:width="5dp"
+                android:color="@color/green" />
+        </shape>
+    </item>
+
+
+</layer-list>

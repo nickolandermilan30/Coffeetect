@@ -1,0 +1,4 @@
+<!-- res/drawable/overlay_white.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFFFFF" /> <!-- White color for the overlay -->
+</shape>

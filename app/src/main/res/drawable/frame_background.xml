@@ -1,0 +1,19 @@
+<!-- res/drawable/frame_background.xml -->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Outer background color (transparent) -->
+    <item android:drawable="@android:color/transparent" />
+
+    <!-- Inner frame background -->
+    <item
+        android:left="20dp"
+        android:right="20dp"
+        android:top="20dp"
+        android:bottom="20dp">
+        <shape android:shape="rectangle">
+            <stroke
+                android:width="2dp"
+                android:color="#62FF00" /> <!-- Adjust color and width as needed -->
+        </shape>
+    </item>
+</layer-list>

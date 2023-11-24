@@ -1,0 +1,33 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Black Border for Rounded Rectangle -->
+    <item>
+        <shape android:shape="rectangle">
+            <!-- Set the fill color of the shape (background) to white -->
+            <solid android:color="#FFFFFF" />
+
+            <!-- Set the corner radius for rounded corners -->
+            <corners
+                android:bottomRightRadius="30dp"
+                android:bottomLeftRadius="30dp"
+                android:topRightRadius="30dp"
+                android:topLeftRadius="30dp" />
+        </shape>
+    </item>
+
+    <!-- Nested shape for black border -->
+    <item>
+        <shape android:shape="rectangle">
+            <!-- Set the stroke (border) color and width -->
+            <stroke
+                android:color="#000000"
+                android:width="2dp" />
+
+            <!-- Set the corner radius for rounded corners, matching the outer shape -->
+            <corners
+                android:bottomRightRadius="30dp"
+                android:bottomLeftRadius="30dp"
+                android:topRightRadius="30dp"
+                android:topLeftRadius="30dp" />
+        </shape>
+    </item>
+</layer-list>

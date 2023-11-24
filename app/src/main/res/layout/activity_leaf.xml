@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bckg"
+    tools:context=".Leaf">
+
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="51dp"
+        android:background="@drawable/back"
+        android:backgroundTint="@color/black"
+        android:id="@+id/backButton"
+        app:layout_constraintBottom_toTopOf="@+id/cercospora"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.739"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.494"
+        tools:ignore="MissingConstraints" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        tools:ignore="MissingConstraints">
+
+    </RelativeLayout>
+
+    <!-- Continue with the rest of the buttons in the same way -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        tools:ignore="MissingConstraints">
+
+    </RelativeLayout>
+
+    <!-- Continue with the rest of the buttons in the same way -->
+
+    <!-- For example: -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        tools:ignore="MissingConstraints">
+
+    </RelativeLayout>
+
+    <!-- Continue with the rest of the buttons in the same way -->
+
+    <!-- For example: -->
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/relativeLayout2"
+        tools:ignore="MissingConstraints">
+
+    </RelativeLayout>
+
+    <!-- Continue with the rest of the buttons in the same way -->
+
+    <!-- For example: -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        tools:ignore="MissingConstraints">
+
+    </RelativeLayout>
+
+
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:background="@drawable/login_white_backg7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints">
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/button_selector"
+            />
+
+        <ImageButton
+            android:id="@+id/leaf"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/button_selector2"
+            android:backgroundTint="#017550"
+            />
+
+        <ImageButton
+            android:id="@+id/cam"
+            android:layout_width="50dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/button_selector3"
+
+            />
+
+
+        <ImageButton
+            android:id="@+id/history"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/button_selector4"
+            />
+
+        <ImageButton
+            android:id="@+id/cal"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/button_selector5"
+            />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/leafrust"
+        android:layout_width="290dp"
+        android:layout_height="85dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/des4"
+        android:contentDescription="Leaf Rust"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/leafminer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="leaf rust"
+        android:textAllCaps="true"
+        android:textColor="#01BB7D"
+        android:fontFamily="@font/hammersmith_one"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/leafrust"
+        app:layout_constraintEnd_toEndOf="@+id/leafrust"
+        app:layout_constraintStart_toStartOf="@+id/leafrust"
+        app:layout_constraintTop_toTopOf="@+id/leafrust" />
+
+    <ImageButton
+        android:id="@+id/leafminer"
+        android:layout_width="290dp"
+        android:layout_height="85dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/des5"
+        android:contentDescription="Leaf Miner"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="leaf miner"
+        android:textAllCaps="true"
+        android:fontFamily="@font/hammersmith_one"
+        android:textColor="#01BB7D"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/leafminer"
+        app:layout_constraintEnd_toEndOf="@+id/leafminer"
+        app:layout_constraintStart_toStartOf="@+id/leafminer"
+        app:layout_constraintTop_toTopOf="@+id/leafminer" />
+
+    <ImageButton
+        android:id="@+id/sootymold"
+        android:layout_width="290dp"
+        android:layout_height="85dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/des3"
+        android:contentDescription="Sooty Mold"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/leafrust"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sootymold"
+        android:fontFamily="@font/hammersmith_one"
+        android:textAllCaps="true"
+        android:textColor="#01BB7D"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/sootymold"
+        app:layout_constraintEnd_toEndOf="@+id/sootymold"
+        app:layout_constraintStart_toStartOf="@+id/sootymold"
+        app:layout_constraintTop_toTopOf="@+id/sootymold" />
+
+    <ImageButton
+        android:id="@+id/phoma"
+        android:layout_width="290dp"
+        android:layout_height="85dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/des2"
+        android:contentDescription="Phoma"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/sootymold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phoma"
+        android:fontFamily="@font/hammersmith_one"
+        android:textAllCaps="true"
+        android:textColor="#01BB7D"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/phoma"
+        app:layout_constraintEnd_toEndOf="@+id/phoma"
+        app:layout_constraintStart_toStartOf="@+id/phoma"
+        app:layout_constraintTop_toTopOf="@+id/phoma" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="190dp"
+        android:layout_height="90dp"
+        android:fontFamily="@font/hammersmith_one"
+        android:text="Disease information"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.089"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/cercospora"
+        android:layout_width="290dp"
+        android:layout_height="85dp"
+        android:background="@drawable/des1"
+        android:contentDescription="CERCOSPORA"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/phoma"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.969" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cercospora"
+        android:fontFamily="@font/hammersmith_one"
+        android:textAllCaps="true"
+        android:textColor="#01BB7D"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/cercospora"
+        app:layout_constraintEnd_toEndOf="@+id/cercospora"
+        app:layout_constraintHorizontal_bias="0.565"
+        app:layout_constraintStart_toStartOf="@+id/cercospora"
+        app:layout_constraintTop_toTopOf="@+id/cercospora"
+        app:layout_constraintVertical_bias="0.491" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

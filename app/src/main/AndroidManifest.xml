@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature android:name="android.hardware.camera.any" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera.flash" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/og2"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/og2"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CoffeeTech"
+        tools:targetApi="31">
+        <activity
+            android:name=".Result_Activity2"
+            android:exported="false" />
+        <activity
+            android:name=".reco10"
+            android:exported="false" />
+        <activity
+            android:name=".reco9"
+            android:exported="false" />
+        <activity
+            android:name=".reco8"
+            android:exported="false" />
+        <activity
+            android:name=".reco7"
+            android:exported="false" />
+        <activity
+            android:name=".reco6"
+            android:exported="false" />
+        <activity
+            android:name=".reco5"
+            android:exported="false" />
+        <activity
+            android:name=".reco4"
+            android:exported="false" />
+        <activity
+            android:name=".reco3"
+            android:exported="false" />
+        <activity
+            android:name=".reco2"
+            android:exported="false" />
+        <activity
+            android:name=".reco1"
+            android:exported="false" />
+        <activity
+            android:name=".rec10"
+            android:exported="false" />
+        <activity
+            android:name=".rec9"
+            android:exported="false" />
+        <activity
+            android:name=".rec8"
+            android:exported="false" />
+        <activity
+            android:name=".rec7"
+            android:exported="false" />
+        <activity
+            android:name=".rec6"
+            android:exported="false" />
+        <activity
+            android:name=".rec5"
+            android:exported="false" />
+        <activity
+            android:name=".rec4"
+            android:exported="false" />
+        <activity
+            android:name=".rec3"
+            android:exported="false" />
+        <activity
+            android:name=".rec2"
+            android:exported="false" />
+        <activity
+            android:name=".Capture"
+            android:exported="false" />
+        <activity
+            android:name=".Report"
+            android:exported="false" />
+        <activity
+            android:name=".Result_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Othe_tree"
+            android:exported="false" />
+        <activity
+            android:name=".History"
+            android:exported="false" />
+        <activity
+            android:name=".History2"
+            android:exported="false" />
+        <activity
+            android:name=".History3"
+            android:exported="false" />
+        <activity
+            android:name=".History4"
+            android:exported="false" />
+        <activity
+            android:name=".History5"
+            android:exported="false" />
+        <activity
+            android:name=".History6"
+            android:exported="false" />
+        <activity
+            android:name=".History7"
+            android:exported="false" />
+        <activity
+            android:name=".History8"
+            android:exported="false" />
+        <activity
+            android:name=".History9"
+            android:exported="false" />
+        <activity
+            android:name=".History10"
+            android:exported="false" />
+        <activity
+            android:name=".RecommendationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MINER"
+            android:exported="false" />
+        <activity
+            android:name=".RUST"
+            android:exported="false" />
+        <activity
+            android:name=".SOOTY_MOLD"
+            android:exported="false" />
+        <activity
+            android:name=".PHOMA"
+            android:exported="false" />
+        <activity
+            android:name=".CERCOSPORA"
+            android:exported="false" />
+        <activity
+            android:name=".Calendar"
+            android:exported="false" />
+        <activity
+            android:name=".Folders"
+            android:exported="false" />
+        <activity
+            android:name=".Leaf"
+            android:exported="false" />
+        <activity
+            android:name=".Camera_page"
+            android:exported="false" />
+        <activity
+            android:name=".Homepage"
+            android:exported="false" />
+        <activity
+            android:name=".Start_landing_page"
+            android:exported="false" />
+        <activity
+            android:name=".Splashscreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

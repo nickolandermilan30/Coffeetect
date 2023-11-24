@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bckg"
+    tools:context=".reco3">
+
+    <com.denzcoskun.imageslider.ImageSlider
+        android:id="@+id/imageSlider"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/green"
+        app:iss_auto_cycle="true"
+        app:iss_corner_radius="0"
+        app:iss_delay="0"
+        app:iss_error_image="@color/green"
+        app:iss_period="3000"
+        app:iss_placeholder="@color/green"
+        app:iss_text_align="CENTER"
+        tools:ignore="MissingConstraints">
+    </com.denzcoskun.imageslider.ImageSlider>
+
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="300dp"
+        android:layout_height="54dp"
+        android:gravity="left"
+        android:text="Title"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.382"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <ScrollView
+        android:id="@+id/paragraphScrollView"
+        android:layout_width="326dp"
+        android:layout_height="318dp"
+        android:layout_marginTop="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageSlider">
+
+        <TextView
+            android:id="@+id/paragraphTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="Your long paragraph text goes here. This will be scrollable if it exceeds the screen height."
+            android:textSize="16sp" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="181dp"
+        android:layout_height="53dp"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paragraphScrollView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

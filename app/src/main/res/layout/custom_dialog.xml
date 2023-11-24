@@ -1,0 +1,26 @@
+<!-- custom_dialog_capture_instructions.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Add a TextView for the instruction message -->
+    <TextView
+        android:id="@+id/instructionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please ensure that the photo is clear for accurate results."
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:paddingBottom="16dp"/>
+
+    <!-- Add a Button for closing the dialog -->
+    <Button
+        android:id="@+id/okButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Close"
+        android:layout_gravity="center"/>
+</LinearLayout>

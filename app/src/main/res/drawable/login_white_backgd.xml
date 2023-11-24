@@ -1,0 +1,27 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background Shape -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/green" /> <!-- Change color here -->
+            <corners
+                android:bottomRightRadius="100dp"
+                android:bottomLeftRadius="1000dp"
+                android:topRightRadius="1000dp"
+                android:topLeftRadius="1000dp" />
+            <stroke
+                android:width="4dp"
+                android:color="@color/green" /> <!-- Change stroke color here -->
+        </shape>
+    </item>
+
+    <!-- Image with Color Filter -->
+    <item
+        android:drawable="@drawable/ic_baseline_upload_24"
+        android:left="16dp"
+        android:top="16dp"
+        android:right="16dp"
+        android:bottom="16dp"/>
+
+
+</layer-list>

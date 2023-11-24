@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "417208217071",
+    "project_id": "nov-20-coffeetech",
+    "storage_bucket": "nov-20-coffeetech.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:417208217071:android:23e3a785a11d5080c71a1a",
+        "android_client_info": {
+          "package_name": "com.example.coffeetech"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiJNiQj31vM0dL_3GckYjBaBXWykkG1Tk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

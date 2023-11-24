@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?><androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_recommended_parent"
+    android:layout_width="340dp"
+    android:layout_height="200dp"
+    android:orientation="vertical"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="40dp"
+    android:background="@drawable/bg_recommended"
+    android:clickable="true"
+    android:elevation="20dp"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/resultImageView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/login_white_backg21"
+            />
+
+        <TextView
+            android:id="@+id/diseaseTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/resultImageView"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="8dp"
+            android:layout_toStartOf="@+id/deleteButton"
+            android:fontFamily="@font/nunito_semi_bold"
+            android:lines="1"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Disease"
+            android:textColor="@color/black" />
+
+        <ImageButton
+            android:id="@+id/deleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/del"
+            android:layout_below="@+id/resultImageView"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp" />
+
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
