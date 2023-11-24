@@ -96,7 +96,7 @@ public class Leaf extends AppCompatActivity {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Leaf.this, Homepage.class);
+                Intent intent = new Intent(Leaf.this, HomePage.class);
                 startActivity(intent);
                  }
         });

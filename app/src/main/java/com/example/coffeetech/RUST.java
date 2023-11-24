@@ -32,7 +32,7 @@ public class RUST extends AppCompatActivity {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(RUST.this, Homepage.class);
+                Intent intent = new Intent(RUST.this, HomePage.class);
                 startActivity(intent);
               }
         });

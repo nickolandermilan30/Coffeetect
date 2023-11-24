@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Default state -->
+    <item android:drawable="@drawable/home_hover"
+        android:state_pressed="true"/>
+    <!-- Pressed state -->
+    <item android:drawable="@drawable/home_hover"
+        android:state_focused="true"/>
+    <!-- Hovered state -->
+    <item android:drawable="@drawable/baseline_screen_search_desktop_24"/>
+</selector>

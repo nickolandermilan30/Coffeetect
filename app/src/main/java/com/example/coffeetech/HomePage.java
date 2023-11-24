@@ -13,7 +13,7 @@ import com.denzcoskun.imageslider.models.SlideModel;
 
 import java.util.ArrayList;
 
-public class Homepage extends AppCompatActivity {
+public class HomePage extends AppCompatActivity {
 
     private ImageSlider imageSlider;
 
@@ -33,9 +33,9 @@ public class Homepage extends AppCompatActivity {
 
         ArrayList<SlideModel> slideModels = new ArrayList<>();
 
-        slideModels.add(new SlideModel(R.drawable.img1, ScaleTypes.FIT));
-        slideModels.add(new SlideModel(R.drawable.img2, ScaleTypes.FIT));
-        slideModels.add(new SlideModel(R.drawable.img3, ScaleTypes.FIT));
+        slideModels.add(new SlideModel(R.drawable.img1_cam, ScaleTypes.FIT));
+        slideModels.add(new SlideModel(R.drawable.img2_upload, ScaleTypes.FIT));
+        slideModels.add(new SlideModel(R.drawable.img3_image, ScaleTypes.FIT));
 
 
         imageSlider.setImageList(slideModels, ScaleTypes.FIT);
@@ -44,27 +44,28 @@ public class Homepage extends AppCompatActivity {
         ImageButton btnNext1 = findViewById(R.id.home);
         ImageButton btnNext2 = findViewById(R.id.leaf);
         ImageButton btnNext3 = findViewById(R.id.cam);
-        ImageButton btnNext4 = findViewById(R.id.history);
-        ImageButton btnNext5 = findViewById(R.id.mon);
-        ImageButton btnNext6 = findViewById(R.id.cal);
+        ImageButton btnNext4 = findViewById(R.id.tree);
+        ImageButton btnNext5 = findViewById(R.id.help);
+        ImageButton btnNext6 = findViewById(R.id.monthly);
 
         // Set an OnClickListener for the ImageButton
         btnNext1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Start the next activity when the ImageButton is clicked
-                Intent intent = new Intent(Homepage.this, Homepage.class);
+                Intent intent = new Intent(HomePage.this, HomePage.class);
                 startActivity(intent);
                 // Apply the transition animation
-
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             }
         });
 
         btnNext2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Homepage.this, Leaf.class);
+                Intent intent = new Intent(HomePage.this, Leaf.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             }
         });
 
@@ -72,24 +73,25 @@ public class Homepage extends AppCompatActivity {
         btnNext3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Homepage.this, Camera_page.class);
+                Intent intent = new Intent(HomePage.this, Camera_page.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             }
         });
 
         btnNext4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Homepage.this, Folders.class);
+                Intent intent = new Intent(HomePage.this, Folders.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             }
         });
-
 
         btnNext5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Homepage.this, Report.class);
+                Intent intent = new Intent(HomePage.this, Report.class);
                 startActivity(intent);
             }
         });
@@ -97,12 +99,11 @@ public class Homepage extends AppCompatActivity {
         btnNext6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Homepage.this, Calendar.class);
+                Intent intent = new Intent(HomePage.this, Calendar.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             }
         });
-
-
 
     }
 }

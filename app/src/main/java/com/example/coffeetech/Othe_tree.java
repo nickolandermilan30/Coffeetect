@@ -136,7 +136,7 @@ public class Othe_tree extends AppCompatActivity {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Othe_tree.this, Homepage.class);
+                Intent intent = new Intent(Othe_tree.this, HomePage.class);
                 startActivity(intent);
                 }
         });

@@ -72,7 +72,7 @@
             home.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(Calendar.this, Homepage.class);
+                    Intent intent = new Intent(Calendar.this, HomePage.class);
                     startActivity(intent);
                 }
             });

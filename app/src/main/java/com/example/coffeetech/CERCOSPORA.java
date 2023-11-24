@@ -33,7 +33,7 @@ public class CERCOSPORA extends AppCompatActivity {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(CERCOSPORA.this, Homepage.class);
+                Intent intent = new Intent(CERCOSPORA.this, HomePage.class);
                 startActivity(intent);
                }
         });

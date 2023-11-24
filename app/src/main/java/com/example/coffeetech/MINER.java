@@ -34,7 +34,7 @@ public class MINER extends AppCompatActivity {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MINER.this, Homepage.class);
+                Intent intent = new Intent(MINER.this, HomePage.class);
                 startActivity(intent);
                   }
         });

@@ -11,7 +11,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Start_landing_page extends AppCompatActivity {
+public class LandingPage extends AppCompatActivity {
 
     Button Next;
 
@@ -25,7 +25,7 @@ public class Start_landing_page extends AppCompatActivity {
             startNextActivity();
             finish(); // Finish the current activity to prevent going back to it
         } else {
-            setContentView(R.layout.activity_start_landing_page);
+            setContentView(R.layout.activity_landing_page);
 
             // Hide the action bar (app bar or title bar)
             if (getSupportActionBar() != null) {
@@ -68,7 +68,7 @@ public class Start_landing_page extends AppCompatActivity {
                             startNextActivity();
                         } else {
                             // Show a message to inform the user that the checkbox needs to be checked.
-                            Toast.makeText(Start_landing_page.this, "Please accept the Terms of Agreement.", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(LandingPage.this, "Please accept the Terms of Agreement.", Toast.LENGTH_SHORT).show();
                         }
                     }
                 })
@@ -84,7 +84,8 @@ public class Start_landing_page extends AppCompatActivity {
     }
 
     private void startNextActivity() {
-        Intent intent = new Intent(Start_landing_page.this, Homepage.class);
+        Intent intent = new Intent(LandingPage.this, HomePage.class);
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
         startActivity(intent);
     }
 

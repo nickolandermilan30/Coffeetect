@@ -171,7 +171,7 @@ public class Folders extends AppCompatActivity {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Folders.this, Homepage.class);
+                Intent intent = new Intent(Folders.this, HomePage.class);
                 startActivity(intent);
                    }
         });

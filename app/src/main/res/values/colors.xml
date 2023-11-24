@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="light_blue_600">#FF039BE5</color>
@@ -10,8 +8,7 @@
     <color name="light_blue_A400">#FF00B0FF</color>
     <color name="black_overlay">#66000000</color>
     <color name="lavender">#8692f7</color>
-    <color name="green">#017550</color>
+    <color name="green">#00704a</color>
     <color name="gray">#808080</color>
-    <color name="cadet_blue">#64b296</color>
     <color name="dark_late_gray">#2b3e50</color>
 </resources>
