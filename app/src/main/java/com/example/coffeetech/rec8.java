@@ -37,7 +37,7 @@ public class rec8 extends AppCompatActivity {
         if (intent != null) {
             diseaseName = SavedResultsManager. getMostFrequentDiseaseHistory8();
 
-            diseaseTextView.setText("Disease: " + diseaseName);
+            diseaseTextView.setText("Tree 8 Major Disease");
 
             Bitmap mostFrequentImage = SavedResultsManager. getImageForMostFrequentDiseaseHistory8();
             if (mostFrequentImage != null) {

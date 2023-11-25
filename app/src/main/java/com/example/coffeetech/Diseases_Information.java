@@ -113,7 +113,7 @@ public class Diseases_Information extends AppCompatActivity {
         history.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Diseases_Information.this, Monthly_Report.class);
+                Intent intent = new Intent(Diseases_Information.this, Tree_Visualization.class);
                 startActivity(intent);
                 overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             }
@@ -123,7 +123,7 @@ public class Diseases_Information extends AppCompatActivity {
         cal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Diseases_Information.this, Tree_Visualization.class);
+                Intent intent = new Intent(Diseases_Information.this, Monthly_Report.class);
                 startActivity(intent);
                 overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             }

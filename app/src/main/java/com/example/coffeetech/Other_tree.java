@@ -11,12 +11,12 @@ import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Othe_tree extends AppCompatActivity {
+public class Other_tree extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_othe_tree);
+        setContentView(R.layout.activity_other_tree);
 
         // Hide the action bar
         if (getSupportActionBar() != null) {
@@ -24,7 +24,7 @@ public class Othe_tree extends AppCompatActivity {
         }
 
 
-        ImageButton camera, gallery, home, leaf, cam, history, cal ;
+        ImageButton home, leaf, cam, history, cal ;
         ImageButton t7, t8, t9, t10 ;
         EditText tr13, tr14, tr15, tr16;
 
@@ -36,8 +36,8 @@ public class Othe_tree extends AppCompatActivity {
         home = findViewById(R.id.home);
         leaf = findViewById(R.id.leaf);
         cam = findViewById(R.id.cam);
-        history = findViewById(R.id.history);
-        cal = findViewById(R.id.cal);
+        history = findViewById(R.id.tree);
+        cal = findViewById(R.id.monthly);
 
 
         t7 = findViewById(R.id.t7);
@@ -102,7 +102,7 @@ public class Othe_tree extends AppCompatActivity {
         t7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Othe_tree.this, History7.class);
+                Intent intent = new Intent(Other_tree.this, History7.class);
                 startActivity(intent);
                  }
         });
@@ -110,7 +110,7 @@ public class Othe_tree extends AppCompatActivity {
         t8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Othe_tree.this, History8.class);
+                Intent intent = new Intent(Other_tree.this, History8.class);
                 startActivity(intent);
               }
         });
@@ -118,7 +118,7 @@ public class Othe_tree extends AppCompatActivity {
         t9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Othe_tree.this, History9.class);
+                Intent intent = new Intent(Other_tree.this, History9.class);
                 startActivity(intent);
                }
         });
@@ -126,7 +126,7 @@ public class Othe_tree extends AppCompatActivity {
         t10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Othe_tree.this, History10.class);
+                Intent intent = new Intent(Other_tree.this, History10.class);
                 startActivity(intent);
                 }
         });
@@ -136,7 +136,7 @@ public class Othe_tree extends AppCompatActivity {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Othe_tree.this, HomePage.class);
+                Intent intent = new Intent(Other_tree.this, HomePage.class);
                 startActivity(intent);
                 }
         });
@@ -144,7 +144,7 @@ public class Othe_tree extends AppCompatActivity {
         leaf.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Othe_tree.this, Diseases_Information.class);
+                Intent intent = new Intent(Other_tree.this, Diseases_Information.class);
                 startActivity(intent);
                 }
         });
@@ -152,7 +152,7 @@ public class Othe_tree extends AppCompatActivity {
         cam.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Othe_tree.this, Camera_page.class);
+                Intent intent = new Intent(Other_tree.this, Camera_page.class);
                 startActivity(intent);
                }
         });
@@ -160,7 +160,7 @@ public class Othe_tree extends AppCompatActivity {
         history.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Othe_tree.this, Tree_Visualization.class);
+                Intent intent = new Intent(Other_tree.this, Tree_Visualization.class);
                 startActivity(intent);
               }
         });
@@ -169,7 +169,7 @@ public class Othe_tree extends AppCompatActivity {
         cal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Othe_tree.this, Monthly_Report.class);
+                Intent intent = new Intent(Other_tree.this, Monthly_Report.class);
                 startActivity(intent);
                  }
         });

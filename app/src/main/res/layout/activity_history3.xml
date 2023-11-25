@@ -4,24 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bckg"
+    android:background="@drawable/green_background"
     tools:context=".History3">
+
 
     <TextView
         android:id="@+id/savedResultsCount"
-        android:layout_width="162dp"
-        android:layout_height="98dp"
-        android:fontFamily="@font/hammersmith_one"
+        android:layout_width="110dp"
+        android:layout_height="60dp"
+        android:fontFamily="@font/mitr_medium"
+        android:lineSpacingExtra="-10dp"
         android:text="Saved Results: 0"
-        android:textColor="@color/black"
-        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/recyclerView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.439"
+        app:layout_constraintVertical_bias="0.050000012"
         tools:ignore="MissingConstraints" />
 
     <ImageButton
@@ -29,13 +31,13 @@
         android:layout_width="57dp"
         android:layout_height="55dp"
         android:background="@drawable/back"
-        android:backgroundTint="@color/black"
+        android:backgroundTint="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/recyclerView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.847"
+        app:layout_constraintHorizontal_bias="0.9"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.378"
+        app:layout_constraintVertical_bias="0.050000012"
         tools:ignore="MissingConstraints" />
 
     <androidx.recyclerview.widget.RecyclerView
@@ -55,12 +57,14 @@
         android:id="@+id/recommendationButton"
         android:layout_width="160dp"
         android:layout_height="62dp"
-        android:backgroundTint="@color/green"
-        android:fontFamily="@font/baloo_bhai_2"
+        android:fontFamily="@font/mitr_medium"
+        android:textColor="@color/green"
+        android:backgroundTint="@color/white"
         android:text="See Result"
         android:textSize="17dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.976"
@@ -70,14 +74,14 @@
         android:id="@+id/clearResultsButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/baloo_bhai_2"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/mitr_medium"
         android:text="Clear Results"
-        android:backgroundTint="@color/green"
+        android:textColor="@color/green"
         app:layout_constraintBottom_toTopOf="@+id/recyclerView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.938"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/backButton"
-        app:layout_constraintVertical_bias="0.666" />
+        app:layout_constraintTop_toBottomOf="@+id/backButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

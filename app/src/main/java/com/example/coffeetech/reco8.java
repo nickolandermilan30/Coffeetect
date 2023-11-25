@@ -21,12 +21,12 @@ public class reco8 extends AppCompatActivity {
     private ScrollView paragraphScrollView;
     private TextView paragraphTextView;
     private ImageSlider imageSlider;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reco8);
 
+        imageSlider = findViewById(R.id.imageSlider);
         ArrayList<SlideModel> slideModels = new ArrayList<>();
         slideModels.add(new SlideModel(R.drawable.image, ScaleTypes.FIT));
         slideModels.add(new SlideModel(R.drawable.imagee, ScaleTypes.FIT));
@@ -67,8 +67,8 @@ public class reco8 extends AppCompatActivity {
         String recommendation;
 
         switch (diseaseName) {
-            case "Healthy Diseases_Information":
-                recommendation = "Recommendation for Healthy Diseases_Information: Keep up with good plant care practices.";
+            case "Healthy Leaf":
+                recommendation = "Recommendation for Healthy Leaf: Keep up with good plant care practices.";
                 break;
             case "Phoma Mild":
                 recommendation = "Phoma leaf spot is a fungal disease that affects coffee plants and can result in leaf damage, potentially impacting coffee yields. In mild conditions, implementing the following measures can help manage the disease effectively:\n" +
@@ -229,7 +229,7 @@ public class reco8 extends AppCompatActivity {
                         "Advisory Note:\n" +
                         "This guide is intended as a general recommendation. For precise diagnosis and treatment planning, always consult with qualified agricultural specialists or plant pathologists. Their expertise ensures an accurate understanding of the specific conditions and tailored solutions for managing Cercospora effectively.\n";
                 break;
-            case "Diseases_Information Miner Mild":
+            case "Leaf Miner Mild":
                 recommendation = "Diseases_Information miner infestations in plants can be managed effectively through a combination of cultural and chemical control methods. Here's a recommendation for mild severity of leaf miner infestation:\n" +
                         "\n" +
                         "Prune and Remove Infested Leaves:\n" +
@@ -259,7 +259,7 @@ public class reco8 extends AppCompatActivity {
                         "\n" +
                         "Remember to document the severity of the infestation and the effectiveness of the control measures. If the infestation persists or worsens, it is advisable to consult with a local agricultural extension office or plant health expert for a more tailored and effective control plan.\n";
                 break;
-            case "Diseases_Information Miner Moderate":
+            case "Leaf Miner Moderate":
                 recommendation = "Diseases_Information miner infestations in coffee plants can have a detrimental impact on plant health and productivity. In moderate conditions, here are recommendations for managing leaf miner issues:\n" +
                         "\n" +
                         "Identification and Removal:\n" +
@@ -287,7 +287,7 @@ public class reco8 extends AppCompatActivity {
                         "\n" +
                         "\n";
                 break;
-            case "Diseases_Information Miner Critical":
+            case "Leaf Miner Critical":
                 recommendation = "Diseases_Information miners are pests that can significantly impact plant health by tunneling through leaves, leading to visible damage. In the case of leaf miners affecting your plants, consider the following recommendations for critical conditions:\n" +
                         "\n" +
                         "Early Detection and Removal:\n" +
@@ -326,7 +326,7 @@ public class reco8 extends AppCompatActivity {
                         "Always adapt recommendations based on the specific conditions and plant species affected, and consider the environmental impact of any control methods used.\n" +
                         "\n";
                 break;
-            case "Diseases_Information Rust Mild":
+            case "Leaf Rust Mild":
                 recommendation = "Coffee leaf rust is a fungal disease that poses a threat to coffee plants, potentially leading to a decline in yields. In cases of mild severity, implementing the following measures can help manage and mitigate the impact of leaf rust on coffee plants:\n" +
                         "\n" +
                         "Early Detection and Removal of Infected Leaves:\n" +
@@ -352,7 +352,7 @@ public class reco8 extends AppCompatActivity {
                         "\n" +
                         "\n";
                 break;
-            case "Diseases_Information Rust Moderate":
+            case "Leaf Rust Moderate":
                 recommendation = "Coffee leaf rust is a fungal disease that affects coffee plants and can lead to significant damage to the leaves, resulting in decreased coffee yields. In moderate conditions, an effective approach to managing leaf rust involves a combination of cultural and chemical control methods.\n" +
                         "\n" +
                         "To address coffee leaf rust in moderate conditions, consider the following recommendations:\n" +
@@ -381,7 +381,7 @@ public class reco8 extends AppCompatActivity {
                         "It is crucial to seek professional advice from an agricultural specialist or a plant pathologist for an accurate diagnosis of the disease and to determine the most appropriate treatment options. Their expertise will ensure that the chosen strategies align with the specific conditions of the coffee plantation and the characteristics of the leaf rust infection. Regular collaboration with specialists enhances the effectiveness of the management plan and contributes to the overall health and productivity of the coffee plants.\n" +
                         "\n";
                 break;
-            case "Diseases_Information Rust Critical":
+            case "Leaf Rust Critical":
                 recommendation = "Coffee leaf rust (CLR) is a devastating fungal disease that poses a serious threat to coffee plants. To effectively manage and mitigate the impact of CLR, particularly in conditions where the severity is critical, it is crucial to adopt a comprehensive approach. Below is a detailed recommendation:\n" +
                         "\n" +
                         "Coffee Diseases_Information Rust Management in Critical Conditions:\n" +

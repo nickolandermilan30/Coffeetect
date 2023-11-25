@@ -22,7 +22,7 @@ public class Tree_Visualization extends AppCompatActivity {
         if (getSupportActionBar() != null) {
             getSupportActionBar().hide();
         }
-        ImageButton camera, gallery, home, leaf, cam, history, cal ;
+        ImageButton home, leaf, cam, history, cal ;
         Button othernext;
         EditText tr1, tr2, tr3, tr4, tr5, tr6 ;
 
@@ -36,8 +36,8 @@ public class Tree_Visualization extends AppCompatActivity {
         home = findViewById(R.id.home);
         leaf = findViewById(R.id.leaf);
         cam = findViewById(R.id.cam);
-        history = findViewById(R.id.history);
-        cal = findViewById(R.id.cal);
+        history = findViewById(R.id.tree);
+        cal = findViewById(R.id.monthly);
 
         ImageButton t1, t2, t3, t4, t5, t6 ;
 
@@ -110,8 +110,9 @@ public class Tree_Visualization extends AppCompatActivity {
         othernext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Tree_Visualization.this, Othe_tree.class);
+                Intent intent = new Intent(Tree_Visualization.this, Other_tree.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
               }
         });
 
@@ -122,6 +123,7 @@ public class Tree_Visualization extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Tree_Visualization.this, History.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                }
         });
 
@@ -130,6 +132,7 @@ public class Tree_Visualization extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Tree_Visualization.this, History2.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
               }
         });
 
@@ -138,6 +141,7 @@ public class Tree_Visualization extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Tree_Visualization.this, History3.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                 }
         });
 
@@ -146,6 +150,7 @@ public class Tree_Visualization extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Tree_Visualization.this, History4.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                    }
         });
 
@@ -154,6 +159,7 @@ public class Tree_Visualization extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Tree_Visualization.this, History5.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                  }
         });
 
@@ -162,6 +168,7 @@ public class Tree_Visualization extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Tree_Visualization.this, History6.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                 }
         });
 
@@ -173,6 +180,7 @@ public class Tree_Visualization extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Tree_Visualization.this, HomePage.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                    }
         });
 
@@ -181,6 +189,7 @@ public class Tree_Visualization extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Tree_Visualization.this, Diseases_Information.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                }
         });
 
@@ -189,6 +198,7 @@ public class Tree_Visualization extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Tree_Visualization.this, Camera_page.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                }
         });
 
@@ -197,6 +207,7 @@ public class Tree_Visualization extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Tree_Visualization.this, Tree_Visualization.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                }
         });
 
@@ -206,6 +217,7 @@ public class Tree_Visualization extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Tree_Visualization.this, Monthly_Report.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                 }
         });
 
@@ -240,6 +252,7 @@ public class Tree_Visualization extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 onBackPressed();
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             }
         });
     }

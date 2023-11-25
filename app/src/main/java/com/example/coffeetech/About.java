@@ -20,33 +20,6 @@ public class About extends AppCompatActivity {
             getSupportActionBar().hide();
         }
 
-        ImageButton cam, leaf;
-
-        leaf = findViewById(R.id.gotoleaf);
-        cam = findViewById(R.id.gotocamera);
-
-
-        leaf.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(About.this, Diseases_Information.class);
-                startActivity(intent);
-               }
-        });
-
-        cam.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(About.this, Camera_page.class);
-                startActivity(intent);
-                 }
-        });
-
-
-
-
-
-
 
         // Add back button functionality
         ImageButton backButton = findViewById(R.id.backButton);
@@ -54,6 +27,7 @@ public class About extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 onBackPressed();
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             }
         });
     }
@@ -61,6 +35,7 @@ public class About extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
 
     }
 }

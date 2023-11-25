@@ -64,8 +64,8 @@
             home = findViewById(R.id.home);
             leaf = findViewById(R.id.leaf);
             cam = findViewById(R.id.cam);
-            history = findViewById(R.id.history);
-            cal = findViewById(R.id.cal);
+            history = findViewById(R.id.tree);
+            cal = findViewById(R.id.monthly);
             clearButton = findViewById(R.id.clearButton);
             ImageButton backButton = findViewById(R.id.backButton);
 
@@ -166,9 +166,9 @@
             // DiseaseLegend array with names and colors
             DiseaseLegend[] diseaseLegends = {
                     new DiseaseLegend("Cercospora", android.graphics.Color.parseColor("#FF5733")),
-                    new DiseaseLegend("Healthy Diseases_Information", android.graphics.Color.parseColor("#33FF57")),
-                    new DiseaseLegend("Diseases_Information Miner", android.graphics.Color.parseColor("#3366FF")),
-                    new DiseaseLegend("Diseases_Information Rust", android.graphics.Color.parseColor("#FF33CC")),
+                    new DiseaseLegend("Healthy Leaf", android.graphics.Color.parseColor("#33FF57")),
+                    new DiseaseLegend("Leaf Miner", android.graphics.Color.parseColor("#3366FF")),
+                    new DiseaseLegend("Leaf Rust", android.graphics.Color.parseColor("#FF33CC")),
                     new DiseaseLegend("Phoma", android.graphics.Color.parseColor("#FFFF33")),
                     new DiseaseLegend("Sooty Mold", android.graphics.Color.parseColor("#8C33FF"))
             };
@@ -214,11 +214,11 @@
 
             // Assign colors to each base disease
             baseDiseaseColorMap.put("Cercospora", android.graphics.Color.parseColor("#FF5733"));
-            baseDiseaseColorMap.put("Diseases_Information Miner", android.graphics.Color.parseColor("#3366FF"));
-            baseDiseaseColorMap.put("Diseases_Information Rust", android.graphics.Color.parseColor("#FF33CC"));
+            baseDiseaseColorMap.put("Leaf Miner", android.graphics.Color.parseColor("#3366FF"));
+            baseDiseaseColorMap.put("Leaf Rust", android.graphics.Color.parseColor("#FF33CC"));
             baseDiseaseColorMap.put("Phoma", android.graphics.Color.parseColor("#FFFF33"));
             baseDiseaseColorMap.put("Sooty Mold", android.graphics.Color.parseColor("#8C33FF"));
-            baseDiseaseColorMap.put("Healthy Diseases_Information", android.graphics.Color.parseColor("#33FF57"));
+            baseDiseaseColorMap.put("Healthy Leaf", android.graphics.Color.parseColor("#33FF57"));
 
             // Count occurrences of each base disease
             for (String disease : diseaseList) {
@@ -312,14 +312,14 @@
             // Implement your logic to extract the base disease name
             // Customize this logic based on your disease naming conventions.
 
-            if (disease.startsWith("Healthy Diseases_Information")) {
-                return "Healthy Diseases_Information";
+            if (disease.startsWith("Healthy Leaf")) {
+                return "Healthy Leaf";
             } else if (disease.startsWith("Cercospora")) {
                 return "Cercospora";
-            } else if (disease.startsWith("Diseases_Information Miner")) {
-                return "Diseases_Information Miner";
-            } else if (disease.startsWith("Diseases_Information Rust")) {
-                return "Diseases_Information Rust";
+            } else if (disease.startsWith("Leaf Miner")) {
+                return "Leaf Miner";
+            } else if (disease.startsWith("Leaf Rust")) {
+                return "Leaf Rust";
             } else if (disease.startsWith("Phoma")) {
                 return "Phoma";
             } else if (disease.startsWith("Sooty Mold")) {

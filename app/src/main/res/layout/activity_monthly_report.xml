@@ -5,54 +5,140 @@ xmlns:tools="http://schemas.android.com/tools"
 xmlns:app="http://schemas.android.com/apk/res-auto"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
-android:background="@drawable/bckg"
+android:background="@drawable/green_background"
 tools:context=".Monthly_Report">
 
 
+  <ImageView
+      android:id="@+id/imageView52"
+      android:layout_width="330dp"
+      android:layout_height="90dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.99"
+      app:srcCompat="@drawable/login_white_backg9" />
 
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/linearLayout6"
+      android:layout_width="370dp"
+      android:layout_height="65dp"
+      android:orientation="horizontal"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.48"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.97"
+      tools:ignore="MissingConstraints">
+
+    <ImageButton
+        android:id="@+id/home"
+        android:layout_width="40dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/home_icon"
+        android:backgroundTint="#00704a"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45999998" />
+
+    <ImageButton
+        android:id="@+id/leaf"
+        android:layout_width="40dp"
+        android:layout_height="33dp"
+        android:background="@drawable/leaf_icon"
+        android:backgroundTint="#00704a"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.28"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/cam"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/capture_ic"
+        android:backgroundTint="#00704a"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/monthly"
+        android:layout_width="40dp"
+        android:layout_height="33dp"
+        android:background="@drawable/monthly_icon"
+        android:backgroundTint="#eac784"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/tree"
+        android:layout_width="40dp"
+        android:layout_height="33dp"
+        android:background="@drawable/treevisual_icon"
+        android:backgroundTint="#00704a"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
 
   <TextView
-    android:id="@+id/textView"
-    android:layout_width="143dp"
-    android:layout_height="87dp"
-    android:fontFamily="@font/hammersmith_one"
-    android:text="Montly Report"
-    android:textColor="@color/black"
-    android:textSize="30sp"
-    android:textStyle="bold"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.123"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintVertical_bias="0.07"
-    tools:ignore="MissingConstraints" />
+      android:id="@+id/textView"
+      android:layout_width="115dp"
+      android:layout_height="50dp"
+      android:fontFamily="@font/mitr_medium"
+      android:lineSpacingExtra="-10dp"
+      android:text="Montly Report"
+      android:textColor="#FFFFFF"
+      android:textSize="20sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.1"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.00999999"
+      tools:ignore="MissingConstraints" />
 
   <ImageView
       android:id="@+id/imageView5"
       android:layout_width="355dp"
-      android:layout_height="249dp"
+      android:layout_height="350dp"
       android:layout_marginBottom="200dp"
       android:background="@drawable/calendar1"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      />
+      app:layout_constraintVertical_bias="0.32" />
 
   <ImageButton
-    android:id="@+id/backButton"
-    android:layout_width="57dp"
-    android:layout_height="55dp"
-    android:background="@drawable/back"
-    android:backgroundTint="@color/black"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.606"
-    app:layout_constraintStart_toEndOf="@+id/textView"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintVertical_bias="0.088"
-    tools:ignore="MissingConstraints" />
+      android:id="@+id/backButton"
+      android:layout_width="33dp"
+      android:layout_height="33dp"
+      android:background="@drawable/back"
+      android:backgroundTint="#FFFFFF"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.9"
+      app:layout_constraintStart_toEndOf="@+id/textView"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.01999998"
+      tools:ignore="MissingConstraints" />
 
   <!-- TextView for displaying category and percentage -->
 
@@ -60,134 +146,69 @@ tools:context=".Monthly_Report">
   <com.github.mikephil.charting.charts.PieChart
       android:id="@+id/graphBarChart"
       android:layout_width="313dp"
-      android:layout_height="222dp"
-      android:layout_marginTop="20dp"
-      app:layout_constraintBottom_toBottomOf="@+id/imageView5"
-      app:layout_constraintEnd_toEndOf="@+id/imageView5"
-      app:layout_constraintHorizontal_bias="0.163"
-      app:layout_constraintStart_toStartOf="@+id/imageView5"
-      app:layout_constraintTop_toTopOf="@+id/imageView5"
-      app:layout_constraintVertical_bias="0.034"
+      android:layout_height="310dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.18"
       tools:ignore="MissingConstraints" />
 
   <ListView
       android:id="@+id/diseaseListView"
-      android:layout_width="348dp"
-      android:layout_height="234dp"
-      app:layout_constraintBottom_toTopOf="@+id/imageView2"
+      android:layout_width="320dp"
+      android:layout_height="140dp"
+      app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.228"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/graphBarChart"
-      app:layout_constraintVertical_bias="0.056"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.73"
       tools:ignore="MissingConstraints" />
 
   <Button
       android:id="@+id/clearButton"
       android:layout_width="137dp"
       android:layout_height="42dp"
+      android:backgroundTint="@color/white"
+      android:fontFamily="@font/mitr_medium"
       android:text="Clear"
-      android:textColor="@color/white"
+      android:textColor="@color/green"
       android:textSize="15dp"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.142"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/graphBarChart"
-      app:layout_constraintVertical_bias="0.741" />
+      app:layout_constraintVertical_bias="0.63" />
 
   <Button
       android:id="@+id/generatePieChartButton"
       android:layout_width="137dp"
       android:layout_height="42dp"
+      android:backgroundTint="@color/white"
+      android:fontFamily="@font/mitr_medium"
       android:text="Load chart"
-      android:textColor="@color/white"
+      android:textColor="@color/green"
       android:textSize="15dp"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.469"
       app:layout_constraintStart_toEndOf="@+id/clearButton"
       app:layout_constraintTop_toBottomOf="@+id/graphBarChart"
-      app:layout_constraintVertical_bias="0.741" />
-
-  <ImageView
-      android:id="@+id/imageView2"
-      android:layout_width="match_parent"
-      android:layout_height="76dp"
-      android:background="@drawable/login_white_backg7"
-      app:layout_constraintBottom_toBottomOf="parent"
-      tools:ignore="MissingConstraints" />
+      app:layout_constraintVertical_bias="0.63" />
 
 
-  <LinearLayout
-      android:id="@+id/linearLayout6"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_marginBottom="16dp"
-      android:gravity="center"
-      android:orientation="horizontal"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.0"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="@+id/imageView2"
-      app:layout_constraintVertical_bias="1.0"
-      tools:ignore="MissingConstraints">
-
-    <ImageButton
-        android:id="@+id/home"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="20dp"
-        android:background="@drawable/button_selector" />
-
-    <ImageButton
-        android:id="@+id/leaf"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="20dp"
-        android:background="@drawable/button_selector2"
-
-        />
-
-    <ImageButton
-        android:id="@+id/cam"
-        android:layout_width="50dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="20dp"
-        android:background="@drawable/button_selector3"
-
-        />
-
-
-    <ImageButton
-        android:id="@+id/history"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="20dp"
-        android:background="@drawable/button_selector4"
-        />
-
-    <ImageButton
-        android:id="@+id/cal"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="20dp"
-        android:background="@drawable/button_selector5"
-        android:backgroundTint="#017550" />
-
-  </LinearLayout>
   <ImageButton
       android:id="@+id/legendButton"
       android:layout_width="42dp"
       android:layout_height="42dp"
       android:layout_gravity="end"
       android:layout_margin="16dp"
-      android:background="@drawable/btn"
-      app:layout_constraintBottom_toTopOf="@+id/imageView2"
+      android:background="@drawable/legend_ic"
+      app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.967"
+      app:layout_constraintHorizontal_bias="0.97"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/backButton"
-      app:layout_constraintVertical_bias="0.406" />
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.51" />
 </androidx.constraintlayout.widget.ConstraintLayout>

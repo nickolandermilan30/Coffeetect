@@ -95,7 +95,7 @@
             android:name=".Result_Activity"
             android:exported="false" />
         <activity
-            android:name=".Othe_tree"
+            android:name=".Other_tree"
             android:exported="false" />
         <activity
             android:name=".History"

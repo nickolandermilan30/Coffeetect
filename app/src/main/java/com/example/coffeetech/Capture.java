@@ -214,6 +214,7 @@ public class Capture extends AppCompatActivity {
     }
 
     private void classifyCapturedImage(Bitmap image) {
+
         try {
             Dataset6 model = Dataset6.newInstance(getApplicationContext());
 

@@ -54,8 +54,8 @@ public class Camera_page extends AppCompatActivity {
         home = findViewById(R.id.home);
         leaf = findViewById(R.id.leaf);
         cam = findViewById(R.id.cam);
-        history = findViewById(R.id.history);
-        cal = findViewById(R.id.cal);
+        history = findViewById(R.id.tree);
+        cal = findViewById(R.id.monthly);
         calbtn = findViewById(R.id.ana);
         camera = findViewById(R.id.button);
         gallery = findViewById(R.id.button2);
@@ -68,6 +68,7 @@ public class Camera_page extends AppCompatActivity {
            public void onClick(View v) {
             Intent intent = new Intent(Camera_page.this, Capture.class);
           startActivity(intent);
+                 overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
       }});
 
 
@@ -86,6 +87,7 @@ public class Camera_page extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Camera_page.this, HomePage.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             }
         });
 
@@ -94,6 +96,7 @@ public class Camera_page extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Camera_page.this, Diseases_Information.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             }
         });
 
@@ -102,6 +105,7 @@ public class Camera_page extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Camera_page.this, Camera_page.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             }
         });
 
@@ -110,6 +114,7 @@ public class Camera_page extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Camera_page.this, Tree_Visualization.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             }
         });
 
@@ -119,6 +124,7 @@ public class Camera_page extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Camera_page.this, Monthly_Report.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             }
         });
 
@@ -128,6 +134,7 @@ public class Camera_page extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Camera_page.this, Monthly_Report.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             }
         });
 
@@ -178,13 +185,13 @@ public class Camera_page extends AppCompatActivity {
                     "Cercospora Critical",
                     "Cercospora Moderate",
                     "Cercospora Mild",
-                    "Healthy Diseases_Information",
-                    "Diseases_Information Miner Critical",
-                    "Diseases_Information Miner Mild",
-                    "Diseases_Information Miner Moderate",
-                    "Diseases_Information Rust Critical",
-                    "Diseases_Information Rust Mild",
-                    "Diseases_Information Rust Moderate",
+                    "Healthy Leaf",
+                    "Leaf Miner Critical",
+                    "Leaf Miner Mild",
+                    "Leaf Miner Moderate",
+                    "Leaf Rust Critical",
+                    "Leaf Rust Mild",
+                    "Leaf Rust Moderate",
                     "Phoma Critical",
                     "Phoma Mild",
                     "Phoma Moderate",

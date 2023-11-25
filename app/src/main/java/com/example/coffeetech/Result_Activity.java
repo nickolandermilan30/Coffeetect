@@ -57,7 +57,7 @@ public class Result_Activity extends AppCompatActivity {
 
 
         // Set the result in the TextView
-        resultTextView.setText("Result: " + result);
+        resultTextView.setText("" + result);
 
         // Retrieve the image byte array from the Intent
         byte[] byteArray = getIntent().getByteArrayExtra("image");

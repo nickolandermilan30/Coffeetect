@@ -37,7 +37,7 @@ public class RecommendationActivity extends AppCompatActivity {
         if (intent != null) {
             diseaseName = SavedResultsManager.getMostFrequentDisease();
 
-            diseaseTextView.setText("Disease: " + diseaseName);
+            diseaseTextView.setText("Tree 1 Major Disease");
 
             Bitmap mostFrequentImage = SavedResultsManager.getImageForMostFrequentDisease();
             if (mostFrequentImage != null) {

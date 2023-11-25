@@ -8,6 +8,17 @@
     tools:context=".Diseases_Information">
 
 
+    <ImageView
+        android:id="@+id/imageView37"
+        android:layout_width="330dp"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.99"
+        app:srcCompat="@drawable/login_white_backg9" />
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/linearLayout6"
         android:layout_width="370dp"
@@ -18,29 +29,29 @@
         app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.99"
+        app:layout_constraintVertical_bias="0.97"
         tools:ignore="MissingConstraints">
 
         <ImageButton
             android:id="@+id/home"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
+            android:layout_width="40dp"
+            android:layout_height="33dp"
             android:layout_marginTop="4dp"
-            android:background="@drawable/button_selector"
-            android:backgroundTint="#FFFFFF"
+            android:background="@drawable/home_icon"
+            android:backgroundTint="#00704a"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.49" />
+            app:layout_constraintVertical_bias="0.45999998" />
 
         <ImageButton
             android:id="@+id/leaf"
-            android:layout_width="45dp"
-            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:layout_height="33dp"
+            android:background="@drawable/leaf_icon"
             android:backgroundTint="#eac784"
-            android:background="@drawable/button_selector2"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.28"
@@ -49,9 +60,10 @@
 
         <ImageButton
             android:id="@+id/cam"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:background="@drawable/button_selector3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/capture_ic"
+            android:backgroundTint="#00704a"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -59,9 +71,10 @@
 
         <ImageButton
             android:id="@+id/monthly"
-            android:layout_width="45dp"
-            android:layout_height="40dp"
-            android:background="@drawable/button_selector5"
+            android:layout_width="40dp"
+            android:layout_height="33dp"
+            android:background="@drawable/monthly_icon"
+            android:backgroundTint="#00704a"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.9"
@@ -70,9 +83,10 @@
 
         <ImageButton
             android:id="@+id/tree"
-            android:layout_width="42dp"
-            android:layout_height="48dp"
-            android:background="@drawable/button_selector7"
+            android:layout_width="40dp"
+            android:layout_height="33dp"
+            android:background="@drawable/treevisual_icon"
+            android:backgroundTint="#00704a"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.72"
@@ -91,7 +105,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.100000024"
+        app:layout_constraintVertical_bias="0.07999998"
         app:srcCompat="@drawable/leaf_diseasebg1" />
 
     <TextView
@@ -109,7 +123,7 @@
         app:layout_constraintHorizontal_bias="0.18"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.13" />
+        app:layout_constraintVertical_bias="0.110000014" />
 
     <ImageView
         android:id="@+id/cercospora_image"
@@ -120,7 +134,7 @@
         app:layout_constraintHorizontal_bias="0.754"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.120000005"
+        app:layout_constraintVertical_bias="0.100000024"
         app:srcCompat="@drawable/cercospora" />
 
     <TextView
@@ -149,7 +163,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.29000002"
+        app:layout_constraintVertical_bias="0.26999998"
         app:srcCompat="@drawable/leaf_diseasebg2" />
 
     <TextView
@@ -167,7 +181,7 @@
         app:layout_constraintHorizontal_bias="0.74"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.3" />
+        app:layout_constraintVertical_bias="0.27999997" />
 
     <ImageView
         android:id="@+id/phomaimage"
@@ -178,7 +192,7 @@
         app:layout_constraintHorizontal_bias="0.21"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.3"
+        app:layout_constraintVertical_bias="0.27999997"
         app:srcCompat="@drawable/phoma" />
 
     <TextView
@@ -206,7 +220,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.48000002"
+        app:layout_constraintVertical_bias="0.45999998"
         app:srcCompat="@drawable/leaf_diseasebg1" />
 
     <TextView
@@ -224,7 +238,7 @@
         app:layout_constraintHorizontal_bias="0.18"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.47000003" />
+        app:layout_constraintVertical_bias="0.45" />
 
     <ImageView
         android:id="@+id/sootymold_image"
@@ -235,7 +249,7 @@
         app:layout_constraintHorizontal_bias="0.754"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.48000002"
+        app:layout_constraintVertical_bias="0.45999998"
         app:srcCompat="@drawable/sootymolds" />
 
     <TextView
@@ -264,7 +278,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.66999996"
+        app:layout_constraintVertical_bias="0.65"
         app:srcCompat="@drawable/leaf_diseasebg2" />
 
     <TextView
@@ -282,7 +296,7 @@
         app:layout_constraintHorizontal_bias="0.77"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.63" />
+        app:layout_constraintVertical_bias="0.62" />
 
     <ImageView
         android:id="@+id/leafrustimage"
@@ -293,7 +307,7 @@
         app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.65999997"
+        app:layout_constraintVertical_bias="0.64"
         app:srcCompat="@drawable/leafrust" />
 
     <TextView
@@ -322,7 +336,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.86"
+        app:layout_constraintVertical_bias="0.84000003"
         app:srcCompat="@drawable/leaf_diseasebg1" />
 
     <TextView
@@ -340,7 +354,7 @@
         app:layout_constraintHorizontal_bias="0.18"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.8" />
+        app:layout_constraintVertical_bias="0.78" />
 
     <ImageView
         android:id="@+id/leafminer_image"
@@ -351,7 +365,7 @@
         app:layout_constraintHorizontal_bias="0.74"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.83"
+        app:layout_constraintVertical_bias="0.82"
         app:srcCompat="@drawable/leafminer" />
 
     <TextView

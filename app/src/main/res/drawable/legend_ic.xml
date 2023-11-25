@@ -3,7 +3,7 @@
     <!-- Background Shape -->
     <item>
         <shape android:shape="rectangle">
-            <solid android:color="@color/white" /> <!-- Change color here -->
+            <solid android:color="@color/green" /> <!-- Change color here -->
             <corners
                 android:bottomRightRadius="1000dp"
                 android:bottomLeftRadius="1000dp"
@@ -11,13 +11,13 @@
                 android:topLeftRadius="1000dp" />
             <stroke
                 android:width="2dp"
-                android:color="@color/white" /> <!-- Change stroke color here -->
+                android:color="@color/green" /> <!-- Change stroke color here -->
         </shape>
     </item>
 
     <!-- Image with Color Filter -->
     <item
-        android:drawable="@drawable/round_question_mark_24"
+        android:drawable="@drawable/qc2"
         android:left="10dp"
         android:top="10dp"
         android:right="10dp"
