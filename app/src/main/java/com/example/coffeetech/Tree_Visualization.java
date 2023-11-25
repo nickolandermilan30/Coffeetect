@@ -11,12 +11,12 @@ import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Folders extends AppCompatActivity {
+public class Tree_Visualization extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_folders);
+        setContentView(R.layout.activity_tree_visualization);
 
         // Hide the action bar
         if (getSupportActionBar() != null) {
@@ -110,7 +110,7 @@ public class Folders extends AppCompatActivity {
         othernext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Folders.this, Othe_tree.class);
+                Intent intent = new Intent(Tree_Visualization.this, Othe_tree.class);
                 startActivity(intent);
               }
         });
@@ -120,7 +120,7 @@ public class Folders extends AppCompatActivity {
         t1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Folders.this, History.class);
+                Intent intent = new Intent(Tree_Visualization.this, History.class);
                 startActivity(intent);
                }
         });
@@ -128,7 +128,7 @@ public class Folders extends AppCompatActivity {
         t2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Folders.this, History2.class);
+                Intent intent = new Intent(Tree_Visualization.this, History2.class);
                 startActivity(intent);
               }
         });
@@ -136,7 +136,7 @@ public class Folders extends AppCompatActivity {
         t3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Folders.this, History3.class);
+                Intent intent = new Intent(Tree_Visualization.this, History3.class);
                 startActivity(intent);
                 }
         });
@@ -144,7 +144,7 @@ public class Folders extends AppCompatActivity {
         t4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Folders.this, History4.class);
+                Intent intent = new Intent(Tree_Visualization.this, History4.class);
                 startActivity(intent);
                    }
         });
@@ -152,7 +152,7 @@ public class Folders extends AppCompatActivity {
         t5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Folders.this, History5.class);
+                Intent intent = new Intent(Tree_Visualization.this, History5.class);
                 startActivity(intent);
                  }
         });
@@ -160,7 +160,7 @@ public class Folders extends AppCompatActivity {
         t6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Folders.this, History6.class);
+                Intent intent = new Intent(Tree_Visualization.this, History6.class);
                 startActivity(intent);
                 }
         });
@@ -171,7 +171,7 @@ public class Folders extends AppCompatActivity {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Folders.this, HomePage.class);
+                Intent intent = new Intent(Tree_Visualization.this, HomePage.class);
                 startActivity(intent);
                    }
         });
@@ -179,7 +179,7 @@ public class Folders extends AppCompatActivity {
         leaf.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Folders.this, Leaf.class);
+                Intent intent = new Intent(Tree_Visualization.this, Diseases_Information.class);
                 startActivity(intent);
                }
         });
@@ -187,7 +187,7 @@ public class Folders extends AppCompatActivity {
         cam.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Folders.this, Camera_page.class);
+                Intent intent = new Intent(Tree_Visualization.this, Camera_page.class);
                 startActivity(intent);
                }
         });
@@ -195,7 +195,7 @@ public class Folders extends AppCompatActivity {
         history.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Folders.this, Folders.class);
+                Intent intent = new Intent(Tree_Visualization.this, Tree_Visualization.class);
                 startActivity(intent);
                }
         });
@@ -204,7 +204,7 @@ public class Folders extends AppCompatActivity {
         cal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Folders.this, Calendar.class);
+                Intent intent = new Intent(Tree_Visualization.this, Monthly_Report.class);
                 startActivity(intent);
                 }
         });

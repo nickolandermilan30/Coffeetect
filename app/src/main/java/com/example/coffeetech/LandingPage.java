@@ -85,8 +85,8 @@ public class LandingPage extends AppCompatActivity {
 
     private void startNextActivity() {
         Intent intent = new Intent(LandingPage.this, HomePage.class);
-        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
         startActivity(intent);
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
     }
 
     private void saveTermsAcceptanceState(boolean isAccepted) {

@@ -124,8 +124,8 @@ public class Result_Activity2 extends AppCompatActivity {
                         // Create a SavedResult object
                         SavedResult savedResult = new SavedResult(result, imageBitmap);
 
-                        // Redirect to another activity (Folders)
-                        Intent intent = new Intent(Result_Activity2.this, Folders.class);
+                        // Redirect to another activity (Tree_Visualization)
+                        Intent intent = new Intent(Result_Activity2.this, Tree_Visualization.class);
                         startActivity(intent);
 // Check if `History` is full and add to the appropriate history list
                         int maxSavedResults = 10;

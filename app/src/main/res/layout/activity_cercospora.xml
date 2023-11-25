@@ -4,233 +4,194 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/img_3"
-    tools:context=".CERCOSPORA">
-
+    android:background="#b95300"
+    tools:context=".Cercospora">
 
     <ImageView
-        android:id="@+id/imageView14"
-        android:layout_width="521dp"
-        android:layout_height="477dp"
-        android:background="@drawable/ce_info"
+        android:id="@+id/imageView28"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:background="@drawable/critical_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.81"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.587"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView29"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:background="@drawable/moderate_bg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.007"
-        tools:ignore="MissingConstraints" />
-
-    <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="363dp"
-        android:layout_height="406dp"
-        android:background="@drawable/login_white_backg12"
-        app:layout_constraintBottom_toBottomOf="@+id/linearLayout6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.587"
         tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/backButton"
-        android:layout_width="50dp"
-        android:layout_height="51dp"
-        android:background="@drawable/back"
-        android:backgroundTint="@color/black"
-
-        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        android:id="@+id/imageView30"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:background="@drawable/mild_box"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.418"
-        app:layout_constraintStart_toEndOf="@+id/textView9"
-        app:layout_constraintTop_toTopOf="@+id/imageView11"
-        app:layout_constraintVertical_bias="0.169" />
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.587"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="40dp"
+        android:layout_height="13dp"
+        android:fontFamily="@font/mitr_medium"
+        android:gravity="center"
+        android:text="Critical"
+        android:textColor="#FFFFFF"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.78"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.58000004"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="49dp"
+        android:layout_height="14dp"
+        android:fontFamily="@font/mitr_medium"
+        android:gravity="center"
+        android:text="Moderate"
+        android:textColor="#00704a"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.58000004"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:fontFamily="@font/mitr_medium"
+        android:gravity="center"
+        android:text="Mild"
+        android:textColor="#FFFFFF"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.58000004"
+        tools:ignore="MissingConstraints" />
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="295dp"
-        android:layout_height="205dp"
-        android:layout_marginStart="28dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        android:layout_width="319dp"
+        android:layout_height="242dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.021"
-        app:layout_constraintStart_toStartOf="@+id/imageView11"
-        app:layout_constraintTop_toTopOf="@+id/imageView11"
-        app:layout_constraintVertical_bias="0.901">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.936">
 
         <TextView
             android:layout_width="279dp"
-            android:layout_height="wrap_content"
+            android:layout_height="600dp"
+            android:fontFamily="@font/mitr_medium"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="-5dp"
             android:text="Coffee leaf cercospora, also known as Cercospora coffeicola, is a fungal disease that affects coffee plants. It is caused by the fungus Cercospora coffeicola, which primarily attacks the leaves of coffee plants. The disease is characterized by the appearance of circular or angular brown spots on the leaves.
 Coffee leaf cercospora typically starts as small, yellowish lesions that gradually enlarge and turn brown. The lesions may have a reddish or purplish border and can coalesce, forming larger irregular-shaped spots. As the disease progresses, the affected leaves may become distorted, dry out, and eventually fall off. Severe infections can lead to significant defoliation, reduced photosynthesis, and decreased coffee yield.
 The fungus Cercospora coffeicola survives on infected plant debris and can be spread through wind, rain splashes, or contaminated tools. Favorable conditions for the disease include high humidity, frequent rain, and warm temperatures.
 Management of coffee leaf cercospora involves a combination of cultural and chemical control measures. This includes pruning and removing infected leaves, applying appropriate fungicides, improving cultural practices to reduce humidity and improve air circulation, and maintaining overall plant health through proper nutrition and care. Regular monitoring and early detection of the disease are crucial for effective control. Consulting with agricultural specialists or plant pathologists can provide further guidance on specific control strategies based on the severity of the infection and local conditions.
 "
-            android:textColor="#000000"
-            android:justificationMode="inter_word"
+            android:textColor="#FFFFFF"
             android:textStyle="bold" />
 
 
     </ScrollView>
 
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="197dp"
-        android:layout_height="39dp"
-        android:fontFamily="@font/hammersmith_one"
-        android:gravity="left"
-        android:text="CERCOSPORA"
-        android:textColor="@color/black"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
-        app:layout_constraintEnd_toEndOf="@+id/imageView11"
-        app:layout_constraintHorizontal_bias="0.259"
-        app:layout_constraintStart_toStartOf="@+id/imageView11"
-        app:layout_constraintTop_toTopOf="@+id/imageView11"
-        app:layout_constraintVertical_bias="0.704"
-        tools:ignore="MissingConstraints" />
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="match_parent"
-        android:layout_height="76dp"
-        android:background="@drawable/login_white_backg7"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout6"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:gravity="center"
-        android:orientation="horizontal"
+        android:id="@+id/imageView26"
+        android:layout_width="449dp"
+        android:layout_height="380dp"
+        android:background="@drawable/login_white_backg12"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="1.0"
-        tools:ignore="MissingConstraints">
-
-        <ImageButton
-            android:id="@+id/home"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="20dp"
-            android:background="@drawable/button_selector"
-            android:backgroundTint="#017550" />
-
-        <ImageButton
-            android:id="@+id/leaf"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="20dp"
-            android:background="@drawable/button_selector2" />
-
-        <ImageButton
-            android:id="@+id/cam"
-            android:layout_width="50dp"
-            android:layout_height="48dp"
-            android:layout_marginStart="20dp"
-            android:background="@drawable/button_selector3" />
-
-        <ImageButton
-            android:id="@+id/history"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="20dp"
-            android:background="@drawable/button_selector4" />
-
-        <ImageButton
-            android:id="@+id/cal"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="20dp"
-            android:background="@drawable/button_selector5" />
-
-    </LinearLayout>
-
-    <ImageView
-        android:id="@+id/imageView19"
-        android:layout_width="50dp"
-        android:layout_height="19dp"
-        android:background="@drawable/login_white_backg13"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
-        app:layout_constraintEnd_toEndOf="@+id/textView9"
-        app:layout_constraintHorizontal_bias="0.863"
-        app:layout_constraintStart_toStartOf="@+id/textView9"
-        app:layout_constraintTop_toTopOf="@+id/textView9"
-        app:layout_constraintVertical_bias="0.76"
-        tools:ignore="MissingConstraints" />
-
-    <ImageView
-        android:id="@+id/imageView18"
-        android:layout_width="50dp"
-        android:layout_height="19dp"
-        android:background="@drawable/login_white_backg9"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
-        app:layout_constraintEnd_toEndOf="@+id/textView9"
-        app:layout_constraintHorizontal_bias="0.428"
-        app:layout_constraintStart_toStartOf="@+id/textView9"
-        app:layout_constraintTop_toTopOf="@+id/textView9"
-        app:layout_constraintVertical_bias="0.76"
-        tools:ignore="MissingConstraints" />
-
-    <ImageView
-        android:id="@+id/imageView17"
-        android:layout_width="50dp"
-        android:layout_height="19dp"
-        android:background="@drawable/login_white_backg8"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
-        app:layout_constraintEnd_toEndOf="@+id/textView9"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textView9"
-        app:layout_constraintTop_toTopOf="@+id/textView9"
-        app:layout_constraintVertical_bias="0.75"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:layout_width="40dp"
-        android:layout_height="13dp"
-        android:fontFamily="@font/baloo_bhai_2"
-        android:gravity="center"
-        android:text="Critical"
-        android:textColor="@color/black"
-        android:textSize="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView19"
-        app:layout_constraintEnd_toEndOf="@+id/imageView19"
-        app:layout_constraintStart_toStartOf="@+id/imageView19"
-        app:layout_constraintTop_toTopOf="@+id/imageView19"
+        android:id="@+id/textView22"
+        android:layout_width="200dp"
+        android:layout_height="39dp"
+        android:fontFamily="@font/mitr_medium"
+        android:text="CERCOSPORA"
+        android:textColor="#00704a"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.119"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.158"
         tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:layout_width="49dp"
-        android:layout_height="14dp"
-        android:fontFamily="@font/baloo_bhai_2"
-        android:text="Moderate"
-        android:textColor="@color/black"
-        android:gravity="center"
-        android:textSize="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView18"
-        app:layout_constraintEnd_toEndOf="@+id/imageView18"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/imageView18"
-        app:layout_constraintTop_toTopOf="@+id/imageView18"
-        app:layout_constraintVertical_bias="0.4"
-        tools:ignore="MissingConstraints" />
+    <ImageButton
+        android:id="@+id/backButton4"
+        android:layout_width="50dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/back"
+        android:backgroundTint="#00704a"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.97"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.060000002"
+        app:srcCompat="@drawable/cercospora" />
 
     <TextView
-        android:layout_width="40dp"
-        android:layout_height="13dp"
-        android:fontFamily="@font/baloo_bhai_2"
-        android:text="Mild"
-        android:textColor="@color/black"
-        android:gravity="center"
-        android:textSize="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView17"
-        app:layout_constraintEnd_toEndOf="@+id/imageView17"
-        app:layout_constraintStart_toStartOf="@+id/imageView17"
-        app:layout_constraintTop_toTopOf="@+id/imageView17"
-        tools:ignore="MissingConstraints" />
+        android:id="@+id/textView21"
+        android:layout_width="193dp"
+        android:layout_height="79dp"
+        android:fontFamily="@font/mitr_medium"
+        android:gravity="left"
+        android:lineSpacingExtra="-5dp"
+        android:text="Pseudocercospora Ebelmoschi"
+        android:textColor="#00704a"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.242" />
 </androidx.constraintlayout.widget.ConstraintLayout>

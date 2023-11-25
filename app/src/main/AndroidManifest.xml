@@ -89,7 +89,7 @@
             android:name=".Capture"
             android:exported="false" />
         <activity
-            android:name=".Report"
+            android:name=".About"
             android:exported="false" />
         <activity
             android:name=".Result_Activity"
@@ -131,28 +131,28 @@
             android:name=".RecommendationActivity"
             android:exported="false" />
         <activity
-            android:name=".MINER"
+            android:name=".Leaf_Miner"
             android:exported="false" />
         <activity
-            android:name=".RUST"
+            android:name=".Leaf_Rust"
             android:exported="false" />
         <activity
-            android:name=".SOOTY_MOLD"
+            android:name=".Sooty_Molds"
             android:exported="false" />
         <activity
-            android:name=".PHOMA"
+            android:name=".Phoma"
             android:exported="false" />
         <activity
-            android:name=".CERCOSPORA"
+            android:name=".Cercospora"
             android:exported="false" />
         <activity
-            android:name=".Calendar"
+            android:name=".Monthly_Report"
             android:exported="false" />
         <activity
-            android:name=".Folders"
+            android:name=".Tree_Visualization"
             android:exported="false" />
         <activity
-            android:name=".Leaf"
+            android:name=".Diseases_Information"
             android:exported="false" />
         <activity
             android:name=".Camera_page"

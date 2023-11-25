@@ -7,13 +7,9 @@
 
             <!-- Set the corner radius for rounded corners -->
             <corners
-                android:bottomRightRadius="150dp"
-                android:bottomLeftRadius="150dp"
-                android:topRightRadius="0dp"
-                android:topLeftRadius="0dp" />
 
-            <!-- Set the stroke (border) properties -->
-
+                android:topLeftRadius="50dp"
+                android:bottomLeftRadius="50dp"/>
         </shape>
     </item>
 

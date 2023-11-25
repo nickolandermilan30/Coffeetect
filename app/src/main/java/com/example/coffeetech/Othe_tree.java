@@ -144,7 +144,7 @@ public class Othe_tree extends AppCompatActivity {
         leaf.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Othe_tree.this, Leaf.class);
+                Intent intent = new Intent(Othe_tree.this, Diseases_Information.class);
                 startActivity(intent);
                 }
         });
@@ -160,7 +160,7 @@ public class Othe_tree extends AppCompatActivity {
         history.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Othe_tree.this, Folders.class);
+                Intent intent = new Intent(Othe_tree.this, Tree_Visualization.class);
                 startActivity(intent);
               }
         });
@@ -169,7 +169,7 @@ public class Othe_tree extends AppCompatActivity {
         cal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Othe_tree.this, Calendar.class);
+                Intent intent = new Intent(Othe_tree.this, Monthly_Report.class);
                 startActivity(intent);
                  }
         });

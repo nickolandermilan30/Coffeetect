@@ -29,7 +29,7 @@
     import java.util.Map;
     import java.util.Set;
 
-    public class Calendar extends AppCompatActivity {
+    public class Monthly_Report extends AppCompatActivity {
 
         private ArrayList<String> diseaseList;
         private ArrayAdapter<String> adapter;
@@ -48,7 +48,7 @@
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_calendar);
+            setContentView(R.layout.activity_monthly_report);
 
             // Hide the action bar (app bar or title bar)
             if (getSupportActionBar() != null) {
@@ -72,7 +72,7 @@
             home.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(Calendar.this, HomePage.class);
+                    Intent intent = new Intent(Monthly_Report.this, HomePage.class);
                     startActivity(intent);
                 }
             });
@@ -80,7 +80,7 @@
             leaf.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(Calendar.this, Leaf.class);
+                    Intent intent = new Intent(Monthly_Report.this, Diseases_Information.class);
                     startActivity(intent);
                 }
             });
@@ -88,7 +88,7 @@
             cam.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(Calendar.this, Camera_page.class);
+                    Intent intent = new Intent(Monthly_Report.this, Camera_page.class);
                     startActivity(intent);
                 }
             });
@@ -96,7 +96,7 @@
             history.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(Calendar.this, Folders.class);
+                    Intent intent = new Intent(Monthly_Report.this, Tree_Visualization.class);
                     startActivity(intent);
                 }
             });
@@ -104,7 +104,7 @@
             cal.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(Calendar.this, Calendar.class);
+                    Intent intent = new Intent(Monthly_Report.this, Monthly_Report.class);
                     startActivity(intent);
                 }
             });
@@ -166,9 +166,9 @@
             // DiseaseLegend array with names and colors
             DiseaseLegend[] diseaseLegends = {
                     new DiseaseLegend("Cercospora", android.graphics.Color.parseColor("#FF5733")),
-                    new DiseaseLegend("Healthy Leaf", android.graphics.Color.parseColor("#33FF57")),
-                    new DiseaseLegend("Leaf Miner", android.graphics.Color.parseColor("#3366FF")),
-                    new DiseaseLegend("Leaf Rust", android.graphics.Color.parseColor("#FF33CC")),
+                    new DiseaseLegend("Healthy Diseases_Information", android.graphics.Color.parseColor("#33FF57")),
+                    new DiseaseLegend("Diseases_Information Miner", android.graphics.Color.parseColor("#3366FF")),
+                    new DiseaseLegend("Diseases_Information Rust", android.graphics.Color.parseColor("#FF33CC")),
                     new DiseaseLegend("Phoma", android.graphics.Color.parseColor("#FFFF33")),
                     new DiseaseLegend("Sooty Mold", android.graphics.Color.parseColor("#8C33FF"))
             };
@@ -214,11 +214,11 @@
 
             // Assign colors to each base disease
             baseDiseaseColorMap.put("Cercospora", android.graphics.Color.parseColor("#FF5733"));
-            baseDiseaseColorMap.put("Leaf Miner", android.graphics.Color.parseColor("#3366FF"));
-            baseDiseaseColorMap.put("Leaf Rust", android.graphics.Color.parseColor("#FF33CC"));
+            baseDiseaseColorMap.put("Diseases_Information Miner", android.graphics.Color.parseColor("#3366FF"));
+            baseDiseaseColorMap.put("Diseases_Information Rust", android.graphics.Color.parseColor("#FF33CC"));
             baseDiseaseColorMap.put("Phoma", android.graphics.Color.parseColor("#FFFF33"));
             baseDiseaseColorMap.put("Sooty Mold", android.graphics.Color.parseColor("#8C33FF"));
-            baseDiseaseColorMap.put("Healthy Leaf", android.graphics.Color.parseColor("#33FF57"));
+            baseDiseaseColorMap.put("Healthy Diseases_Information", android.graphics.Color.parseColor("#33FF57"));
 
             // Count occurrences of each base disease
             for (String disease : diseaseList) {
@@ -312,14 +312,14 @@
             // Implement your logic to extract the base disease name
             // Customize this logic based on your disease naming conventions.
 
-            if (disease.startsWith("Healthy Leaf")) {
-                return "Healthy Leaf";
+            if (disease.startsWith("Healthy Diseases_Information")) {
+                return "Healthy Diseases_Information";
             } else if (disease.startsWith("Cercospora")) {
                 return "Cercospora";
-            } else if (disease.startsWith("Leaf Miner")) {
-                return "Leaf Miner";
-            } else if (disease.startsWith("Leaf Rust")) {
-                return "Leaf Rust";
+            } else if (disease.startsWith("Diseases_Information Miner")) {
+                return "Diseases_Information Miner";
+            } else if (disease.startsWith("Diseases_Information Rust")) {
+                return "Diseases_Information Rust";
             } else if (disease.startsWith("Phoma")) {
                 return "Phoma";
             } else if (disease.startsWith("Sooty Mold")) {

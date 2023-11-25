@@ -8,27 +8,14 @@
     tools:context=".HomePage">
 
 
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="370dp"
-        android:layout_height="85dp"
-        android:background="@drawable/nav_green_bg"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        tools:ignore="MissingConstraints" />
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/linearLayout6"
         android:layout_width="370dp"
         android:layout_height="65dp"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.99"

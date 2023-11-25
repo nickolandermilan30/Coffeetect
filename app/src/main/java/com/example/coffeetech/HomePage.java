@@ -63,7 +63,7 @@ public class HomePage extends AppCompatActivity {
         btnNext2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(HomePage.this, Leaf.class);
+                Intent intent = new Intent(HomePage.this, Diseases_Information.class);
                 startActivity(intent);
                 overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             }
@@ -82,7 +82,7 @@ public class HomePage extends AppCompatActivity {
         btnNext4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(HomePage.this, Folders.class);
+                Intent intent = new Intent(HomePage.this, Tree_Visualization.class);
                 startActivity(intent);
                 overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             }
@@ -91,15 +91,16 @@ public class HomePage extends AppCompatActivity {
         btnNext5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(HomePage.this, Report.class);
+                Intent intent = new Intent(HomePage.this, About.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             }
         });
 
         btnNext6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(HomePage.this, Calendar.class);
+                Intent intent = new Intent(HomePage.this, Monthly_Report.class);
                 startActivity(intent);
                 overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             }

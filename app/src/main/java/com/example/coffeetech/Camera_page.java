@@ -33,8 +33,7 @@ import java.util.ArrayList;
 
 public class Camera_page extends AppCompatActivity {
 
-    ImageButton camera, camera2, gallery,  home, leaf, cam, history, cal,  calbtn;
-    private ImageSlider imageSlider;
+    ImageButton camera, gallery,  home, leaf, cam, history, cal,  calbtn;
     ImageView imageView;
     TextView result;
     int imageSize = 32;
@@ -52,45 +51,17 @@ public class Camera_page extends AppCompatActivity {
             getSupportActionBar().hide();
         }
 
-        imageSlider = findViewById(R.id.imageSlider);
-
-        ArrayList<SlideModel> slideModels = new ArrayList<>();
-
-        slideModels.add(new SlideModel(R.drawable.img1, ScaleTypes.FIT));
-        slideModels.add(new SlideModel(R.drawable.img2, ScaleTypes.FIT));
-        slideModels.add(new SlideModel(R.drawable.img3, ScaleTypes.FIT));
-
-
-        imageSlider.setImageList(slideModels, ScaleTypes.FIT);
-
-
         home = findViewById(R.id.home);
         leaf = findViewById(R.id.leaf);
         cam = findViewById(R.id.cam);
         history = findViewById(R.id.history);
         cal = findViewById(R.id.cal);
         calbtn = findViewById(R.id.ana);
-
         camera = findViewById(R.id.button);
         gallery = findViewById(R.id.button2);
-        camera2 = findViewById(R.id.button3);
         result = findViewById(R.id.result);
         imageView = findViewById(R.id.imageView);
 
-
-        camera2.setOnClickListener(view -> {
-            // Launch Camera if we have permission
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                if (checkSelfPermission(Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
-                    Intent cameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                    startActivityForResult(cameraIntent, 1);
-                } else {
-                    // Request camera permission if don't have
-                    requestPermissions(new String[]{Manifest.permission.CAMERA}, 100);
-                }
-            }
-
-        });
 
         camera.setOnClickListener(new View.OnClickListener() {
              @Override
@@ -121,7 +92,7 @@ public class Camera_page extends AppCompatActivity {
         leaf.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Camera_page.this, Leaf.class);
+                Intent intent = new Intent(Camera_page.this, Diseases_Information.class);
                 startActivity(intent);
             }
         });
@@ -137,7 +108,7 @@ public class Camera_page extends AppCompatActivity {
         history.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Camera_page.this, Folders.class);
+                Intent intent = new Intent(Camera_page.this, Tree_Visualization.class);
                 startActivity(intent);
             }
         });
@@ -146,7 +117,7 @@ public class Camera_page extends AppCompatActivity {
         cal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Camera_page.this, Calendar.class);
+                Intent intent = new Intent(Camera_page.this, Monthly_Report.class);
                 startActivity(intent);
             }
         });
@@ -155,7 +126,7 @@ public class Camera_page extends AppCompatActivity {
         calbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Camera_page.this, Calendar.class);
+                Intent intent = new Intent(Camera_page.this, Monthly_Report.class);
                 startActivity(intent);
             }
         });
@@ -207,13 +178,13 @@ public class Camera_page extends AppCompatActivity {
                     "Cercospora Critical",
                     "Cercospora Moderate",
                     "Cercospora Mild",
-                    "Healthy Leaf",
-                    "Leaf Miner Critical",
-                    "Leaf Miner Mild",
-                    "Leaf Miner Moderate",
-                    "Leaf Rust Critical",
-                    "Leaf Rust Mild",
-                    "Leaf Rust Moderate",
+                    "Healthy Diseases_Information",
+                    "Diseases_Information Miner Critical",
+                    "Diseases_Information Miner Mild",
+                    "Diseases_Information Miner Moderate",
+                    "Diseases_Information Rust Critical",
+                    "Diseases_Information Rust Mild",
+                    "Diseases_Information Rust Moderate",
                     "Phoma Critical",
                     "Phoma Mild",
                     "Phoma Moderate",

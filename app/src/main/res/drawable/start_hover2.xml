@@ -3,19 +3,19 @@
     <item>
         <shape android:shape="rectangle">
             <!-- Set the fill color of the shape (background) to white -->
-            <solid android:color="#FFFFFF" />
+            <solid android:color="#eac784" />
 
             <!-- Set the corner radius for rounded corners -->
             <corners
-                android:bottomRightRadius="150dp"
-                android:bottomLeftRadius="150dp"
-                android:topRightRadius="0dp"
-                android:topLeftRadius="0dp" />
+                android:bottomRightRadius="20dp"
+                android:bottomLeftRadius="20dp"
+                android:topRightRadius="20dp"
+                android:topLeftRadius="20dp" />
 
-            <!-- Set the stroke (border) properties -->
 
         </shape>
     </item>
 
+    <!-- Image -->
 
 </layer-list>

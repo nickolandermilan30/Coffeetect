@@ -9,34 +9,7 @@
 
 
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardView3"
-        android:layout_width="345dp"
-        android:layout_height="125dp"
-        android:layout_marginBottom="200dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
-        tools:ignore="MissingConstraints">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <com.denzcoskun.imageslider.ImageSlider
-                android:id="@+id/imageSlider"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:iss_auto_cycle="true"
-                app:iss_corner_radius="7"
-                app:iss_delay="1000"
-                app:iss_period="1000"
-                app:iss_title_background="@drawable/default_gradient"
-                tools:ignore="MissingClass" />
-
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
 
 
     <ImageView
@@ -72,25 +45,8 @@
         app:layout_constraintBottom_toTopOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView3"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
-
-    <ImageButton
-        android:id="@+id/button3"
-        android:layout_width="63dp"
-        android:layout_height="60dp"
-        android:layout_centerVertical="true"
-        android:background="@drawable/design4"
-        android:text="Take Picture"
-        android:textAllCaps="false"
-        android:textSize="21sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/imageView13"
-        app:layout_constraintEnd_toStartOf="@+id/ana"
-        app:layout_constraintHorizontal_bias="0.478"
-        app:layout_constraintStart_toEndOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/imageView12"
-        app:layout_constraintVertical_bias="0.357" />
 
     <ImageButton
         android:id="@+id/button"
@@ -168,6 +124,7 @@
         app:layout_constraintVertical_bias="0.137"
         tools:ignore="MissingConstraints" />
 
+
     <View
         android:id="@+id/view2"
         android:layout_width="265dp"
@@ -175,11 +132,11 @@
         android:background="@drawable/login_white_backg8"
         app:layout_constraintBottom_toBottomOf="@+id/imageView12"
         app:layout_constraintEnd_toEndOf="@+id/imageView12"
+        app:layout_constraintHorizontal_bias="0.387"
         app:layout_constraintStart_toStartOf="@+id/imageView12"
-        app:layout_constraintTop_toTopOf="@+id/imageView12"
-        app:layout_constraintVertical_bias="0.612"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.972"
         tools:ignore="MissingConstraints" />
-
 
     <TextView
         android:id="@+id/result"
@@ -194,10 +151,11 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/view2"
         app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintHorizontal_bias="0.56"
         app:layout_constraintStart_toStartOf="@+id/view2"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         tools:ignore="MissingConstraints" />
-
 
     <ImageView
         android:id="@+id/imageView13"

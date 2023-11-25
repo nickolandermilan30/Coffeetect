@@ -61,7 +61,7 @@ public class rec5 extends AppCompatActivity {
         okButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(rec5.this, Calendar.class);
+                Intent intent = new Intent(rec5.this, Monthly_Report.class);
                 intent.putExtra("diseaseName", diseaseName);
                 startActivity(intent);
             }

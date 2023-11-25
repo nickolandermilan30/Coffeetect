@@ -7,12 +7,12 @@ import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Report extends AppCompatActivity {
+public class About extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_report);
+        setContentView(R.layout.activity_about);
 
 
         // Hide the action bar
@@ -29,7 +29,7 @@ public class Report extends AppCompatActivity {
         leaf.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Report.this, Leaf.class);
+                Intent intent = new Intent(About.this, Diseases_Information.class);
                 startActivity(intent);
                }
         });
@@ -37,7 +37,7 @@ public class Report extends AppCompatActivity {
         cam.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Report.this, Camera_page.class);
+                Intent intent = new Intent(About.this, Camera_page.class);
                 startActivity(intent);
                  }
         });
