@@ -5,18 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/green_background"
-    tools:context=".Diseases_Information">
+    tools:context=".DiseasesInformation">
 
 
     <ImageView
         android:id="@+id/imageView37"
-        android:layout_width="330dp"
+        android:layout_width="370dp"
         android:layout_height="90dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.99"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/login_white_backg9" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -29,7 +29,7 @@
         app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.97"
+        app:layout_constraintVertical_bias="0.98"
         tools:ignore="MissingConstraints">
 
         <ImageButton
@@ -51,7 +51,7 @@
             android:layout_width="40dp"
             android:layout_height="33dp"
             android:background="@drawable/leaf_icon"
-            android:backgroundTint="#eac784"
+            android:backgroundTint="#362415"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.28"
@@ -112,7 +112,7 @@
         android:id="@+id/name_cercospora"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/mitr_medium"
+        android:fontFamily="@font/hammersmith_one"
         android:text="Cercospora"
         android:textAllCaps="true"
         android:textColor="#00704a"
@@ -123,7 +123,7 @@
         app:layout_constraintHorizontal_bias="0.18"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.110000014" />
+        app:layout_constraintVertical_bias="0.120000005" />
 
     <ImageView
         android:id="@+id/cercospora_image"
@@ -141,7 +141,7 @@
         android:id="@+id/cercospora_sc"
         android:layout_width="170dp"
         android:layout_height="15dp"
-        android:fontFamily="@font/mitr_medium"
+        android:fontFamily="@font/hammersmith_one"
         android:text="Pseudocercospora Ebelmoschi"
         android:textAllCaps="true"
         android:textColor="#00704a"
@@ -170,7 +170,7 @@
         android:id="@+id/phoma_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/mitr_medium"
+        android:fontFamily="@font/hammersmith_one"
         android:text="Phoma"
         android:textAllCaps="true"
         android:textColor="#00704a"
@@ -181,7 +181,7 @@
         app:layout_constraintHorizontal_bias="0.74"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.27999997" />
+        app:layout_constraintVertical_bias="0.29000002" />
 
     <ImageView
         android:id="@+id/phomaimage"
@@ -199,7 +199,7 @@
         android:id="@+id/phoma_sc"
         android:layout_width="80dp"
         android:layout_height="15dp"
-        android:fontFamily="@font/mitr_medium"
+        android:fontFamily="@font/hammersmith_one"
         android:text="Didymellaceae"
         android:textAllCaps="true"
         android:textColor="#00704a"
@@ -207,6 +207,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/phoma"
         app:layout_constraintEnd_toEndOf="@+id/phoma_name"
+        app:layout_constraintHorizontal_bias="0.67"
         app:layout_constraintStart_toStartOf="@+id/phoma_name"
         app:layout_constraintTop_toBottomOf="@+id/phoma_name"
         app:layout_constraintVertical_bias="0.0" />
@@ -227,7 +228,7 @@
         android:id="@+id/name_sootymold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/mitr_medium"
+        android:fontFamily="@font/hammersmith_one"
         android:text="Sooty Molds"
         android:textAllCaps="true"
         android:textColor="#00704a"
@@ -256,7 +257,7 @@
         android:id="@+id/sootymold_sc"
         android:layout_width="90dp"
         android:layout_height="15dp"
-        android:fontFamily="@font/mitr_medium"
+        android:fontFamily="@font/hammersmith_one"
         android:text="Capnodium Citri"
         android:textAllCaps="true"
         android:textColor="#00704a"
@@ -285,7 +286,7 @@
         android:id="@+id/leafrust_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/mitr_medium"
+        android:fontFamily="@font/hammersmith_one"
         android:text="Leaf Rust"
         android:textAllCaps="true"
         android:textColor="#00704a"
@@ -314,7 +315,7 @@
         android:id="@+id/leafrust_sc"
         android:layout_width="80dp"
         android:layout_height="15dp"
-        android:fontFamily="@font/mitr_medium"
+        android:fontFamily="@font/hammersmith_one"
         android:text="Pucciniales"
         android:textAllCaps="true"
         android:textColor="#00704a"
@@ -343,7 +344,7 @@
         android:id="@+id/name_leafminer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/mitr_medium"
+        android:fontFamily="@font/hammersmith_one"
         android:text="Leaf Miner"
         android:textAllCaps="true"
         android:textColor="#00704a"
@@ -372,7 +373,7 @@
         android:id="@+id/leafminer_sc"
         android:layout_width="100dp"
         android:layout_height="15dp"
-        android:fontFamily="@font/mitr_medium"
+        android:fontFamily="@font/hammersmith_one"
         android:text="Liriomyza sativae"
         android:textAllCaps="true"
         android:textColor="#00704a"
@@ -393,7 +394,7 @@
         android:backgroundTint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintHorizontal_bias="0.94"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.01999998"
@@ -454,8 +455,7 @@
         android:id="@+id/textView"
         android:layout_width="115dp"
         android:layout_height="50dp"
-        android:fontFamily="@font/mitr_medium"
-        android:lineSpacingExtra="-10dp"
+        android:fontFamily="@font/hammersmith_one"
         android:text="Diseases Information"
         android:textColor="#FFFFFF"
         android:textSize="20sp"

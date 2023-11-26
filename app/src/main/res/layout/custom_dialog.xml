@@ -22,11 +22,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:fontFamily="@font/hammersmith_one"
+        android:textStyle="bold"
         android:gravity="center"
         android:paddingBottom="16dp"
         android:text="SNAP TIPS"
         android:textColor="@color/green"
-        android:fontFamily="@font/mitr_medium"
         android:textSize="30sp" />
 
     <TextView
@@ -38,9 +39,9 @@
         android:paddingBottom="16dp"
         android:text="• Please ensure to capture leaves from all sides of the coffee tree to obtain an accurate severity level of the detected disease for each tree. Comprehensive imaging helps in better analysis and diagnosis."
         android:textColor="@color/green"
-        android:lineSpacingExtra="-6dp"
+        android:textStyle="bold"
         android:justificationMode="inter_word"
-        android:fontFamily="@font/mitr_medium"
+        android:fontFamily="@font/hammersmith_one"
         android:textSize="15sp" />
     <TextView
         android:id="@+id/instructionTextView3"
@@ -50,10 +51,10 @@
         android:gravity="center"
         android:paddingBottom="16dp"
         android:text="• For accurate detection, ensure that only Arabica coffee leaves are captured. Avoid including other object or plant species in your photos as it may lead to misleading detection results."
-        android:lineSpacingExtra="-6dp"
         android:textColor="@color/green"
         android:justificationMode="inter_word"
-        android:fontFamily="@font/mitr_medium"
+        android:fontFamily="@font/hammersmith_one"
+        android:textStyle="bold"
         android:textSize="15sp" />
     <TextView
         android:id="@+id/instructionTextView4"
@@ -62,11 +63,11 @@
         android:layout_gravity="center"
         android:gravity="center"
         android:paddingBottom="16dp"
-        android:text="• Position the picture inside the marker provided. This ensures a consistent size and framing, optimizing the accuracy of disease analysis."
+        android:text="• Position the leaf inside the marker provided. This ensures a consistent size and framing, optimizing the accuracy of disease analysis."
         android:textColor="@color/green"
-        android:lineSpacingExtra="-6dp"
         android:justificationMode="inter_word"
-        android:fontFamily="@font/mitr_medium"
+        android:fontFamily="@font/hammersmith_one"
+        android:textStyle="bold"
         android:textSize="15sp" />
     <TextView
         android:id="@+id/instructionTextView5"
@@ -77,9 +78,9 @@
         android:paddingBottom="16dp"
         android:text="• Capture clear and well-lit photos for precise results. Issues with lighting or unclear images may impact the accuracy of disease detection. Ensure the leaves are in focus and the image is free from blurs or distractions."
         android:textColor="@color/green"
-        android:lineSpacingExtra="-6dp"
         android:justificationMode="inter_word"
-        android:fontFamily="@font/mitr_medium"
+        android:fontFamily="@font/hammersmith_one"
+        android:textStyle="bold"
         android:textSize="15sp" />
 
     <Button
@@ -87,7 +88,8 @@
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:fontFamily="@font/mitr_medium"
+        android:fontFamily="@font/hammersmith_one"
+        android:textStyle="bold"
         android:justificationMode="inter_word"
         android:text="Got It"
         android:textColor="@color/white"

@@ -35,11 +35,12 @@
             android:layout_marginTop="15dp"
             android:layout_marginEnd="8dp"
             android:layout_toStartOf="@+id/deleteButton"
-            android:fontFamily="@font/mitr_medium"
+            android:fontFamily="@font/hammersmith_one"
             android:lines="1"
             android:maxLines="1"
             android:singleLine="true"
             android:text="Disease"
+            android:textStyle="bold"
             android:textColor="@color/green" />
 
         <ImageButton

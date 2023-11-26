@@ -5,8 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/whitebg"
-    tools:context=".reco1">
+    android:background="@drawable/bckg"
+    tools:context=".Recommendation1">
 
     <com.denzcoskun.imageslider.ImageSlider
         android:id="@+id/imageSlider"
@@ -28,10 +28,10 @@
         android:id="@+id/titleTextView"
         android:layout_width="300dp"
         android:layout_height="40dp"
-        android:fontFamily="@font/mitr_medium"
         android:background="@color/green"
-        android:textAlignment="center"
+        android:fontFamily="@font/hammersmith_one"
         android:text="Title"
+        android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -59,8 +59,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/green"
-            android:fontFamily="@font/mitr_medium"
+            android:fontFamily="@font/hammersmith_one"
             android:textStyle="bold"
+            android:lineSpacingExtra="3dp"
             android:justificationMode="inter_word"
             android:text="Your long paragraph text goes here. This will be scrollable if it exceeds the screen height."
             android:textSize="16sp" />
@@ -68,11 +69,12 @@
 
     <Button
         android:id="@+id/backButton"
-        android:layout_width="181dp"
+        android:layout_width="100dp"
         android:layout_height="53dp"
         android:text="Back"
-        android:fontFamily="@font/mitr_medium"
+        android:fontFamily="@font/hammersmith_one"
         android:textColor="@color/white"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

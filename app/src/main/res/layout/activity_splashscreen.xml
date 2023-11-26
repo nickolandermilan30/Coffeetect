@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/whitebg"
     app:layoutDescription="@xml/activity_splash_screen_scene"
-    tools:context=".Splashscreen">
+    tools:context=".SplashScreen">
 
 
 

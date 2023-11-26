@@ -6,18 +6,18 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:background="@drawable/green_background"
-tools:context=".Monthly_Report">
+tools:context=".MonthlyReport">
 
 
   <ImageView
       android:id="@+id/imageView52"
-      android:layout_width="330dp"
+      android:layout_width="370dp"
       android:layout_height="90dp"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.99"
+      app:layout_constraintVertical_bias="1.0"
       app:srcCompat="@drawable/login_white_backg9" />
 
   <androidx.constraintlayout.widget.ConstraintLayout
@@ -30,7 +30,7 @@ tools:context=".Monthly_Report">
       app:layout_constraintHorizontal_bias="0.48"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.97"
+      app:layout_constraintVertical_bias="0.98"
       tools:ignore="MissingConstraints">
 
     <ImageButton
@@ -75,7 +75,7 @@ tools:context=".Monthly_Report">
         android:layout_width="40dp"
         android:layout_height="33dp"
         android:background="@drawable/monthly_icon"
-        android:backgroundTint="#eac784"
+        android:backgroundTint="#362415"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.9"
@@ -100,9 +100,8 @@ tools:context=".Monthly_Report">
       android:id="@+id/textView"
       android:layout_width="115dp"
       android:layout_height="50dp"
-      android:fontFamily="@font/mitr_medium"
-      android:lineSpacingExtra="-10dp"
-      android:text="Montly Report"
+      android:fontFamily="@font/hammersmith_one"
+      android:text="Monthly Report"
       android:textColor="#FFFFFF"
       android:textSize="20sp"
       android:textStyle="bold"
@@ -167,36 +166,38 @@ tools:context=".Monthly_Report">
 
   <Button
       android:id="@+id/clearButton"
-      android:layout_width="137dp"
+      android:layout_width="125dp"
       android:layout_height="42dp"
       android:backgroundTint="@color/white"
-      android:fontFamily="@font/mitr_medium"
+      android:fontFamily="@font/hammersmith_one"
       android:text="Clear"
       android:textColor="@color/green"
       android:textSize="15dp"
+      android:textStyle="bold"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.142"
+      app:layout_constraintHorizontal_bias="0.18"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/graphBarChart"
       app:layout_constraintVertical_bias="0.63" />
 
+
   <Button
       android:id="@+id/generatePieChartButton"
-      android:layout_width="137dp"
+      android:layout_width="125dp"
       android:layout_height="42dp"
       android:backgroundTint="@color/white"
-      android:fontFamily="@font/mitr_medium"
+      android:fontFamily="@font/hammersmith_one"
       android:text="Load chart"
       android:textColor="@color/green"
       android:textSize="15dp"
+      android:textStyle="bold"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.469"
-      app:layout_constraintStart_toEndOf="@+id/clearButton"
+      app:layout_constraintHorizontal_bias="0.828"
+      app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/graphBarChart"
       app:layout_constraintVertical_bias="0.63" />
-
 
   <ImageButton
       android:id="@+id/legendButton"

@@ -5,17 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/green_background"
-    tools:context=".Other_tree">
+    tools:context=".OtherTree">
 
     <ImageView
         android:id="@+id/imageView50"
-        android:layout_width="330dp"
+        android:layout_width="370dp"
         android:layout_height="90dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.99"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/login_white_backg9" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -28,7 +28,7 @@
         app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.97"
+        app:layout_constraintVertical_bias="0.98"
         tools:ignore="MissingConstraints">
 
         <ImageButton
@@ -85,7 +85,7 @@
             android:layout_width="40dp"
             android:layout_height="33dp"
             android:background="@drawable/treevisual_icon"
-            android:backgroundTint="#eac784"
+            android:backgroundTint="#362415"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.72"
@@ -160,12 +160,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/white"
-        android:fontFamily="@font/mitr_medium"
+        android:fontFamily="@font/hammersmith_one"
         android:text="Save Text"
         android:textColor="@color/green"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.74"
@@ -175,8 +175,7 @@
         android:id="@+id/textView"
         android:layout_width="130dp"
         android:layout_height="90dp"
-        android:fontFamily="@font/mitr_medium"
-        android:lineSpacingExtra="-10dp"
+        android:fontFamily="@font/hammersmith_one"
         android:text="Tree Report Visualization"
         android:textColor="@color/white"
         android:textSize="20sp"

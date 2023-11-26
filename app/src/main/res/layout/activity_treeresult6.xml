@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bckg"
+    tools:context=".TreeResult6">
+
+
+    <ImageView
+        android:id="@+id/mostFrequentImageView"
+        android:layout_width="585dp"
+        android:layout_height="346dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_foreground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.564"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/mostFrequentTextView"
+        android:layout_width="310dp"
+        android:layout_height="68dp"
+        android:layout_gravity="left"
+        android:fontFamily="@font/hammersmith_one"
+        android:gravity="center"
+        android:text="Most Disease"
+        android:textColor="@color/green"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.415"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mostFrequentImageView"
+        app:layout_constraintVertical_bias="0.36"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_search"
+        android:elevation="50dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="15dp" />
+
+
+    <Button
+        android:id="@+id/okButton"
+        android:layout_width="158dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="@color/green"
+        android:fontFamily="@font/hammersmith_one"
+        android:text="Add to Chart"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.944"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/leafRecommendationButton"
+        android:layout_width="170dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/green"
+        android:fontFamily="@font/hammersmith_one"
+        android:text="Recommendation"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.83"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/diseaseTextView"
+        android:layout_width="180dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="312dp"
+        android:background="@drawable/login_white_backg17"
+        android:fontFamily="@font/hammersmith_one"
+        android:text="Disease:"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/mostFrequentTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.722"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

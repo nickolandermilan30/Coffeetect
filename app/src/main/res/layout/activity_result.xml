@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/green"
-    tools:context=".Result_Activity">
+    tools:context=".ResultActivity">
 
 
 
@@ -46,7 +46,7 @@
         android:id="@+id/resultTextView"
         android:layout_width="400dp"
         android:layout_height="100dp"
-        android:fontFamily="@font/mitr_medium"
+        android:fontFamily="@font/hammersmith_one"
         android:gravity="center"
         android:text=""
         android:textAllCaps="true"
@@ -64,7 +64,7 @@
         android:id="@+id/textView"
         android:layout_width="155dp"
         android:layout_height="57dp"
-        android:fontFamily="@font/mitr_medium"
+        android:fontFamily="@font/hammersmith_one"
         android:text="Result"
         android:textAlignment="center"
         android:textColor="@color/green"
@@ -110,9 +110,10 @@
         android:layout_height="65dp"
         android:layout_marginTop="16dp"
         android:backgroundTint="@color/green"
-        android:fontFamily="@font/mitr_medium"
+        android:fontFamily="@font/hammersmith_one"
         android:textColor="#FFFFFF"
-        android:text="Capture Or Upload "
+        android:text="Capture Or Upload"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/imageView22"
         app:layout_constraintEnd_toEndOf="@+id/imageView22"
         app:layout_constraintHorizontal_bias="0.929"
@@ -127,9 +128,10 @@
         android:layout_height="65dp"
         android:layout_marginStart="7dp"
         android:backgroundTint="@color/green"
-        android:fontFamily="@font/mitr_medium"
-        android:textColor="#FFFFFF"
+        android:fontFamily="@font/hammersmith_one"
         android:text="Save Result"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/imageView22"
         app:layout_constraintEnd_toEndOf="@+id/imageView22"
         app:layout_constraintHorizontal_bias="0.038"

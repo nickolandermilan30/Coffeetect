@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/brownbg"
+    android:background="#00704a"
     tools:context=".Phoma">
 
     <ImageView
@@ -17,7 +17,7 @@
         app:layout_constraintHorizontal_bias="0.81"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.587"
+        app:layout_constraintVertical_bias="0.57"
         tools:ignore="MissingConstraints" />
 
     <ImageView
@@ -29,7 +29,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.587"
+        app:layout_constraintVertical_bias="0.57"
         tools:ignore="MissingConstraints" />
 
     <ImageButton
@@ -42,14 +42,14 @@
         app:layout_constraintHorizontal_bias="0.18"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.587"
+        app:layout_constraintVertical_bias="0.57"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView20"
         android:layout_width="40dp"
         android:layout_height="13dp"
-        android:fontFamily="@font/mitr_medium"
+        android:fontFamily="@font/hammersmith_one"
         android:gravity="center"
         android:text="Critical"
         android:textColor="#FFFFFF"
@@ -59,14 +59,14 @@
         app:layout_constraintHorizontal_bias="0.78"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.58000004"
+        app:layout_constraintVertical_bias="0.57"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView26"
         android:layout_width="49dp"
         android:layout_height="14dp"
-        android:fontFamily="@font/mitr_medium"
+        android:fontFamily="@font/hammersmith_one"
         android:gravity="center"
         android:text="Moderate"
         android:textColor="#00704a"
@@ -75,14 +75,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.58000004"
+        app:layout_constraintVertical_bias="0.57"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView27"
         android:layout_width="40dp"
         android:layout_height="20dp"
-        android:fontFamily="@font/mitr_medium"
+        android:fontFamily="@font/hammersmith_one"
         android:gravity="center"
         android:text="Mild"
         android:textColor="#FFFFFF"
@@ -92,7 +92,7 @@
         app:layout_constraintHorizontal_bias="0.21"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.58000004"
+        app:layout_constraintVertical_bias="0.57"
         tools:ignore="MissingConstraints" />
 
     <ScrollView
@@ -110,9 +110,8 @@
         <TextView
             android:layout_width="279dp"
             android:layout_height="600dp"
-            android:fontFamily="@font/mitr_medium"
+            android:fontFamily="@font/hammersmith_one"
             android:justificationMode="inter_word"
-            android:lineSpacingExtra="-5dp"
             android:text="Coffee leaf phoma, also known as Phoma tarda, is a fungal disease that affects coffee plants. It is caused by the fungus Phoma spp. and primarily affects the leaves of coffee plants. Coffee leaf phoma can cause significant damage to the foliage, leading to reduced coffee yields if left untreated.
 The symptoms of coffee leaf phoma vary, but commonly include the appearance of small, circular to irregular-shaped lesions on the leaves. These lesions may start as small yellow spots and gradually turn brown or dark brown. Over time, the lesions may enlarge and coalesce, leading to the browning and necrosis of larger portions of the leaf. In severe cases, the affected leaves may dry out, wither, and fall off prematurely.
 The fungus Phoma spp. that causes coffee leaf phoma survives in infected plant debris and can be spread through rain splashes, wind, or contaminated tools. The disease tends to be more prevalent in regions with high humidity and frequent rain, as moisture provides favorable conditions for its development.
@@ -155,7 +154,7 @@ It is important to consult with agricultural specialists or plant pathologists f
         android:id="@+id/textView5"
         android:layout_width="200dp"
         android:layout_height="39dp"
-        android:fontFamily="@font/mitr_medium"
+        android:fontFamily="@font/hammersmith_one"
         android:text="Phoma"
         android:textColor="#00704a"
         android:textSize="30sp"
@@ -183,7 +182,7 @@ It is important to consult with agricultural specialists or plant pathologists f
         android:id="@+id/textView17"
         android:layout_width="193dp"
         android:layout_height="79dp"
-        android:fontFamily="@font/mitr_medium"
+        android:fontFamily="@font/hammersmith_one"
         android:gravity="left"
         android:lineSpacingExtra="-5dp"
         android:text="Didymellaceae"

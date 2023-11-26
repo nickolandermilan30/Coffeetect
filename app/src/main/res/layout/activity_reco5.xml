@@ -5,8 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/whitebg"
-    tools:context=".reco5">
+    android:background="@drawable/bckg"
+    tools:context=".Recommendation5">
 
     <com.denzcoskun.imageslider.ImageSlider
         android:id="@+id/imageSlider"
@@ -27,16 +27,17 @@
     <TextView
         android:id="@+id/titleTextView"
         android:layout_width="300dp"
-        android:layout_height="54dp"
-        android:gravity="left"
+        android:layout_height="40dp"
+        android:background="@color/green"
+        android:fontFamily="@font/hammersmith_one"
         android:text="Title"
-        android:textColor="@color/green"
-        android:fontFamily="@font/mitr_medium"
+        android:textAlignment="center"
+        android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.382"
@@ -58,8 +59,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/green"
-            android:fontFamily="@font/mitr_medium"
+            android:fontFamily="@font/hammersmith_one"
             android:textStyle="bold"
+            android:lineSpacingExtra="3dp"
             android:justificationMode="inter_word"
             android:text="Your long paragraph text goes here. This will be scrollable if it exceeds the screen height."
             android:textSize="16sp" />
@@ -67,11 +69,12 @@
 
     <Button
         android:id="@+id/backButton"
-        android:layout_width="181dp"
+        android:layout_width="100dp"
         android:layout_height="53dp"
         android:text="Back"
-        android:fontFamily="@font/mitr_medium"
+        android:fontFamily="@font/hammersmith_one"
         android:textColor="@color/white"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -3,15 +3,15 @@
     <!-- Background Shape -->
     <item>
         <shape android:shape="rectangle">
-            <solid android:color="#00704a" /> <!-- Change color here -->
+            <solid android:color="#FFFFFF" /> <!-- Change color here -->
             <corners
                 android:bottomRightRadius="2000dp"
                 android:bottomLeftRadius="2000dp"
                 android:topRightRadius="2000dp"
                 android:topLeftRadius="2000dp" />
             <stroke
-                android:width="2dp"
-                android:color="@color/white" /> <!-- Change stroke color here -->
+                android:width="5dp"
+                android:color="@color/green" /> <!-- Change stroke color here -->
         </shape>
     </item>
 

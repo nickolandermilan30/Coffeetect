@@ -5,21 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/green"
-    tools:context=".About">
+    tools:context=".AboutUs">
 
     <ImageButton
         android:id="@+id/backButton"
-        android:layout_width="50dp"
-        android:layout_height="51dp"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
         android:background="@drawable/back"
         android:backgroundTint="@color/white"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintHorizontal_bias="0.67"
         app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.04000002"
+        app:layout_constraintVertical_bias="0.01999998"
         tools:ignore="MissingConstraints" />
 
 
@@ -40,7 +40,7 @@
         android:id="@+id/textView"
         android:layout_width="240dp"
         android:layout_height="91dp"
-        android:fontFamily="@font/mitr_medium"
+        android:fontFamily="@font/hammersmith_one"
         android:lineSpacingExtra="-10dp"
         android:text="About this app"
         android:textColor="@color/white"
@@ -48,10 +48,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintHorizontal_bias="0.21"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.060000002"
+        app:layout_constraintVertical_bias="0.01999998"
         tools:ignore="MissingConstraints" />
 
     <ImageView
@@ -72,8 +72,8 @@
         android:layout_height="300dp"
         android:background="@drawable/login_white_backg11"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageView13"
-        app:layout_constraintStart_toStartOf="@+id/imageView13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.921"
         tools:ignore="MissingConstraints" />
@@ -81,12 +81,12 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/mitr_medium"
+        android:fontFamily="@font/hammersmith_one"
         android:text="Version 1.0"
         android:textColor="@color/green"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.52"
@@ -95,10 +95,11 @@
     <TextView
         android:layout_width="283dp"
         android:layout_height="160dp"
-        android:fontFamily="@font/mitr_medium"
+        android:fontFamily="@font/hammersmith_one"
         android:justificationMode="inter_word"
         android:text="The Coffeetect application is a tool designed and developed by BSIT Students from CSTC Sariaya to help coffee experts, coffee farmers and coffee plantation owners for quick and accurate detection and identification of diseases found in coffee leaves."
         android:textColor="@color/white"
+        android:lineSpacingExtra="8dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView13"
         app:layout_constraintEnd_toEndOf="@+id/imageView15"
         app:layout_constraintHorizontal_bias="0.508"
@@ -110,8 +111,9 @@
     <TextView
         android:layout_width="283dp"
         android:layout_height="88dp"
-        android:fontFamily="@font/mitr_medium"
+        android:fontFamily="@font/hammersmith_one"
         android:justificationMode="inter_word"
+        android:lineSpacingExtra="8dp"
         android:text="Developers: \n\ Magpantay, Dan Carlo B. \n\ Milan, Nicko Lander R. \n\ Mabulay, Ron Ron"
         android:textAlignment="center"
         android:textColor="@color/white"
@@ -120,7 +122,7 @@
         app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="@+id/imageView15"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.92"
+        app:layout_constraintVertical_bias="0.90999997"
         tools:ignore="MissingConstraints" />
 
     <ImageView

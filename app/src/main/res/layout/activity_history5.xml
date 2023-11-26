@@ -12,8 +12,7 @@
         android:id="@+id/savedResultsCount"
         android:layout_width="110dp"
         android:layout_height="60dp"
-        android:fontFamily="@font/mitr_medium"
-        android:lineSpacingExtra="-10dp"
+        android:fontFamily="@font/hammersmith_one"
         android:text="Saved Results: 0"
         android:textColor="@color/white"
         android:textSize="20sp"
@@ -23,7 +22,7 @@
         app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.050000012"
+        app:layout_constraintVertical_bias="0.13999999"
         tools:ignore="MissingConstraints" />
 
     <ImageButton
@@ -34,10 +33,10 @@
         android:backgroundTint="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/recyclerView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.050000012"
+        app:layout_constraintVertical_bias="0.029999971"
         tools:ignore="MissingConstraints" />
 
     <androidx.recyclerview.widget.RecyclerView
@@ -57,7 +56,8 @@
         android:id="@+id/recommendationButton"
         android:layout_width="160dp"
         android:layout_height="62dp"
-        android:fontFamily="@font/mitr_medium"
+        android:fontFamily="@font/hammersmith_one"
+        android:textStyle="bold"
         android:textColor="@color/green"
         android:backgroundTint="@color/white"
         android:text="See Result"
@@ -75,8 +75,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/white"
-        android:fontFamily="@font/mitr_medium"
+        android:fontFamily="@font/hammersmith_one"
         android:text="Clear Results"
+        android:textStyle="bold"
         android:textColor="@color/green"
         app:layout_constraintBottom_toTopOf="@+id/recyclerView"
         app:layout_constraintEnd_toEndOf="parent"

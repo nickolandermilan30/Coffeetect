@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#102d00"
-    tools:context=".Sooty_Molds">
+    android:background="#00704a"
+    tools:context=".SootyMolds">
 
     <ImageView
         android:id="@+id/imageView6"
@@ -17,7 +17,7 @@
         app:layout_constraintHorizontal_bias="0.81"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.587"
+        app:layout_constraintVertical_bias="0.57"
         tools:ignore="MissingConstraints" />
 
     <ImageView
@@ -29,7 +29,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.587"
+        app:layout_constraintVertical_bias="0.57"
         tools:ignore="MissingConstraints" />
 
     <ImageButton
@@ -42,14 +42,14 @@
         app:layout_constraintHorizontal_bias="0.18"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.587"
+        app:layout_constraintVertical_bias="0.57"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="40dp"
         android:layout_height="13dp"
-        android:fontFamily="@font/mitr_medium"
+        android:fontFamily="@font/hammersmith_one"
         android:gravity="center"
         android:text="Critical"
         android:textColor="#FFFFFF"
@@ -59,14 +59,14 @@
         app:layout_constraintHorizontal_bias="0.78"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.58000004"
+        app:layout_constraintVertical_bias="0.57"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="49dp"
         android:layout_height="14dp"
-        android:fontFamily="@font/mitr_medium"
+        android:fontFamily="@font/hammersmith_one"
         android:gravity="center"
         android:text="Moderate"
         android:textColor="#00704a"
@@ -75,14 +75,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.58000004"
+        app:layout_constraintVertical_bias="0.57"
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView31"
+        android:id="@+id/textView28"
         android:layout_width="40dp"
         android:layout_height="20dp"
-        android:fontFamily="@font/mitr_medium"
+        android:fontFamily="@font/hammersmith_one"
         android:gravity="center"
         android:text="Mild"
         android:textColor="#FFFFFF"
@@ -92,7 +92,7 @@
         app:layout_constraintHorizontal_bias="0.21"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.58000004"
+        app:layout_constraintVertical_bias="0.57"
         tools:ignore="MissingConstraints" />
 
     <ScrollView
@@ -110,9 +110,8 @@
         <TextView
             android:layout_width="279dp"
             android:layout_height="600dp"
-            android:fontFamily="@font/mitr_medium"
+            android:fontFamily="@font/hammersmith_one"
             android:justificationMode="inter_word"
-            android:lineSpacingExtra="-5dp"
             android:text="Coffee leaf sooty mold is a fungal disease that affects coffee plants. It is caused by the growth of black or dark-colored fungi on the surface of leaves. The fungi colonize on the sugary substance called honeydew, which is excreted by certain insects such as aphids, whiteflies, mealybugs, or scale insects that feed on the sap of coffee plants.
 The honeydew excreted by these insects serves as a food source for the sooty mold fungi. As the fungi grow, they form a dark, powdery coating on the surface of the leaves, giving them a sooty or black appearance. This mold does not directly attack or harm the coffee plant, but it can interfere with photosynthesis by blocking sunlight and reduce the plant's overall vigor.
 The presence of coffee leaf sooty mold is an indicator of an underlying insect infestation. Controlling the insects that produce the honeydew is crucial to managing sooty mold. Once the insect infestation is addressed, the sooty mold can gradually fade away as new, unaffected leaves grow.
@@ -155,7 +154,7 @@ Regular monitoring of the coffee plants is essential to detect the presence of b
         android:id="@+id/textView18"
         android:layout_width="200dp"
         android:layout_height="39dp"
-        android:fontFamily="@font/mitr_medium"
+        android:fontFamily="@font/hammersmith_one"
         android:text="Sooty Molds"
         android:textColor="#00704a"
         android:textSize="30sp"
@@ -184,7 +183,7 @@ Regular monitoring of the coffee plants is essential to detect the presence of b
         android:id="@+id/textView19"
         android:layout_width="193dp"
         android:layout_height="79dp"
-        android:fontFamily="@font/mitr_medium"
+        android:fontFamily="@font/hammersmith_one"
         android:gravity="left"
         android:lineSpacingExtra="-5dp"
         android:text="Capnodium Citri"

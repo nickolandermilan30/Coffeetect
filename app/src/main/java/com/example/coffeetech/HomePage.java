@@ -63,7 +63,7 @@ public class HomePage extends AppCompatActivity {
         btnNext2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(HomePage.this, Diseases_Information.class);
+                Intent intent = new Intent(HomePage.this, DiseasesInformation.class);
                 startActivity(intent);
                 overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             }
@@ -73,7 +73,7 @@ public class HomePage extends AppCompatActivity {
         btnNext3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(HomePage.this, Camera_page.class);
+                Intent intent = new Intent(HomePage.this, CameraPage.class);
                 startActivity(intent);
                 overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             }
@@ -82,7 +82,7 @@ public class HomePage extends AppCompatActivity {
         btnNext4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(HomePage.this, Tree_Visualization.class);
+                Intent intent = new Intent(HomePage.this, TreeVisualization.class);
                 startActivity(intent);
                 overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             }
@@ -91,7 +91,7 @@ public class HomePage extends AppCompatActivity {
         btnNext5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(HomePage.this, About.class);
+                Intent intent = new Intent(HomePage.this, AboutUs.class);
                 startActivity(intent);
                 overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             }
@@ -100,7 +100,7 @@ public class HomePage extends AppCompatActivity {
         btnNext6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(HomePage.this, Monthly_Report.class);
+                Intent intent = new Intent(HomePage.this, MonthlyReport.class);
                 startActivity(intent);
                 overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             }

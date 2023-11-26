@@ -12,11 +12,9 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.camera.core.Camera;
 import androidx.camera.core.CameraSelector;
@@ -36,7 +34,6 @@ import org.tensorflow.lite.support.tensorbuffer.TensorBuffer;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
@@ -284,7 +281,7 @@ public class Capture extends AppCompatActivity {
 
     private void openResultActivity(Bitmap image) {
         if (!currentResult.isEmpty()) {
-            Intent intent = new Intent(this, Result_Activity2.class);
+            Intent intent = new Intent(this, ResultActivity2.class);
             intent.putExtra("result", currentResult);
 
             ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
