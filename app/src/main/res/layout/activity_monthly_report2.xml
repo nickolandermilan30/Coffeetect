@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/green_background"
+    tools:context=".MonthlyReport2">
+
+  <!-- LineChart to display the line graph -->
+  <Button
+      android:id="@+id/backButton"
+      android:layout_width="100dp"
+      android:layout_height="53dp"
+      android:layout_marginBottom="16dp"
+      android:backgroundTint="@color/white"
+      android:fontFamily="@font/hammersmith_one"
+      android:text="Back"
+      android:textColor="@color/green"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.498"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/highestDiseaseTextView"
+      app:layout_constraintVertical_bias="0.945" />
+
+
+  <com.github.mikephil.charting.charts.LineChart
+      android:id="@+id/lineChart"
+      android:layout_width="318dp"
+      android:layout_height="255dp"
+      android:layout_below="@id/highestDiseaseTextView"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.494"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.056" />
+
+  <TextView
+      android:id="@+id/highestDiseaseTextView"
+      android:layout_width="280dp"
+      android:layout_height="31dp"
+      android:backgroundTint="@color/white"
+      android:text="Highest Occurring Disease: "
+      android:textAlignment="center"
+      android:textColor="@color/white"
+      android:textSize="18sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.496"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/lineChart"
+      app:layout_constraintVertical_bias="0.045" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

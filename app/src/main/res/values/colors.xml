@@ -11,4 +11,7 @@
     <color name="green">#00704a</color>
     <color name="gray">#808080</color>
     <color name="dark_late_gray">#2b3e50</color>
+    <color name="colorPrimary">#9C27B0</color>
+    <color name="colorPrimaryDark">#7B1FA2</color>
+    <color name="colorAccent">#03A9F4</color>
 </resources>

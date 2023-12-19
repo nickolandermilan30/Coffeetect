@@ -77,7 +77,6 @@ public class TreeVisualization extends AppCompatActivity {
         String savedText6 = sharedPreferences.getString("savedText6", "");
         tr6.setText(savedText6);
 
-
         // Save the text to SharedPreferences when a button is clicked
         Button saveButton = findViewById(R.id.saveButton);
         saveButton.setOnClickListener(new View.OnClickListener() {
@@ -97,7 +96,6 @@ public class TreeVisualization extends AppCompatActivity {
                 editor.apply();
             }
         });
-
 
         othernext.setOnClickListener(new View.OnClickListener() {
             @Override

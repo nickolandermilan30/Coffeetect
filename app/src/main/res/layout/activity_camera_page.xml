@@ -160,7 +160,6 @@
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
         android:background="@drawable/design3"
-        android:text="Analitics"
         android:textAllCaps="false"
         android:textSize="21sp"
         android:textStyle="bold"

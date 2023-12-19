@@ -55,6 +55,14 @@
                 getSupportActionBar().hide();
             }
 
+            // Set onClickListener for the button to show the highest disease
+            findViewById(R.id.linegraph).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    showHighestDisease();
+                }
+            });
+
             // Initialize the disease list and adapter
             diseaseList = loadDiseaseList();
             adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, diseaseList);
@@ -68,6 +76,8 @@
             cal = findViewById(R.id.monthly);
             clearButton = findViewById(R.id.clearButton);
             ImageButton backButton = findViewById(R.id.backButton);
+
+
 
             home.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -159,6 +169,30 @@
                     // Save the updated disease list
                     saveDiseaseList();
                 }
+            }
+        }
+
+        // Method to show the activity displaying the highest occurring disease
+        private void showHighestDisease() {
+            // Implement your logic to determine the highest occurring disease
+            String highestDisease = getHighestOccurringDisease();
+
+            // Start a new activity to display the highest occurring disease
+            Intent intent = new Intent(MonthlyReport.this, MonthlyReport2.class);
+            intent.putExtra("highestDisease", highestDisease);
+            startActivity(intent);
+            overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+        }
+
+        // Method to get the highest occurring disease
+        private String getHighestOccurringDisease() {
+            // Implement your logic to determine the highest occurring disease
+            // You may use the data from the pie chart to find this information
+            // For now, let's assume it's the first disease in the list
+            if (!diseaseList.isEmpty()) {
+                return diseaseList.get(0);
+            } else {
+                return "No data available";
             }
         }
 
