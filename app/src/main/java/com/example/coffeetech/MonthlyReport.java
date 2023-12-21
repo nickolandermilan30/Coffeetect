@@ -10,6 +10,7 @@
     import android.widget.LinearLayout.LayoutParams;
     import android.widget.ListView;
     import android.widget.TextView;
+    import android.widget.Toast;
 
     import androidx.appcompat.app.AlertDialog;
     import androidx.appcompat.app.AppCompatActivity;
@@ -56,10 +57,10 @@
             }
 
             // Set onClickListener for the button to show the highest disease
-            findViewById(R.id.linegraph).setOnClickListener(new View.OnClickListener() {
+            findViewById(R.id.addButton).setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    showHighestDisease();
+                        addDiseaseToEmptyActivity();
                 }
             });
 
@@ -171,6 +172,52 @@
                 }
             }
         }
+
+        // ...
+
+        // Idagdag ang method na ito sa loob ng MonthlyReport class
+        private void addDiseaseToEmptyActivity() {
+            // Dapat meron nang pie chart na na-generate para magkaruon tayo ng data
+            generatePieChart();
+
+            // Kumuha ng mga entries mula sa pie chart
+            PieData data = pieChart.getData();
+
+            if (data != null && data.getDataSetCount() > 0) {
+                // Kunin ang unang dataset (pwede mo baguhin depende sa logic mo)
+                PieDataSet dataSet = (PieDataSet) data.getDataSetByIndex(0);
+
+                // Kung wala pang data, ipakita ang error message o gawin ang ibang action
+                if (dataSet != null) {
+                    ArrayList<PieEntry> entries = new ArrayList<>(dataSet.getValues());
+
+                    if (entries != null && entries.size() > 0) {
+                        // Kuhaan ng data
+                        ArrayList<String> diseaseNames = new ArrayList<>();
+                        ArrayList<Float> percentages = new ArrayList<>();
+
+                        for (PieEntry entry : entries) {
+                            diseaseNames.add(entry.getLabel());
+                            percentages.add(entry.getValue());
+                        }
+
+                        // I-send ang data sa EmptyActivity
+                        Intent intent = new Intent(MonthlyReport.this, MonthlyReport2.class);
+                        intent.putStringArrayListExtra("diseaseNames", diseaseNames);
+                        // I-set ang percentage sa Intent para makuha ito ng EmptyActivity
+                        for (PieEntry entry : entries) {
+                            intent.putExtra(entry.getLabel() + "_percentage", entry.getValue());
+                        }
+                        startActivity(intent);
+                    } else {
+                        // Kung wala pang data, ipakita ang error message o gawin ang ibang action
+                        Toast.makeText(this, "No data available.", Toast.LENGTH_SHORT).show();
+                    }
+                }
+            }
+        }
+
+
 
         // Method to show the activity displaying the highest occurring disease
         private void showHighestDisease() {
