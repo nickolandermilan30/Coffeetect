@@ -16,14 +16,41 @@
         android:layout_height="wrap_content"
         android:text="List of Diseases with Percentages"
         android:textColor="@color/white"
-        android:textSize="18sp"
-        android:textStyle="bold"/>
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
 
     <ListView
         android:id="@+id/listView"
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_width="wrap_content"
+        android:layout_height="524dp"
         android:layout_below="@id/textViewHeader"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="16dp"
+        android:padding="8dp" />
+
+    <!-- Button to start CompareActivity -->
+    <Button
+        android:id="@+id/compareButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/listView"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:text="Go to Chart"
+        android:textColor="@color/green"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/compareButton"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:text="Add Date"
+        android:textColor="@color/green"
+        android:textSize="18sp" />
 
 </RelativeLayout>

@@ -8,6 +8,17 @@ android:layout_height="match_parent"
 android:background="@drawable/green_background"
 tools:context=".MonthlyReport">
 
+  <ListView
+      android:id="@+id/diseaseListView"
+      android:layout_width="320dp"
+      android:layout_height="148dp"
+      android:background="@color/white"
+      app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+      app:layout_constraintEnd_toEndOf="@+id/imageView5"
+      app:layout_constraintStart_toStartOf="@+id/imageView5"
+      app:layout_constraintTop_toTopOf="@+id/imageView5"
+      app:layout_constraintVertical_bias="0.73"
+      tools:ignore="MissingConstraints" />
 
   <ImageView
       android:id="@+id/imageView52"
@@ -154,40 +165,28 @@ tools:context=".MonthlyReport">
       app:layout_constraintVertical_bias="0.18"
       tools:ignore="MissingConstraints" />
 
-  <ListView
-      android:id="@+id/diseaseListView"
-      android:layout_width="320dp"
-      android:layout_height="140dp"
-      android:cacheColorHint="@color/white"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.73"
-      tools:ignore="MissingConstraints" />
-
 
   <Button
       android:id="@+id/clearButton"
-      android:layout_width="98dp"
-      android:layout_height="41dp"
+      android:layout_width="153dp"
+      android:layout_height="50dp"
       android:backgroundTint="@color/white"
       android:fontFamily="@font/hammersmith_one"
       android:text="Clear"
-      android:textColor="@color/green"
+      android:textColor="#F44336"
       android:textSize="15dp"
       android:textStyle="bold"
-      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintBottom_toTopOf="@+id/imageView52"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.089"
+      app:layout_constraintHorizontal_bias="0.488"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/graphBarChart"
-      app:layout_constraintVertical_bias="0.631" />
+      app:layout_constraintTop_toBottomOf="@+id/addButton"
+      app:layout_constraintVertical_bias="0.526" />
 
   <Button
       android:id="@+id/generatePieChartButton"
-      android:layout_width="98dp"
-      android:layout_height="41dp"
+      android:layout_width="153dp"
+      android:layout_height="50dp"
       android:backgroundTint="@color/white"
       android:fontFamily="@font/hammersmith_one"
       android:text="Load"
@@ -196,27 +195,27 @@ tools:context=".MonthlyReport">
       android:textStyle="bold"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.101"
-      app:layout_constraintStart_toEndOf="@+id/clearButton"
-      app:layout_constraintTop_toBottomOf="@+id/graphBarChart"
-      app:layout_constraintVertical_bias="0.631" />
+      app:layout_constraintHorizontal_bias="0.488"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/imageView5"
+      app:layout_constraintVertical_bias="0.109" />
 
   <Button
       android:id="@+id/addButton"
-      android:layout_width="98dp"
-      android:layout_height="41dp"
+      android:layout_width="153dp"
+      android:layout_height="50dp"
       android:backgroundTint="@color/white"
       android:fontFamily="@font/hammersmith_one"
-      android:text="Add"
+      android:text="List"
       android:textColor="@color/green"
       android:textSize="15dp"
       android:textStyle="bold"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.447"
-      app:layout_constraintStart_toEndOf="@+id/generatePieChartButton"
-      app:layout_constraintTop_toBottomOf="@+id/graphBarChart"
-      app:layout_constraintVertical_bias="0.631" />
+      app:layout_constraintHorizontal_bias="0.488"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/generatePieChartButton"
+      app:layout_constraintVertical_bias="0.087" />
 
   <ImageButton
       android:id="@+id/legendButton"

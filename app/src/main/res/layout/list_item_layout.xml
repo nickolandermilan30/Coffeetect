@@ -3,23 +3,29 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:padding="8dp">
+    android:orientation="vertical"
+    android:padding="16dp">
 
     <TextView
-        android:id="@+id/textViewDiseaseName"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:textSize="16sp"
-        android:textColor="@color/white"
-        android:textStyle="bold"/>
+    android:id="@+id/textViewDiseaseName"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="18sp"
+    android:textColor="@color/white"
+    android:textStyle="bold"/>
 
     <TextView
-        android:id="@+id/textViewPercentage"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:textColor="@color/white"
-        android:textSize="16sp"/>
-</LinearLayout>
+    android:id="@+id/textViewPercentage"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/white"
+    android:textSize="18sp"/>
+
+
+    <TextView
+    android:id="@+id/textViewDateTime"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/white"
+    android:textSize="14sp"/>
+    </LinearLayout>

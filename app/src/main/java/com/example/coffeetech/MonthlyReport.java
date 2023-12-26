@@ -25,6 +25,8 @@
     import com.github.mikephil.charting.listener.OnChartValueSelectedListener;
 
     import java.util.ArrayList;
+    import java.util.Collections;
+    import java.util.Comparator;
     import java.util.HashMap;
     import java.util.HashSet;
     import java.util.Map;
@@ -39,7 +41,7 @@
         private static final String PREFS_NAME = "MyPrefs";
         private static final String DISEASE_LIST_KEY = "diseaseList";
         private static final int MAX_SICKNESS_COUNT = 6; // Maximum number of sicknesses
-        private static final int TOTAL_PERCENTAGE = 100; // Total percentage for the Pie Chart
+        private static final int TOTAL_PERCENTAGE = 120; // Total percentage for the Pie Chart
         private long diseaseCounter = 1; // Initialize the counter
         ImageButton home, leaf, cam, history, cal;
         View clearButton;
@@ -157,9 +159,14 @@
                     overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                 }
             });
+
             // Set the adapter to the ListView
             ListView listView = findViewById(R.id.diseaseListView);
             listView.setAdapter(adapter);
+
+// Hide the ListView
+            listView.setVisibility(View.GONE);
+
 
             // Example: Receive the added disease from TreeResult1
             Intent intent = getIntent();
@@ -296,6 +303,7 @@
         private void generatePieChart() {
             // Create entries for the pie chart
             ArrayList<PieEntry> entries = new ArrayList<>();
+            float totalPercentage = 0;
 
             // Create a map to store the count for each base disease and its corresponding color
             HashMap<String, Integer> baseDiseaseCountMap = new HashMap<>();
@@ -328,14 +336,25 @@
                 totalBaseDiseases += count;
             }
 
-            // Calculate the percentage for each base disease based on a constant total (TOTAL_PERCENTAGE)
+            // Calculate the percentage for each base disease based on the total percentage (TOTAL_PERCENTAGE)
             for (Map.Entry<String, Integer> entry : baseDiseaseCountMap.entrySet()) {
                 String baseDisease = entry.getKey();
                 int count = entry.getValue();
                 int color = baseDiseaseColorMap.containsKey(baseDisease) ? baseDiseaseColorMap.get(baseDisease) : android.graphics.Color.BLACK;
 
                 float percentage = (count / (float) totalBaseDiseases) * TOTAL_PERCENTAGE;
-                entries.add(new ColoredPieEntry(percentage, baseDisease, color));
+                totalPercentage += percentage;
+
+                // Only add entries with percentage greater than or equal to 5.0%
+                if (percentage >= 5.0) {
+                    entries.add(new ColoredPieEntry(percentage, baseDisease, color));
+                }
+            }
+
+                    // If the total percentage is less than 120, add a dummy entry to make up the difference
+            if (totalPercentage < TOTAL_PERCENTAGE) {
+                float difference = TOTAL_PERCENTAGE - totalPercentage;
+                entries.add(new ColoredPieEntry(difference, "Dummy Entry", android.graphics.Color.TRANSPARENT));
             }
 
 
@@ -507,6 +526,15 @@
             dialog.show();
         }
 
+        private void sortEntriesByPercentage(ArrayList<PieEntry> entries) {
+            Collections.sort(entries, new Comparator<PieEntry>() {
+                @Override
+                public int compare(PieEntry entry1, PieEntry entry2) {
+                    // Sort in descending order
+                    return Float.compare(entry2.getValue(), entry1.getValue());
+                }
+            });
+        }
 
 
 
