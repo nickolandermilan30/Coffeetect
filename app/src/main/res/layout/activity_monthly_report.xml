@@ -178,10 +178,9 @@ tools:context=".MonthlyReport">
       android:textStyle="bold"
       app:layout_constraintBottom_toTopOf="@+id/imageView52"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.488"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/addButton"
-      app:layout_constraintVertical_bias="0.526" />
+      app:layout_constraintTop_toBottomOf="@+id/imageView5"
+      app:layout_constraintVertical_bias="0.94" />
 
   <Button
       android:id="@+id/generatePieChartButton"
@@ -195,10 +194,10 @@ tools:context=".MonthlyReport">
       android:textStyle="bold"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.488"
-      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintHorizontal_bias="0.626"
+      app:layout_constraintStart_toEndOf="@+id/addButton"
       app:layout_constraintTop_toBottomOf="@+id/imageView5"
-      app:layout_constraintVertical_bias="0.109" />
+      app:layout_constraintVertical_bias="0.417" />
 
   <Button
       android:id="@+id/addButton"
@@ -206,16 +205,16 @@ tools:context=".MonthlyReport">
       android:layout_height="50dp"
       android:backgroundTint="@color/white"
       android:fontFamily="@font/hammersmith_one"
-      android:text="List"
+      android:text="Add"
       android:textColor="@color/green"
       android:textSize="15dp"
       android:textStyle="bold"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.488"
+      app:layout_constraintHorizontal_bias="0.116"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/generatePieChartButton"
-      app:layout_constraintVertical_bias="0.087" />
+      app:layout_constraintTop_toBottomOf="@+id/imageView5"
+      app:layout_constraintVertical_bias="0.417" />
 
   <ImageButton
       android:id="@+id/legendButton"
@@ -230,4 +229,9 @@ tools:context=".MonthlyReport">
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
       app:layout_constraintVertical_bias="0.51" />
+
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,8 +1,10 @@
 package com.example.coffeetech;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.TextView;
 
@@ -54,6 +56,7 @@ public class Line_chart extends AppCompatActivity {
                 // Create a list to store LineDataSet objects
                 List<LineDataSet> dataSets = new ArrayList<>();
 
+                saveChartData(diseasePercentageMap, currentMonth);
 
                 for (int i = 0; i < diseases.size(); i++) {
                     String disease = diseases.get(i);
@@ -61,7 +64,7 @@ public class Line_chart extends AppCompatActivity {
 
 
                     // Get percentage values for the current disease and month
-                    List<Float> percentages = getPercentageValuesForDisease(diseasePercentageMap, disease, currentMonth);
+                    List<Float> percentages = getSavedChartData(disease, currentMonth);
 
                     for (int j = 0; j < percentages.size(); j++) {
                         entries.add(new Entry(j, percentages.get(j)));
@@ -104,8 +107,35 @@ public class Line_chart extends AppCompatActivity {
         }
     }
 
+    private void saveChartData(HashMap<String, Float> diseasePercentageMap, int currentMonth) {
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
+        SharedPreferences.Editor editor = preferences.edit();
 
+        for (String disease : diseasePercentageMap.keySet()) {
+            String key = generateKey(disease, currentMonth);
+            Float percentage = diseasePercentageMap.get(disease);
+            editor.putFloat(key, percentage != null ? percentage : 0f);
+        }
 
+        editor.apply();
+    }
+
+    private List<Float> getSavedChartData(String disease, int currentMonth) {
+        List<Float> percentages = new ArrayList<>();
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
+
+        for (int i = 0; i < 12; i++) {
+            String key = generateKey(disease, i);
+            Float percentage = preferences.getFloat(key, 0f);
+            percentages.add(percentage);
+        }
+
+        return percentages;
+    }
+
+    private String generateKey(String disease, int month) {
+        return disease + "_" + month;
+    }
 
     // Add this method to retrieve percentage values for a specific disease and month
     private List<Float> getPercentageValuesForDisease(HashMap<String, Float> diseasePercentageMap, String disease, int currentMonth) {
@@ -149,7 +179,7 @@ public class Line_chart extends AppCompatActivity {
         lineChart.getAxisRight().setEnabled(false);
     }
 
-    private static class YearAxisValueFormatter extends ValueFormatter {
+    static class YearAxisValueFormatter extends ValueFormatter {
         private final String[] months = {"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};
 
         @Override
@@ -170,5 +200,4 @@ public class Line_chart extends AppCompatActivity {
         return colors[position % colors.length];
     }
 }
-
 

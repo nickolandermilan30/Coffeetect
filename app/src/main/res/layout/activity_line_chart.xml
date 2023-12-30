@@ -34,6 +34,27 @@
             android:textSize="16sp"
             android:textStyle="bold"
             android:visibility="gone" />
+
     </LinearLayout>
+    <!-- Add a Save button -->
+    <Button
+        android:id="@+id/saveLineChartButton"
+        android:layout_width="198dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/green"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="-46dp"
+        android:layout_marginEnd="115dp"
+        android:layout_marginBottom="80dp"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </RelativeLayout>

@@ -23,7 +23,7 @@
     <ListView
         android:id="@+id/listView"
         android:layout_width="wrap_content"
-        android:layout_height="524dp"
+        android:layout_height="520dp"
         android:layout_below="@id/textViewHeader"
         android:layout_marginTop="16dp"
         android:padding="8dp" />
@@ -37,7 +37,7 @@
         android:layout_marginTop="18dp"
         android:backgroundTint="@color/white"
         android:gravity="center"
-        android:text="Go to Chart"
+        android:text="View list and Month"
         android:textColor="@color/green"
         android:textSize="18sp" />
 
@@ -52,5 +52,7 @@
         android:text="Add Date"
         android:textColor="@color/green"
         android:textSize="18sp" />
+
+
 
 </RelativeLayout>

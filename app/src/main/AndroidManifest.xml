@@ -30,6 +30,48 @@
         android:theme="@style/Theme.CoffeeTech"
         tools:targetApi="31">
         <activity
+            android:name=".MonthlyReport2"
+            android:exported="false" />
+        <activity
+            android:name=".dec"
+            android:exported="false" />
+        <activity
+            android:name=".nov"
+            android:exported="false" />
+        <activity
+            android:name=".oct"
+            android:exported="false" />
+        <activity
+            android:name=".sep"
+            android:exported="false" />
+        <activity
+            android:name=".aug"
+            android:exported="false" />
+        <activity
+            android:name=".jul"
+            android:exported="false" />
+        <activity
+            android:name=".jun"
+            android:exported="false" />
+        <activity
+            android:name=".may"
+            android:exported="false" />
+        <activity
+            android:name=".apr"
+            android:exported="false" />
+        <activity
+            android:name=".mar"
+            android:exported="false" />
+        <activity
+            android:name=".feb"
+            android:exported="false" />
+        <activity
+            android:name=".jan"
+            android:exported="false" />
+        <activity
+            android:name=".Months"
+            android:exported="false" />
+        <activity
             android:name=".Months_saved"
             android:exported="false" />
         <activity
@@ -42,9 +84,6 @@
 
         <activity
             android:name=".Geo_Location_Maker"
-            android:exported="false" />
-        <activity
-            android:name=".MonthlyReport2"
             android:exported="false" />
         <activity
             android:name=".ResultActivity2"
