@@ -12,27 +12,26 @@
         android:layout_width="33dp"
         android:layout_height="33dp"
         android:background="@drawable/back"
-        android:backgroundTint="@color/white"
 
+        android:backgroundTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.67"
-        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.01999998"
+        app:layout_constraintVertical_bias="0.00999999"
         tools:ignore="MissingConstraints" />
 
 
     <ImageView
         android:id="@+id/imageView13"
-        android:layout_width="398dp"
-        android:layout_height="400dp"
+        android:layout_width="410dp"
+        android:layout_height="450dp"
         android:background="@drawable/login_white_backg10"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.461"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView12"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         tools:ignore="MissingConstraints" />
 
@@ -63,20 +62,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.20999998" />
+        app:layout_constraintVertical_bias="0.050000012" />
 
-
-    <ImageView
-        android:id="@+id/imageView15"
-        android:layout_width="350dp"
-        android:layout_height="300dp"
-        android:background="@drawable/login_white_backg11"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.921"
-        tools:ignore="MissingConstraints" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -84,45 +71,13 @@
         android:fontFamily="@font/hammersmith_one"
         android:text="Version 1.0"
         android:textColor="@color/green"
+        android:textSize="10sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.52"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:layout_width="283dp"
-        android:layout_height="160dp"
-        android:fontFamily="@font/hammersmith_one"
-        android:justificationMode="inter_word"
-        android:text="The Coffeetect application is a tool designed and developed by BSIT Students from CSTC Sariaya to help coffee experts, coffee farmers and coffee plantation owners for quick and accurate detection and identification of diseases found in coffee leaves."
-        android:textColor="@color/white"
-        android:lineSpacingExtra="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView13"
-        app:layout_constraintEnd_toEndOf="@+id/imageView15"
-        app:layout_constraintHorizontal_bias="0.508"
-        app:layout_constraintStart_toStartOf="@+id/imageView15"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.74"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:layout_width="283dp"
-        android:layout_height="88dp"
-        android:fontFamily="@font/hammersmith_one"
-        android:justificationMode="inter_word"
-        android:lineSpacingExtra="8dp"
-        android:text="Developers: \n\ Magpantay, Dan Carlo B. \n\ Milan, Nicko Lander R. \n\ Mabulay, Ron Ron"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView13"
-        app:layout_constraintEnd_toEndOf="@+id/imageView15"
-        app:layout_constraintHorizontal_bias="0.508"
-        app:layout_constraintStart_toStartOf="@+id/imageView15"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.90999997"
+        app:layout_constraintVertical_bias="0.31"
         tools:ignore="MissingConstraints" />
 
     <ImageView
@@ -133,8 +88,305 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.3"
+        app:layout_constraintVertical_bias="0.18"
         app:srcCompat="@drawable/about_logo" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ScrollView
+            android:layout_width="368dp"
+            android:layout_height="424dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:paddingTop="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:layout_goneMarginStart="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:elevation="8dp"
+                android:orientation="vertical"
+                android:paddingLeft="12dp"
+                android:paddingTop="12dp"
+                android:paddingRight="12dp"
+                android:paddingBottom="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/hammersmith_one"
+                    android:justificationMode="inter_word"
+                    android:text="The Coffeetect application is a tool designed and developed by BSIT students from CSTC Sariaya. It aims to assist coffee experts, farmers, and plantation owners in quickly and accurately detecting and identifying diseases found in coffee leaves."
+                    android:textAlignment="textStart"
+                    android:textColor="@color/green"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:fontFamily="@font/hammersmith_one"
+                    android:text="Key Features:"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="110dp"
+                    android:textColor="@color/green"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/hammersmith_one"
+                    android:justificationMode="inter_word"
+                    android:text="1. Real-time Capturing"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/green"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="344dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="15dp">
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hammersmith_one"
+                        android:justificationMode="inter_word"
+                        android:text="The Coffeetect Application can capture leaf diseases in real-time using the mobile phone's camera."
+                        android:textAlignment="textStart"
+                        android:textColor="@color/green"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:layout_width="136dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="15dp"
+                        android:src="@drawable/feature1" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/hammersmith_one"
+                    android:justificationMode="inter_word"
+                    android:text="2. Upload from Gallery"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/green"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="128dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/feature2" />
+
+                    <TextView
+                        android:layout_width="194dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hammersmith_one"
+                        android:justificationMode="inter_word"
+                        android:text="The Coffeetect Application can also utilize the captured images of leaf diseases from the mobile phone's gallery."
+                        android:textAlignment="textStart"
+                        android:textColor="@color/green"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/hammersmith_one"
+                    android:justificationMode="inter_word"
+                    android:text="3. Severity Level"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/green"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="346dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="35dp">
+
+
+                    <TextView
+                        android:layout_width="191dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hammersmith_one"
+                        android:justificationMode="inter_word"
+                        android:text="The Coffeetect Application can categorize detected diseases severity into three levels: Minor, Moderate, and Critical. To assess the severity of leaf diseases for each tree, ten leaf images per tree are required."
+                        android:textAlignment="textStart"
+                        android:textColor="@color/green"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:layout_width="149dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="5dp"
+                        android:src="@drawable/feature3" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/hammersmith_one"
+                    android:justificationMode="inter_word"
+                    android:text="4. Tree Report Visualization"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/green"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="30dp">
+
+                    <ImageView
+                        android:layout_width="130dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="5dp"
+                        android:src="@drawable/feature4" />
+
+                    <TextView
+                        android:layout_width="183dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hammersmith_one"
+                        android:justificationMode="inter_word"
+                        android:text="The Coffeetect Application features the ability to generate information about disease prevalence, severity levels, and recommended remedies for ten selected trees within an entire plantation. Users are required to capture 10 leaf diseases from all parts of each tree to obtain valuable reports concerning the overall health of the tree."
+                        android:textAlignment="textStart"
+                        android:textColor="@color/green"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/hammersmith_one"
+                    android:justificationMode="inter_word"
+                    android:text="5. Monthly Report"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/green"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="343dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="290dp"
+                        android:fontFamily="@font/hammersmith_one"
+                        android:justificationMode="inter_word"
+                        android:text="The Coffeetect Application also provides a monthly report displaying the percentage of leaf diseases detected per month using a line graph. Users need to capture 10 images of coffee leaf diseases from each of the 10 randomly selected trees throughout the entire plantation to address the leaf diseases affecting the entire plantation. Additionally, it categorizes the data annually, showcasing the predominant leaf diseases detected throughout the year."
+                        android:textAlignment="textStart"
+                        android:textColor="@color/green"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:layout_width="141dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="20dp"
+                        android:src="@drawable/feature5" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="283dp"
+                        android:layout_height="92dp"
+                        android:fontFamily="@font/hammersmith_one"
+                        android:justificationMode="inter_word"
+                        android:text="Developers: \n\ Magpantay, Dan Carlo B. \n\ Milan, Nicko Lander R. \n\ Mabulay, Ron Ron"
+                        android:textAlignment="center"
+                        android:textColor="@color/green"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView13"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.90999997"
+                        tools:ignore="MissingConstraints" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginEnd="2dp"
+                        android:justificationMode="inter_word"
+                        android:text="Contact:"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="29dp"
+                        android:layout_gravity="center_horizontal"
+                        android:justificationMode="inter_word"
+                        android:text="coffeetect@gmail.com"
+                        android:textColor="@color/green"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

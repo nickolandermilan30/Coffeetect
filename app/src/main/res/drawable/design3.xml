@@ -3,7 +3,7 @@
     <!-- Background Shape -->
     <item>
         <shape android:shape="rectangle">
-            <solid android:color="@color/green" /> <!-- Change color here -->
+            <solid android:color="@color/white" /> <!-- Change color here -->
             <corners
                 android:bottomRightRadius="2000dp"
                 android:bottomLeftRadius="2000dp"
