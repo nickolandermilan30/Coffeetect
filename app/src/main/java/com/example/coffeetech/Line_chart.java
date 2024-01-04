@@ -9,6 +9,8 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.NumberPicker;
 import android.widget.TextView;
 
@@ -16,8 +18,11 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.github.mikephil.charting.animation.Easing;
 import com.github.mikephil.charting.charts.LineChart;
 import com.github.mikephil.charting.components.AxisBase;
+import com.github.mikephil.charting.components.Legend;
+import com.github.mikephil.charting.components.MarkerView;
 import com.github.mikephil.charting.components.XAxis;
 import com.github.mikephil.charting.components.YAxis;
 import com.github.mikephil.charting.data.Entry;
@@ -51,7 +56,7 @@ public class Line_chart extends AppCompatActivity {
     private NumberPicker yearPicker;
     private int selectedYear;
     private Map<String, Integer> baseDiseaseColorMap;
-
+    ImageButton legendButton;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -68,7 +73,8 @@ public class Line_chart extends AppCompatActivity {
         baseDiseaseColorMap.put("Sooty Mold", android.graphics.Color.parseColor("#8C33FF"));
         baseDiseaseColorMap.put("Healthy Leaf", android.graphics.Color.parseColor("#33FF57"));
 
-
+        ImageButton backButton = findViewById(R.id.backButton);
+        legendButton = findViewById(R.id.legendButton2);
         Button resetButton = findViewById(R.id.resetButton);
         diseaseTextView = findViewById(R.id.diseaseTextView);
         TextView monthYearTextView = findViewById(R.id.monthYearTextView);
@@ -77,6 +83,21 @@ public class Line_chart extends AppCompatActivity {
 
         Button saveImageButton = findViewById(R.id.saveImageButton);
 
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+            }
+        });
+
+        legendButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showLegendDialog();
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+            }
+        });
         saveImageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -146,6 +167,14 @@ public class Line_chart extends AppCompatActivity {
                     for (int j = 0; j <= currentMonth && j < percentages.size(); j++) {
                         entries.add(new Entry(j, percentages.get(j)));
                     }
+
+                    for (LineDataSet dataSet : dataSets) {
+                        dataSet.setLineWidth(2f);
+                        dataSet.setDrawFilled(true);
+                        dataSet.setFillColor(Color.BLUE);
+                        dataSet.setFillAlpha(50);
+                    }
+
 
                     LineDataSet dataSet = new LineDataSet(entries, disease);
                     dataSet.setColor(getDiseaseColor(disease));
@@ -259,6 +288,14 @@ public class Line_chart extends AppCompatActivity {
                 lineChart.setData(lineData);
                 lineChart.invalidate();
 
+                lineChart.setHighlightPerTapEnabled(true);
+                lineChart.setHighlightPerDragEnabled(true);
+                lineChart.setDrawMarkers(true);
+
+// Customize the marker view (you can create your own custom marker if needed)
+                MarkerView markerView = new CustomMarkerView(this, R.layout.custom_marker_view);
+                lineChart.setMarker(markerView);
+
                 // Set up OnChartValueSelectedListener to update the TextView
                 lineChart.setOnChartValueSelectedListener(new OnChartValueSelectedListener() {
                     @Override
@@ -276,6 +313,55 @@ public class Line_chart extends AppCompatActivity {
                 });
             }
         }
+    }
+
+    private void showLegendDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Legend");
+
+        // Inflate the custom layout for the legend dialog
+        View view = getLayoutInflater().inflate(R.layout.legend, null);
+        builder.setView(view);
+
+        // DiseaseLegend array with names and colors
+        DiseaseLegend[] diseaseLegends = {
+                new DiseaseLegend("Cercospora", android.graphics.Color.parseColor("#FF5733")),
+                new DiseaseLegend("Healthy Leaf", android.graphics.Color.parseColor("#33FF57")),
+                new DiseaseLegend("Leaf Miner", android.graphics.Color.parseColor("#3366FF")),
+                new DiseaseLegend("Leaf Rust", android.graphics.Color.parseColor("#FF33CC")),
+                new DiseaseLegend("Phoma", android.graphics.Color.parseColor("#FFFF33")),
+                new DiseaseLegend("Sooty Mold", android.graphics.Color.parseColor("#8C33FF"))
+        };
+
+        // Add legend TextViews and palette color views dynamically
+        for (DiseaseLegend diseaseLegend : diseaseLegends) {
+            TextView legendTextView = new TextView(this);
+            legendTextView.setText(diseaseLegend.getName());
+            legendTextView.setTextColor(diseaseLegend.getColor());
+
+            // Set layout parameters for the TextView
+            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+            params.setMargins(0, 0, 0, 8); // Adjust margin as needed
+            legendTextView.setLayoutParams(params);
+
+
+            // Add color views to paletteLayout
+            View colorView = new View(this);
+            colorView.setId(View.generateViewId());
+            colorView.setLayoutParams(new LinearLayout.LayoutParams(24, 24)); // Adjust size as needed
+            colorView.setBackgroundColor(diseaseLegend.getColor());
+        }
+
+        // Set a button in the dialog to close it
+        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+
+        AlertDialog dialog = builder.create();
+        dialog.show();
     }
 
     // Add this method to retrieve the last saved image path from SharedPreferences
@@ -483,10 +569,17 @@ public class Line_chart extends AppCompatActivity {
 
         // Remove the legend
         lineChart.getLegend().setEnabled(false);
+        lineChart.getLegend().setTextColor(Color.BLACK);
+        lineChart.getLegend().setForm(Legend.LegendForm.CIRCLE);
+
+        lineChart.animateX(1500, Easing.EaseInOutCubic);  // Duration and easing type
+
 
         XAxis xAxis = lineChart.getXAxis();
         xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
         xAxis.setValueFormatter(new YearAxisValueFormatter());
+        xAxis.setTextColor(Color.BLACK);
+        xAxis.setAxisLineColor(Color.BLACK);
 
         // Customize XAxis to reduce the gap between labels
         xAxis.setGranularity(1f);
@@ -495,8 +588,15 @@ public class Line_chart extends AppCompatActivity {
         xAxis.setAxisMaximum(12f); // Maximum axis value
 
         YAxis leftAxis = lineChart.getAxisLeft();
+        leftAxis.setTextColor(Color.BLACK);
+        leftAxis.setAxisLineColor(Color.BLACK);
+
+        // Customize the grid lines
+        xAxis.setDrawGridLines(true);
+        leftAxis.setDrawGridLines(true);
+
         leftAxis.setAxisMinimum(0f);
-        leftAxis.setAxisMaximum(300f); // Update the maximum value to 500
+        leftAxis.setAxisMaximum(100f); // Update the maximum value to 500
 
         lineChart.getAxisRight().setEnabled(false);
     }
@@ -516,6 +616,13 @@ public class Line_chart extends AppCompatActivity {
     }
 
 
+
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+    }
 
 
     private int getDiseaseColor(String disease) {
