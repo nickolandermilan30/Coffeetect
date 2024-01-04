@@ -33,9 +33,9 @@ public class HomePage extends AppCompatActivity {
 
         ArrayList<SlideModel> slideModels = new ArrayList<>();
 
-        slideModels.add(new SlideModel(R.drawable.img1_cam, ScaleTypes.FIT));
+        slideModels.add(new SlideModel(R.drawable.img1_cam,    ScaleTypes.FIT));
         slideModels.add(new SlideModel(R.drawable.img2_upload, ScaleTypes.FIT));
-        slideModels.add(new SlideModel(R.drawable.img3_image, ScaleTypes.FIT));
+        slideModels.add(new SlideModel(R.drawable.img3_image,  ScaleTypes.FIT));
 
 
         imageSlider.setImageList(slideModels, ScaleTypes.FIT);
@@ -76,7 +76,7 @@ public class HomePage extends AppCompatActivity {
                 Intent intent = new Intent(HomePage.this, CameraPage.class);
                 startActivity(intent);
                 overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
-            }
+                                                                                                            }
         });
 
         btnNext4.setOnClickListener(new View.OnClickListener() {

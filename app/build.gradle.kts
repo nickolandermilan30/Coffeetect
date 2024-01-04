@@ -100,5 +100,7 @@ dependencies {
     testImplementation("junit:junit:4.12")
     testImplementation("junit:junit:4.12")
     testImplementation("org.junit.jupiter:junit-jupiter:5.8.1")
+    implementation ("com.github.PhilJay:MPAndroidChart:v3.1.0")
+    implementation ("com.google.android.gms:play-services-maps:17.0.1")
 
 }
