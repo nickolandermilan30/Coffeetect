@@ -39,10 +39,16 @@ public class StorageActivity extends AppCompatActivity {
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                onBackPressed();
+                // Redirect to MonthlyReportActivity
+                Intent intent = new Intent(StorageActivity.this, MonthlyReport.class);
+                startActivity(intent);
+                finish(); // Finish the current activity
                 overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             }
         });
+
+
+
 
         Button deleteListButton = findViewById(R.id.deleteListButton);
         deleteListButton.setOnClickListener(new View.OnClickListener() {
@@ -135,5 +141,46 @@ public class StorageActivity extends AppCompatActivity {
         Calendar calendar = Calendar.getInstance();
         // Use "yyyyMMdd_kkmmss" format for image name
         return DateFormat.format("yyyyMMdd_kkmmss", calendar).toString();
+
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        // Check if there is an intent with deleteImagePath extra
+        if (getIntent().hasExtra("deleteImagePath")) {
+            String deleteImagePath = getIntent().getStringExtra("deleteImagePath");
+
+            // Remove the image from the list
+            deleteImageFromList(deleteImagePath);
+
+            // Notify the adapter about the change
+            ((ChartListAdapter) listView.getAdapter()).notifyDataSetChanged();
+
+            // Clear the deleteImagePath extra to avoid re-deleting on resume
+            getIntent().removeExtra("deleteImagePath");
+        }
+    }
+
+
+    private void deleteImageFromList(String deleteImagePath) {
+        // Iterate through the chartItems list and find the item with the matching imagePath
+        for (int i = 0; i < chartItems.size(); i++) {
+            if (chartItems.get(i).getImagePath().equals(deleteImagePath)) {
+                // Remove the item from the list
+                chartItems.remove(i);
+
+                // Save the updated list to SharedPreferences
+                saveChartItems();
+
+                break; // Exit the loop once the item is found and removed
+            }
+        }
+    } @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+    }
+
 }

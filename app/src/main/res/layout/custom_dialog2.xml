@@ -6,22 +6,6 @@
     android:background="@color/white"
     android:padding="20dp">
 
-    <!-- Button T1 -->
-
-    <!-- Guideline to create equal spacing between buttons -->
-
-
-    <!-- Add more buttons (T2 to T10) similarly -->
-    <!-- Replace the android:text value, app:layout_constraintStart_toEndOf, and the id for each button -->
-
-    <!-- Button T2 -->
-
-    <!-- Guideline2 for equal spacing -->
-
-
-    <!-- Add remaining buttons T3 to T10 following the same pattern -->
-
-
     <Button
         android:id="@+id/button_t1"
         android:layout_width="70dp"
@@ -171,7 +155,7 @@
         android:onClick="onButtonClick"
         android:text="10"
         android:textColor="@color/white"
-        android:textSize="19dp"
+        android:textSize="17dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -180,8 +164,8 @@
 
     <Button
         android:id="@+id/doneButton"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
+        android:layout_width="101dp"
+        android:layout_height="58dp"
         android:layout_gravity="center"
         android:fontFamily="@font/hammersmith_one"
         android:justificationMode="inter_word"

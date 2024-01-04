@@ -10,6 +10,22 @@
     android:background="@color/white"
     tools:context=".Line_chart">
 
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:background="@drawable/back_ic"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="550dp"/>
+
+    <ImageButton
+        android:id="@+id/legendButton2"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="550dp"
+        android:layout_marginLeft="270dp"
+        android:background="@drawable/legend_ic" />
+
     <NumberPicker
         android:id="@+id/yearPicker"
         android:layout_width="138dp"
@@ -20,11 +36,24 @@
         android:textColor="@color/white" />
 
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/green"
+        android:text="Monthly report Line chart"
+        android:fontFamily="@font/hammersmith_one"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp" />
+
+    <TextView
         android:id="@+id/monthYearTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="70dp"
         android:textColor="@color/green"
+        android:fontFamily="@font/hammersmith_one"
         android:text=""
         android:textStyle="bold"
         android:gravity="center"
@@ -34,7 +63,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="100dp"
         android:orientation="vertical">
 
 
@@ -52,6 +81,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:textColor="@color/green"
+            android:fontFamily="@font/hammersmith_one"
             android:text=""
             android:textSize="16sp"
             android:textStyle="bold"
@@ -61,10 +91,11 @@
 
     <Button
         android:id="@+id/saveImageButton"
-        android:layout_width="120dp"
+        android:layout_width="130dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:textColor="@color/white"
+        android:fontFamily="@font/hammersmith_one"
         android:backgroundTint="@color/green"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
@@ -80,6 +111,7 @@
         android:layout_alignParentBottom="true"
         android:textColor="@color/white"
         android:backgroundTint="#FF1100"
+        android:fontFamily="@font/hammersmith_one"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="30dp"

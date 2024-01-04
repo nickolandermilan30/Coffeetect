@@ -24,7 +24,8 @@
       android:layout_centerHorizontal="true"
       android:layout_marginTop="590dp"
       android:backgroundTint="@color/white"
-      android:text="Back"
+      android:text="Home"
+      android:fontFamily="@font/hammersmith_one"
       android:textColor="@color/green" />
 
   <Button
@@ -34,6 +35,7 @@
       android:layout_centerHorizontal="true"
       android:text="Delete List"
       android:layout_marginTop="650dp"
+      android:fontFamily="@font/hammersmith_one"
       android:backgroundTint="@color/white"
       android:textColor="@color/green"
      />

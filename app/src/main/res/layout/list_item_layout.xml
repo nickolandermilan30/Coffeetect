@@ -3,44 +3,61 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:padding="16dp">
 
-    <TextView
-        android:id="@+id/textViewDiseaseName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:textColor="@color/white"/>
+    <!-- Image on the left side -->
+    <ImageView
+        android:id="@+id/imageViewDisease"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ana"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"/>
 
+    <!-- Text information on the right side -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="8dp">
+        android:orientation="vertical"
+        android:layout_marginStart="16dp">
 
         <TextView
-            android:id="@+id/textViewPercentageLabel"
-            android:layout_width="wrap_content"
+            android:id="@+id/textViewDiseaseName"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Percentage: "
-            android:textSize="16sp"
-            android:textColor="@android:color/darker_gray"/>
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/textViewPercentageLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Percentage: "
+                android:textSize="16sp"
+                android:textColor="@android:color/darker_gray"/>
+
+            <TextView
+                android:id="@+id/textViewPercentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+        </LinearLayout>
 
         <TextView
-            android:id="@+id/textViewPercentage"
-            android:layout_width="wrap_content"
+            android:id="@+id/textViewDateTime"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:textSize="16sp"/>
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginTop="8dp"/>
     </LinearLayout>
-
-    <TextView
-        android:id="@+id/textViewDateTime"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="14sp"
-        android:textColor="@android:color/darker_gray"
-        android:layout_marginTop="8dp"/>
 </LinearLayout>

@@ -18,6 +18,8 @@
         android:layout_below="@id/detailImageView"
         android:layout_centerInParent="true"
         android:layout_marginTop="16dp"
+        android:fontFamily="@font/hammersmith_one"
+        android:textColor="@color/green"
         android:gravity="center"
         android:text="Date: "
         android:textSize="18sp" />
@@ -30,7 +32,26 @@
         android:layout_below="@id/dateTextView"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="8dp"
+        android:fontFamily="@font/hammersmith_one"
+        android:textColor="@color/green"
         android:text="Time: "
         android:textSize="18sp" />
 
+    <ImageButton
+        android:id="@+id/deleteImageButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="640dp"
+        android:layout_marginLeft="80dp"
+        android:background="@drawable/del_ic"
+        android:text="Delete Image" />
+
+    <ImageButton
+        android:id="@+id/shareImageButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="640dp"
+        android:layout_marginLeft="250dp"
+        android:background="@drawable/share_ic"
+        android:text="Delete Image" />
 </RelativeLayout>
