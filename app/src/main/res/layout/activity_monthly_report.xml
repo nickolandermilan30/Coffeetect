@@ -178,6 +178,7 @@ tools:context=".MonthlyReport">
       android:textStyle="bold"
       app:layout_constraintBottom_toTopOf="@+id/imageView52"
       app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.891"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/imageView5"
       app:layout_constraintVertical_bias="0.94" />
@@ -194,7 +195,7 @@ tools:context=".MonthlyReport">
       android:textStyle="bold"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.626"
+      app:layout_constraintHorizontal_bias="0.506"
       app:layout_constraintStart_toEndOf="@+id/addButton"
       app:layout_constraintTop_toBottomOf="@+id/imageView5"
       app:layout_constraintVertical_bias="0.417" />
@@ -230,8 +231,22 @@ tools:context=".MonthlyReport">
       app:layout_constraintTop_toTopOf="parent"
       app:layout_constraintVertical_bias="0.51" />
 
-
-
+  <Button
+      android:id="@+id/year"
+      android:layout_width="153dp"
+      android:layout_height="50dp"
+      android:backgroundTint="@color/white"
+      android:fontFamily="@font/hammersmith_one"
+      android:text="Chart Years"
+      android:textColor="@color/green"
+      android:textSize="15dp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.116"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/imageView5"
+      app:layout_constraintVertical_bias="0.887" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

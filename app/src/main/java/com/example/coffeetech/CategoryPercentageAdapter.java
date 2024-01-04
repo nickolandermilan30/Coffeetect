@@ -4,6 +4,7 @@ package com.example.coffeetech;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -32,6 +33,10 @@ public class CategoryPercentageAdapter extends RecyclerView.Adapter<CategoryPerc
 
         holder.categoryTextView.setText(item.getCategory());
         holder.percentageTextView.setText(item.getPercentage());
+
+        // Set the progress for the ProgressBar
+        int progress = (int) Float.parseFloat(item.getPercentage()); // Assuming getPercentage returns a String
+        holder.progressBar.setProgress(progress);
     }
 
     @Override
@@ -42,11 +47,13 @@ public class CategoryPercentageAdapter extends RecyclerView.Adapter<CategoryPerc
     public class ViewHolder extends RecyclerView.ViewHolder {
         TextView categoryTextView;
         TextView percentageTextView;
+        ProgressBar progressBar;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             categoryTextView = itemView.findViewById(R.id.categoryTextView);
             percentageTextView = itemView.findViewById(R.id.percentageTextView);
+            progressBar = itemView.findViewById(R.id.percentageProgressBar);
         }
     }
 }

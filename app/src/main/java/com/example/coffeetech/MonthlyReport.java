@@ -6,6 +6,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout.LayoutParams;
 import android.widget.ListView;
@@ -41,12 +42,13 @@ public class MonthlyReport extends AppCompatActivity {
     private static final String PREFS_NAME = "MyPrefs";
     private static final String DISEASE_LIST_KEY = "diseaseList";
     private static final int MAX_SICKNESS_COUNT = 6; // Maximum number of sicknesses
-    private static final int TOTAL_PERCENTAGE = 120; // Total percentage for the Pie Chart
+    private static final int TOTAL_PERCENTAGE = 300; // Total percentage for the Pie Chart
     private long diseaseCounter = 1; // Initialize the counter
     ImageButton home, leaf, cam, history, cal;
     View clearButton;
     PieChart pieChart;  // Add this line
     ImageButton legendButton;  // Add this line
+    Button years;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,7 +64,13 @@ public class MonthlyReport extends AppCompatActivity {
         findViewById(R.id.addButton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                addDiseaseToEmptyActivity();
+                if (diseaseList.isEmpty()) {
+                    // Show a dialog prompting the user to add a disease
+                    showAddDiseaseDialog();
+                } else {
+                    // Proceed with the current logic to add disease to EmptyActivity
+                    addDiseaseToEmptyActivity();
+                }
             }
         });
 
@@ -79,8 +87,16 @@ public class MonthlyReport extends AppCompatActivity {
         cal = findViewById(R.id.monthly);
         clearButton = findViewById(R.id.clearButton);
         ImageButton backButton = findViewById(R.id.backButton);
+        years = findViewById(R.id.year);
 
-
+        years.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MonthlyReport.this, StorageActivity.class);
+                startActivity(intent);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+            }
+        });
 
         home.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -178,6 +194,26 @@ public class MonthlyReport extends AppCompatActivity {
                 saveDiseaseList();
             }
         }
+    }
+
+    // Add this method to show a dialog prompting the user to add a disease
+    private void showAddDiseaseDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Add Disease");
+        builder.setMessage("The Pie chart is empty add disease on Tree report visualization");
+
+        // Add positive button (OK)
+        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                // Dismiss the dialog
+                dialog.dismiss();
+            }
+        });
+
+        // Create and show the AlertDialog
+        AlertDialog dialog = builder.create();
+        dialog.show();
     }
 
     // ...

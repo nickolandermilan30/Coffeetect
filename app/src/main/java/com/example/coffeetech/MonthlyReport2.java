@@ -25,6 +25,7 @@ import java.util.Locale;
 public class MonthlyReport2 extends AppCompatActivity {
 
     private MyAdapter adapter; // Add this line
+    private Button compareButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,6 +48,9 @@ public class MonthlyReport2 extends AppCompatActivity {
                 // Baguhin ang ArrayAdapter na gumamit ng custom layout
                 adapter = new MyAdapter(this, new ArrayList<>(diseasePercentageMap.keySet()), diseasePercentageMap);
                 listView.setAdapter(adapter);
+                // Initialize the compareButton
+                compareButton = findViewById(R.id.compareButton);
+                compareButton.setVisibility(View.GONE);
 
                 // Button to save the data
                 Button saveButton = findViewById(R.id.saveButton);
@@ -55,6 +59,7 @@ public class MonthlyReport2 extends AppCompatActivity {
                     public void onClick(View v) {
                         // Perform save operation here
                         saveData();
+                        compareButton.setVisibility(View.VISIBLE);
                     }
                 });
 
@@ -62,6 +67,7 @@ public class MonthlyReport2 extends AppCompatActivity {
                 // Inside the onCreate method of MonthlyReport2 activity
                 Button compareButton = findViewById(R.id.compareButton);
                 HashMap<String, Float> finalDiseasePercentageMap = diseasePercentageMap;
+                // Button to start another activity with line chart (compareButton)
                 compareButton.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
