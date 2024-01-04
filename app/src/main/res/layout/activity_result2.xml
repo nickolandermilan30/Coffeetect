@@ -110,7 +110,7 @@
         android:layout_marginTop="16dp"
         android:backgroundTint="#00704a"
         android:fontFamily="@font/hammersmith_one"
-        android:text="Capture Or Upload "
+        android:text="Tree Visualization "
         android:textColor="#FFFFFF"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/imageView22"

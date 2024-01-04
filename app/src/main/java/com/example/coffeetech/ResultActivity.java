@@ -70,7 +70,7 @@ public class ResultActivity extends AppCompatActivity {
         backr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ResultActivity.this, CameraPage.class);
+                Intent intent = new Intent(ResultActivity.this, TreeVisualization.class);
                 intent.putExtra("diseaseName", "SampleDiseaseName");
                 startActivity(intent);
                 overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
@@ -113,7 +113,7 @@ public class ResultActivity extends AppCompatActivity {
                         SavedResult savedResult = new SavedResult(result, imageBitmap);
 
                         // Redirect to another activity (TreeVisualization)
-                        Intent intent = new Intent(ResultActivity.this, TreeVisualization.class);
+                        Intent intent = new Intent(ResultActivity.this, CameraPage.class);
                         startActivity(intent);
                         overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
 // Check if `History` is full and add to the appropriate history list

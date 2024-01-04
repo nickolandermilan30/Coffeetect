@@ -1,0 +1,24 @@
+[33m17e2444[m[33m ([m[1;36mHEAD -> [m[1;32mfeature/dan-feature[m[33m, [m[1;31morigin/feature/dan-feature[m[33m)[m HEAD@{0}: commit: Added Key Features in About section.
+[33m905cd9a[m[33m ([m[1;32mmaster[m[33m)[m HEAD@{1}: checkout: moving from feature/dan-feature to feature/dan-feature
+[33m905cd9a[m[33m ([m[1;32mmaster[m[33m)[m HEAD@{2}: branch: Reset to origin/feature/dan-feature
+[33m905cd9a[m[33m ([m[1;32mmaster[m[33m)[m HEAD@{3}: checkout: moving from master to feature/dan-feature
+[33m905cd9a[m[33m ([m[1;32mmaster[m[33m)[m HEAD@{4}: checkout: moving from master to master
+[33m905cd9a[m[33m ([m[1;32mmaster[m[33m)[m HEAD@{5}: merge origin/master: Merge made by the 'ort' strategy.
+[33m3dc0de6[m HEAD@{6}: commit (amend): Binago ko ang nav button icon.
+[33m1d6f90e[m HEAD@{7}: merge origin/master: Merge made by the 'ort' strategy.
+[33m403e3de[m HEAD@{8}: commit (amend): Binago ko ang mga animation at ilang UI/layout.
+[33m387ca0d[m HEAD@{9}: merge origin/master: Merge made by the 'ort' strategy.
+[33m0b2ef5f[m HEAD@{10}: commit (amend): I edited the whole layout files.
+[33mc5eb110[m HEAD@{11}: merge origin/master: Merge made by the 'ort' strategy.
+[33m32552d8[m HEAD@{12}: commit (amend): Merge remote-tracking branch 'origin/master'
+[33mfb5b3c7[m HEAD@{13}: merge origin/master: Merge made by the 'ort' strategy.
+[33m9fcd7cc[m HEAD@{14}: commit (amend): I edit the UI/layout of home page and landing page.
+[33m21ab627[m HEAD@{15}: commit (amend): I edit the UI/layout of home page and landing page.
+[33m3e0e416[m HEAD@{16}: commit (merge): I edit the UI/layout of home page and landing page.
+[33m021a3d7[m HEAD@{17}: commit (amend): I edit the UI/layout of home page and landing page.
+[33m8df8f24[m HEAD@{18}: commit (amend): I change the root project
+[33m899b1a9[m HEAD@{19}: commit (amend): I change the root project
+[33m91e9882[m HEAD@{20}: commit: I change the root project
+[33mb39ea76[m HEAD@{21}: commit (amend): I change the root project
+[33mb98e2fe[m HEAD@{22}: commit: I change the root project
+[33m5885873[m HEAD@{23}: clone: from https://github.com/nickolandermilan30/Coffeetect.git

@@ -1,6 +1,4 @@
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -25,16 +23,6 @@
         android:onClick="onCaptureButtonClick"
         android:text="Capture" />
 
-    <ImageView
-        android:id="@+id/imageView35"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="42dp"
-        android:layout_marginBottom="65dp"
-        app:srcCompat="@drawable/coffeecircle" />
-
     <ImageButton
         android:id="@+id/customDialogButton"
         android:layout_width="50dp"
@@ -44,6 +32,16 @@
         android:layout_marginEnd="41dp"
         android:layout_marginBottom="60dp"
         android:background="@drawable/btn" />
+
+    <ImageButton
+        android:id="@+id/customDialogButton2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="60dp"
+        android:layout_toStartOf="@+id/captureButton"
+        android:background="@drawable/locate" />
 
     <View
         android:layout_width="300dp"
@@ -84,7 +82,6 @@
         android:layout_above="@+id/captureButton"
         android:layout_marginBottom="560dp"
         android:text="Disease Detected: Not available"
-
         android:textStyle="bold"
         android:textColor="@color/black"
         android:textSize="17sp" />

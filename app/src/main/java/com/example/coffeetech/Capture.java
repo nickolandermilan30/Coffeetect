@@ -1,8 +1,11 @@
 package com.example.coffeetech;
 
+
 import android.Manifest;
 import android.app.Dialog;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -53,6 +56,15 @@ public class Capture extends AppCompatActivity {
     private PreviewView previewView;
     private TextView diseaseTextView;
 
+    private static final String PREF_HIGHLIGHTED_BUTTON = "highlighted_button";
+
+    private SharedPreferences sharedPreferences;
+    private Dialog dialog;
+
+    private Map<String, Boolean> buttonStates;
+
+    private Button lastClickedButton;
+
     private String currentResult = "";
 
     private String[] classes = {
@@ -79,14 +91,28 @@ public class Capture extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // Use the Application Context for SharedPreferences
+        sharedPreferences = SavedPref.getSharedPreferences();
+        buttonStates = getButtonStates();
+        // Other initializations and setup
         setContentView(R.layout.activity_capture);
 
         // Create and set OnClickListener for the custom dialog button
-        ImageButton customDialogButton = findViewById(R.id.customDialogButton); // Replace with your actual button ID
+        ImageButton customDialogButton = findViewById(R.id.customDialogButton);
         customDialogButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 showCustomDialog();
+            }
+        });
+
+
+        // Create and set OnClickListener for the custom dialog button 2
+        ImageButton customDialogButton2 = findViewById(R.id.customDialogButton2);
+        customDialogButton2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showCustomDialog2();
             }
         });
 
@@ -139,6 +165,234 @@ public class Capture extends AppCompatActivity {
         });
 
         dialog.show();
+    }
+
+
+
+    private void showCustomDialog2() {
+        // Create the custom dialog
+        dialog = new Dialog(this);
+        dialog.setContentView(R.layout.custom_dialog2);
+
+        // Find all buttons by their IDs
+        Button buttonT1 = dialog.findViewById(R.id.button_t1);
+        Button buttonT2 = dialog.findViewById(R.id.button_t2);
+        Button buttonT3 = dialog.findViewById(R.id.button_t3);
+        Button buttonT4 = dialog.findViewById(R.id.button_t4);
+        Button buttonT5 = dialog.findViewById(R.id.button_t5);
+        Button buttonT6 = dialog.findViewById(R.id.button_t6);
+        Button buttonT7 = dialog.findViewById(R.id.button_t7);
+        Button buttonT8 = dialog.findViewById(R.id.button_t8);
+        Button buttonT9 = dialog.findViewById(R.id.button_t9);
+        Button buttonT10 = dialog.findViewById(R.id.button_t10);
+
+        // Set initial states of the buttons
+        setButtonState(buttonT1);
+        setButtonState(buttonT2);
+        setButtonState(buttonT3);
+        setButtonState(buttonT4);
+        setButtonState(buttonT5);
+        setButtonState(buttonT6);
+        setButtonState(buttonT7);
+        setButtonState(buttonT8);
+        setButtonState(buttonT9);
+        setButtonState(buttonT10);
+
+        // Restore the last clicked button if it was previously highlighted
+        String lastButtonId = sharedPreferences.getString(PREF_HIGHLIGHTED_BUTTON, "");
+        if (!lastButtonId.isEmpty()) {
+            int id = getResources().getIdentifier(lastButtonId, "id", getPackageName());
+            lastClickedButton = dialog.findViewById(id);
+            if (lastClickedButton != null) {
+                highlightButton(lastClickedButton);
+            }
+        }
+
+        // Set click listeners for each button
+        buttonT1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                toggleButtonState(buttonT1);
+            }
+        });
+
+        buttonT2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                toggleButtonState(buttonT2);
+            }
+        });
+        buttonT3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                toggleButtonState(buttonT3);
+            }
+        });
+        buttonT4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                toggleButtonState(buttonT4);
+            }
+        });
+        buttonT5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                toggleButtonState(buttonT5);
+            }
+        });
+        buttonT6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                toggleButtonState(buttonT6);
+            }
+        });
+        buttonT7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                toggleButtonState(buttonT7);
+            }
+        });
+        buttonT8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                toggleButtonState(buttonT8);
+            }
+        });
+        buttonT9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                toggleButtonState(buttonT9);
+            }
+        });
+        buttonT10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                toggleButtonState(buttonT10);
+            }
+        });
+        // Show the dialog
+        dialog.show();
+        // Restore the button states when the dialog is shown
+        restoreButtonStates();
+
+        // Set up the doneButton click listener after the dialog is shown
+        Button doneButton = dialog.findViewById(R.id.doneButton);
+        doneButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Save the button states before dismissing the dialog
+                saveButtonStates();
+                // Dismiss the dialog
+                dialog.dismiss();
+            }
+        });
+    }
+
+    private void setButtonState(Button button) {
+        boolean isHighlighted = buttonStates.getOrDefault(getButtonKey(button), false);
+        if (isHighlighted) {
+            button.setBackgroundTintList(ContextCompat.getColorStateList(this, R.color.brown));
+        } else {
+            button.setBackgroundTintList(ContextCompat.getColorStateList(this, R.color.green));
+        }
+    }
+
+    private void toggleButtonState(Button button) {
+        boolean isHighlighted = buttonStates.getOrDefault(getButtonKey(button), false);
+        buttonStates.put(getButtonKey(button), !isHighlighted);
+        setButtonState(button);
+        saveButtonStates();
+    }
+
+    private String getButtonKey(Button button) {
+        return String.valueOf(button.getId());
+    }
+
+    // Method to save button states using Application Context for SharedPreferences
+    private void saveButtonStates() {
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        for (Map.Entry<String, Boolean> entry : buttonStates.entrySet()) {
+            editor.putBoolean(PREF_HIGHLIGHTED_BUTTON + entry.getKey(), entry.getValue());
+        }
+        editor.apply();
+    }
+
+
+    private Map<String, Boolean> getButtonStates() {
+        Map<String, Boolean> states = new HashMap<>();
+        // Retrieve button states from SharedPreferences
+        // For each button, get its state and add it to the map
+        // states.put("button_t1", sharedPreferences.getBoolean("button_t1", false));
+        states.put("button_t1", sharedPreferences.getBoolean(PREF_HIGHLIGHTED_BUTTON + "button_t1", false));
+        states.put("button_t2", sharedPreferences.getBoolean(PREF_HIGHLIGHTED_BUTTON + "button_t2", false));
+        states.put("button_t3", sharedPreferences.getBoolean(PREF_HIGHLIGHTED_BUTTON + "button_t3", false));
+        states.put("button_t4", sharedPreferences.getBoolean(PREF_HIGHLIGHTED_BUTTON + "button_t4", false));
+        states.put("button_t5", sharedPreferences.getBoolean(PREF_HIGHLIGHTED_BUTTON + "button_t5", false));
+        states.put("button_t6", sharedPreferences.getBoolean(PREF_HIGHLIGHTED_BUTTON + "button_t6", false));
+        states.put("button_t7", sharedPreferences.getBoolean(PREF_HIGHLIGHTED_BUTTON + "button_t7", false));
+        states.put("button_t8", sharedPreferences.getBoolean(PREF_HIGHLIGHTED_BUTTON + "button_t8", false));
+        states.put("button_t9", sharedPreferences.getBoolean(PREF_HIGHLIGHTED_BUTTON + "button_t9", false));
+        states.put("button_t10", sharedPreferences.getBoolean(PREF_HIGHLIGHTED_BUTTON + "button_t10", false));
+        return states;
+    }
+
+    // ... (existing code)
+
+    // Method to restore button states from SharedPreferences
+    // Inside restoreButtonStates() method
+    private void restoreButtonStates() {
+        sharedPreferences = getApplicationContext().getSharedPreferences("ButtonStates", Context.MODE_PRIVATE);
+        for (Map.Entry<String, Boolean> entry : buttonStates.entrySet()) {
+            boolean isHighlighted = sharedPreferences.getBoolean(entry.getKey(), false);
+            int buttonId = getResources().getIdentifier(entry.getKey(), "id", getPackageName());
+            Button button = dialog.findViewById(buttonId);
+            if (button != null) {
+                if (isHighlighted) {
+                    // Reapply the highlighted state to the buttons
+                    setButtonState(button);
+                }
+            }
+        }
+        // Set up the done button
+        Button doneButton = dialog.findViewById(R.id.doneButton);
+        doneButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Save the button states before dismissing the dialog
+                saveButtonStates();
+
+                // Dismiss the dialog
+                dialog.dismiss();
+            }
+        });
+    }
+
+    // Method to highlight the clicked button
+    // Inside highlightButton() method
+    private void highlightButton(Button button) {
+        // Change the background color of the clicked button to green
+        button.setBackgroundTintList(ContextCompat.getColorStateList(this, R.color.green));
+
+        // Save the ID of the clicked button to SharedPreferences
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putBoolean(getButtonKey(button), true); // Save the highlighted state
+        editor.apply();
+
+        // Update the last clicked button reference
+        lastClickedButton = button;
+
+        // Set up the done button
+        Button doneButton = dialog.findViewById(R.id.doneButton);
+        doneButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Save the button states before dismissing the dialog
+                saveButtonStates();
+
+                // Dismiss the dialog
+                dialog.dismiss();
+            }
+        });
     }
 
 
@@ -295,5 +549,17 @@ public class Capture extends AppCompatActivity {
 
     public void onCaptureButtonClick(View view) {
         captureImage();
+    }
+
+    public void setDialog(Dialog dialog) {
+        this.dialog = dialog;
+    }
+
+    public Button getLastClickedButton() {
+        return lastClickedButton;
+    }
+
+    public void setLastClickedButton(Button lastClickedButton) {
+        this.lastClickedButton = lastClickedButton;
     }
 }

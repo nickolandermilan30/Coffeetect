@@ -1,0 +1,154 @@
+[33mcommit e1958a99339eece75df98a7784d7431973c7d3c2[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Merge: 17e2444 ea88bd1
+Author: Dan <92004865+danlocar25@users.noreply.github.com>
+Date:   Thu Jan 4 11:28:54 2024 +0800
+
+    Merge remote-tracking branch 'origin/master'
+
+[33mcommit ea88bd1c88872bbed99a0146cba6e02b781af8af[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Dan Carlo Magpantay <dancarlom03@gmail.com>
+Date:   Fri Dec 22 12:16:07 2023 +0800
+
+    Update README.md
+
+[33mcommit dca51d46a5582f175bf8d2cf523edf3c47bbf983[m
+Author: Dan Carlo Magpantay <dancarlom03@gmail.com>
+Date:   Fri Dec 22 12:15:07 2023 +0800
+
+    Update README.md
+    
+    Project Description
+
+[33mcommit 16779ea787187041b50b961c79f9ff62a46ab4a2[m
+Author: Dan Carlo Magpantay <dancarlom03@gmail.com>
+Date:   Fri Dec 22 12:13:37 2023 +0800
+
+    Create README.md
+    
+    Project Description
+
+[33mcommit 17e2444c03d2e18a561eb6d60fc6a9997aa2a318[m[33m ([m[1;31morigin/feature/dan-feature[m[33m, [m[1;32mfeature/dan-feature[m[33m)[m
+Author: Dan <92004865+danlocar25@users.noreply.github.com>
+Date:   Thu Dec 21 14:32:52 2023 +0800
+
+    Added Key Features in About section.
+
+[33mcommit ef90732edb308d26b73f85647a15eacecf2d655c[m
+Author: nicko <nickolandermilan30@gmail.com>
+Date:   Thu Dec 21 10:58:06 2023 +0800
+
+    Dec_20_Push
+
+[33mcommit c72870143baa6e94741aef3bfabc2d1dbc8be797[m
+Author: nicko <nickolandermilan30@gmail.com>
+Date:   Tue Dec 19 08:33:49 2023 +0800
+
+    Dec_18_Push
+
+[33mcommit 905cd9a84078a32500ef7a3e7964b24dcf57f6ce[m
+Merge: 3dc0de6 1d6f90e
+Author: Dan <92004865+danlocar25@users.noreply.github.com>
+Date:   Sun Dec 3 18:20:58 2023 +0800
+
+    Merge remote-tracking branch 'origin/master'
+
+[33mcommit 3dc0de6a57e96ead9aad546d473edcbe428098d8[m
+Merge: 403e3de 387ca0d
+Author: Dan <92004865+danlocar25@users.noreply.github.com>
+Date:   Sat Dec 2 20:09:28 2023 +0800
+
+    Binago ko ang nav button icon.
+
+[33mcommit 1d6f90ed5865ad5ff08482b02984b6b9f31b9063[m
+Merge: 403e3de 387ca0d
+Author: Dan <92004865+danlocar25@users.noreply.github.com>
+Date:   Sat Dec 2 20:09:28 2023 +0800
+
+    Merge remote-tracking branch 'origin/master'
+
+[33mcommit 403e3deeb6815458a5790f9eee1667ab31cbab1b[m
+Merge: 0b2ef5f c5eb110
+Author: Dan <92004865+danlocar25@users.noreply.github.com>
+Date:   Mon Nov 27 07:28:31 2023 +0800
+
+    Binago ko ang mga animation at ilang UI/layout.
+
+[33mcommit 387ca0d477ad2c50f1a579eb522e30d4c5172979[m
+Merge: 0b2ef5f c5eb110
+Author: Dan <92004865+danlocar25@users.noreply.github.com>
+Date:   Mon Nov 27 07:28:31 2023 +0800
+
+    Merge remote-tracking branch 'origin/master'
+
+[33mcommit 0b2ef5f496d68c055310703c22f81597e9797ce6[m
+Merge: 32552d8 fb5b3c7
+Author: Dan <92004865+danlocar25@users.noreply.github.com>
+Date:   Sat Nov 25 20:25:57 2023 +0800
+
+    I edited the whole layout files.
+
+[33mcommit c5eb1103178cae96331672951fdbd7e0dcdad6e1[m
+Merge: 32552d8 fb5b3c7
+Author: Dan <92004865+danlocar25@users.noreply.github.com>
+Date:   Sat Nov 25 20:25:57 2023 +0800
+
+    Merge remote-tracking branch 'origin/master'
+
+[33mcommit 32552d8ce434127bbf018ffba6682639f5f976ff[m
+Merge: 9fcd7cc 21ab627
+Author: Dan <92004865+danlocar25@users.noreply.github.com>
+Date:   Sat Nov 25 08:37:26 2023 +0800
+
+    Merge remote-tracking branch 'origin/master'
+    I edit the diseases information.
+
+[33mcommit fb5b3c7977c369c010392a3ad0717b7cbf08ed83[m
+Merge: 9fcd7cc 21ab627
+Author: Dan <92004865+danlocar25@users.noreply.github.com>
+Date:   Sat Nov 25 08:37:26 2023 +0800
+
+    Merge remote-tracking branch 'origin/master'
+
+[33mcommit 9fcd7cc2b055b10fad7a58acbce1a6a5994a0430[m
+Merge: 021a3d7 4bb1c9b
+Author: Dan <92004865+danlocar25@users.noreply.github.com>
+Date:   Sat Nov 25 08:35:53 2023 +0800
+
+    I edit the UI/layout of home page and landing page.
+
+[33mcommit 21ab6277e71de3d403797ead654791e80ad920aa[m
+Merge: 021a3d7 4bb1c9b
+Author: Dan <92004865+danlocar25@users.noreply.github.com>
+Date:   Sat Nov 25 08:35:53 2023 +0800
+
+    I edit the UI/layout of home page and landing page.
+
+[33mcommit 021a3d74935453b0f0d3af9aad2e4a1dd181098f[m
+Author: Dan <92004865+danlocar25@users.noreply.github.com>
+Date:   Sat Nov 25 02:14:20 2023 +0800
+
+    I edit the UI/layout of home page and landing page.
+
+[33mcommit b39ea76327c1ee35c9d981e35358cca43fdaf3ac[m
+Author: Dan <92004865+danlocar25@users.noreply.github.com>
+Date:   Fri Nov 24 21:01:49 2023 +0800
+
+    I change the root project
+
+[33mcommit 4bb1c9b1d3990c2ece3e319a53ed67518fae12f9[m
+Author: nicko <nickolandermilan30@gmail.com>
+Date:   Fri Nov 24 21:37:36 2023 +0800
+
+    Nov22_coffeetect_final_push
+
+[33mcommit 5885873b3d4c83191ba1b163fef9e4194ea8f401[m
+Author: nicko <nickolandermilan30@gmail.com>
+Date:   Fri Nov 24 19:24:28 2023 +0800
+
+    Nov22_coffeetect_final_push
+
+[33mcommit e66e63300497203576186a85941db0bedfae5c10[m
+Author: nicko <nickolandermilan30@gmail.com>
+Date:   Fri Nov 24 19:22:56 2023 +0800
+
+    Nov22_coffeetect_final_push

@@ -42,7 +42,7 @@ public class MonthlyReport extends AppCompatActivity {
     private static final String PREFS_NAME = "MyPrefs";
     private static final String DISEASE_LIST_KEY = "diseaseList";
     private static final int MAX_SICKNESS_COUNT = 6; // Maximum number of sicknesses
-    private static final int TOTAL_PERCENTAGE = 300; // Total percentage for the Pie Chart
+    private static final int TOTAL_PERCENTAGE = 100; // Total percentage for the Pie Chart
     private long diseaseCounter = 1; // Initialize the counter
     ImageButton home, leaf, cam, history, cal;
     View clearButton;

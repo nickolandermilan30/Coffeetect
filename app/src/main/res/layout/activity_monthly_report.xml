@@ -110,8 +110,8 @@ tools:context=".MonthlyReport">
 
   <TextView
       android:id="@+id/textView"
-      android:layout_width="115dp"
-      android:layout_height="50dp"
+      android:layout_width="143dp"
+      android:layout_height="31dp"
       android:fontFamily="@font/hammersmith_one"
       android:text="Monthly Report"
       android:textColor="#FFFFFF"
@@ -119,10 +119,9 @@ tools:context=".MonthlyReport">
       android:textStyle="bold"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.1"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.00999999"
+      app:layout_constraintVertical_bias="0.01999998"
       tools:ignore="MissingConstraints" />
 
   <ImageView
@@ -168,7 +167,7 @@ tools:context=".MonthlyReport">
 
   <Button
       android:id="@+id/clearButton"
-      android:layout_width="153dp"
+      android:layout_width="120dp"
       android:layout_height="50dp"
       android:backgroundTint="@color/white"
       android:fontFamily="@font/hammersmith_one"
@@ -176,16 +175,16 @@ tools:context=".MonthlyReport">
       android:textColor="#F44336"
       android:textSize="15dp"
       android:textStyle="bold"
-      app:layout_constraintBottom_toTopOf="@+id/imageView52"
+      app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.891"
+      app:layout_constraintHorizontal_bias="0.8"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/imageView5"
-      app:layout_constraintVertical_bias="0.94" />
+      app:layout_constraintVertical_bias="0.63" />
 
   <Button
       android:id="@+id/generatePieChartButton"
-      android:layout_width="153dp"
+      android:layout_width="120dp"
       android:layout_height="50dp"
       android:backgroundTint="@color/white"
       android:fontFamily="@font/hammersmith_one"
@@ -195,14 +194,14 @@ tools:context=".MonthlyReport">
       android:textStyle="bold"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.506"
-      app:layout_constraintStart_toEndOf="@+id/addButton"
+      app:layout_constraintHorizontal_bias="0.8"
+      app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/imageView5"
       app:layout_constraintVertical_bias="0.417" />
 
   <Button
       android:id="@+id/addButton"
-      android:layout_width="153dp"
+      android:layout_width="120dp"
       android:layout_height="50dp"
       android:backgroundTint="@color/white"
       android:fontFamily="@font/hammersmith_one"
@@ -212,7 +211,7 @@ tools:context=".MonthlyReport">
       android:textStyle="bold"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.116"
+      app:layout_constraintHorizontal_bias="0.2"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/imageView5"
       app:layout_constraintVertical_bias="0.417" />
@@ -233,20 +232,20 @@ tools:context=".MonthlyReport">
 
   <Button
       android:id="@+id/year"
-      android:layout_width="153dp"
+      android:layout_width="120dp"
       android:layout_height="50dp"
       android:backgroundTint="@color/white"
       android:fontFamily="@font/hammersmith_one"
-      android:text="Chart Years"
+      android:text="Year Chart"
       android:textColor="@color/green"
-      android:textSize="15dp"
+      android:textSize="14sp"
       android:textStyle="bold"
-      app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+      app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.116"
+      app:layout_constraintHorizontal_bias="0.2"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/imageView5"
-      app:layout_constraintVertical_bias="0.887" />
+      app:layout_constraintVertical_bias="0.63" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
