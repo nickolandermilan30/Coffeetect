@@ -4,7 +4,8 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="8dp"
-    android:background="@android:color/white">
+    android:background="@android:color/white"
+    >
 
     <TextView
         android:id="@+id/markerText"

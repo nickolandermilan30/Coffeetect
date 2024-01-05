@@ -7,7 +7,7 @@
     android:paddingTop="16dp"
     android:paddingRight="16dp"
     android:paddingBottom="16dp"
-    android:background="@color/white"
+    android:background="@color/green"
     tools:context=".Line_chart">
 
     <ImageButton
@@ -39,7 +39,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:textColor="@color/green"
+        android:textColor="@color/white"
         android:text="Monthly Report"
         android:fontFamily="@font/hammersmith_one"
         android:textStyle="bold"
@@ -70,8 +70,9 @@
         <com.github.mikephil.charting.charts.LineChart
             android:id="@+id/lineChart"
             android:layout_width="match_parent"
+            android:backgroundTint="@color/white"
             android:layout_height="350dp"
-            android:layout_marginBottom="16dp"
+            android:layout_marginBottom="30dp"
             android:background="@android:color/white" >
         </com.github.mikephil.charting.charts.LineChart>
 
@@ -80,7 +81,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:textColor="@color/green"
+            android:textColor="@color/white"
             android:fontFamily="@font/hammersmith_one"
             android:text=""
             android:textSize="16sp"
@@ -94,9 +95,9 @@
         android:layout_width="125dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:textColor="@color/white"
+        android:textColor="@color/green"
         android:fontFamily="@font/hammersmith_one"
-        android:backgroundTint="@color/green"
+        android:backgroundTint="@color/white"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="100dp"
