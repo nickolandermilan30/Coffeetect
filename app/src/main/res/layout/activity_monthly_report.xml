@@ -121,7 +121,7 @@ tools:context=".MonthlyReport">
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.01999998"
+      app:layout_constraintVertical_bias="0.050000012"
       tools:ignore="MissingConstraints" />
 
   <ImageView
@@ -134,21 +134,7 @@ tools:context=".MonthlyReport">
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.32" />
-
-  <ImageButton
-      android:id="@+id/backButton"
-      android:layout_width="33dp"
-      android:layout_height="33dp"
-      android:background="@drawable/back"
-      android:backgroundTint="#FFFFFF"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.9"
-      app:layout_constraintStart_toEndOf="@+id/textView"
-      app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.01999998"
-      tools:ignore="MissingConstraints" />
+      app:layout_constraintVertical_bias="0.45999998" />
 
   <!-- TextView for displaying category and percentage -->
 
@@ -161,7 +147,7 @@ tools:context=".MonthlyReport">
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.18"
+      app:layout_constraintVertical_bias="0.24000001"
       tools:ignore="MissingConstraints" />
 
 
@@ -179,8 +165,8 @@ tools:context=".MonthlyReport">
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.8"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/imageView5"
-      app:layout_constraintVertical_bias="0.63" />
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.81" />
 
   <Button
       android:id="@+id/generatePieChartButton"
@@ -196,8 +182,8 @@ tools:context=".MonthlyReport">
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.8"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/imageView5"
-      app:layout_constraintVertical_bias="0.417" />
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.7" />
 
   <Button
       android:id="@+id/addButton"
@@ -213,8 +199,8 @@ tools:context=".MonthlyReport">
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.2"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/imageView5"
-      app:layout_constraintVertical_bias="0.417" />
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.7" />
 
   <ImageButton
       android:id="@+id/legendButton"
@@ -228,7 +214,7 @@ tools:context=".MonthlyReport">
       app:layout_constraintHorizontal_bias="0.97"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.51" />
+      app:layout_constraintVertical_bias="0.53999996" />
 
   <Button
       android:id="@+id/year"
@@ -236,16 +222,16 @@ tools:context=".MonthlyReport">
       android:layout_height="50dp"
       android:backgroundTint="@color/white"
       android:fontFamily="@font/hammersmith_one"
-      android:text="Year Chart"
+      android:text="Yearly Report"
       android:textColor="@color/green"
-      android:textSize="14sp"
+      android:textSize="11sp"
       android:textStyle="bold"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.2"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/imageView5"
-      app:layout_constraintVertical_bias="0.63" />
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.81" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

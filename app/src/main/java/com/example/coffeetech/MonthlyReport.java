@@ -86,7 +86,6 @@ public class MonthlyReport extends AppCompatActivity {
         history = findViewById(R.id.tree);
         cal = findViewById(R.id.monthly);
         clearButton = findViewById(R.id.clearButton);
-        ImageButton backButton = findViewById(R.id.backButton);
         years = findViewById(R.id.year);
 
         years.setOnClickListener(new View.OnClickListener() {
@@ -168,13 +167,6 @@ public class MonthlyReport extends AppCompatActivity {
             }
         });
 
-        backButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onBackPressed();
-                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
-            }
-        });
 
         // Set the adapter to the ListView
         ListView listView = findViewById(R.id.diseaseListView);
@@ -200,7 +192,7 @@ public class MonthlyReport extends AppCompatActivity {
     private void showAddDiseaseDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Add Disease");
-        builder.setMessage("The Pie chart is empty add disease on Tree report visualization");
+        builder.setMessage("The Pie chart is empty, add disease first on Tree Report Visualization");
 
         // Add positive button (OK)
         builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {

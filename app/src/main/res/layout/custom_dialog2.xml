@@ -179,16 +179,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.96" />
 
-    <ImageView
-        android:id="@+id/imageView15"
-        android:layout_width="356dp"
-        android:layout_height="110dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.82"
-        app:srcCompat="@drawable/green_background" />
 
     <TextView
         android:id="@+id/textView39"
@@ -197,7 +187,7 @@
         android:fontFamily="@font/hammersmith_one"
         android:justificationMode="inter_word"
         android:text="Please press the button corresponding to the tree's numbered tag after inspecting the entire tree. This serves as confirmation that the tree has been checked to prevent missing any trees requiring diagnosis."
-        android:textColor="@color/white"
+        android:textColor="@color/green"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

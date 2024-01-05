@@ -1,5 +1,6 @@
 package com.example.coffeetech;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -9,6 +10,7 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.common.reflect.TypeToken;
@@ -54,14 +56,8 @@ public class StorageActivity extends AppCompatActivity {
         deleteListButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Clear the list of saved chart items
-                chartItems.clear();
-
-                // Save the updated list to SharedPreferences
-                saveChartItems();
-
-                // Notify the adapter about the change
-                ((ChartListAdapter) listView.getAdapter()).notifyDataSetChanged();
+                // Show AlertDialog to confirm deletion
+                showDeleteConfirmationDialog();
             }
         });
 
@@ -95,6 +91,40 @@ public class StorageActivity extends AppCompatActivity {
                 showClickedChart(clickedItem.getImagePath());
             }
         });
+    }
+
+    private void showDeleteConfirmationDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Delete List");
+        builder.setMessage("Are you sure you want to delete the entire list?");
+        builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                // User clicked Yes, delete the list
+                deleteList();
+            }
+        });
+        builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                // User clicked No, do nothing
+                dialog.dismiss();
+            }
+        });
+        builder.create().show();
+    }
+
+
+
+    private void deleteList() {
+        // Clear the list of saved chart items
+        chartItems.clear();
+
+        // Save the updated list to SharedPreferences
+        saveChartItems();
+
+        // Notify the adapter about the change
+        ((ChartListAdapter) listView.getAdapter()).notifyDataSetChanged();
     }
 
     private void retrieveSavedChartItems(int selectedYear) {

@@ -1,5 +1,6 @@
 package com.example.coffeetech;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
@@ -12,6 +13,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.FileProvider;
 
@@ -36,16 +38,31 @@ public class ChartDetailActivity extends AppCompatActivity {
         deleteImageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Retrieve the image path from the intent
-                String imagePath = getIntent().getStringExtra("imagePath");
+                // Build an AlertDialog for confirmation
+                new AlertDialog.Builder(ChartDetailActivity.this)
+                        .setTitle("Delete Image")
+                        .setMessage("Are you sure you want to delete this image?")
+                        .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+                                // Retrieve the image path from the intent
+                                String imagePath = getIntent().getStringExtra("imagePath");
 
-                // Delete the image from both lists
-                deleteImageFromList(imagePath);
+                                // Delete the image from both lists
+                                deleteImageFromList(imagePath);
 
-                // Finish the activity
-                finish();
+                                // Finish the activity
+                                finish();
+                            }
+                        })
+                        .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+                                // User clicked "No," do nothing
+                            }
+                        })
+                        .show();
             }
         });
+
 
         // Find the Share ImageButton and set its click listener
         ImageButton shareImageButton = findViewById(R.id.shareImageButton);

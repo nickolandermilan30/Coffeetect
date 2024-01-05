@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:textColor="@color/green"
-        android:text="Monthly report Line chart"
+        android:text="Monthly Report"
         android:fontFamily="@font/hammersmith_one"
         android:textStyle="bold"
         android:gravity="center"
@@ -91,7 +91,7 @@
 
     <Button
         android:id="@+id/saveImageButton"
-        android:layout_width="130dp"
+        android:layout_width="125dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:textColor="@color/white"

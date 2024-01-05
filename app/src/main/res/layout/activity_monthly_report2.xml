@@ -14,9 +14,10 @@
         android:id="@+id/textViewHeader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="List of Diseases with Percentages"
+        android:text="List of Diseases Detected"
         android:textColor="@color/white"
-        android:textSize="24sp"
+        android:fontFamily="@font/hammersmith_one"
+        android:textSize="17sp"
         android:textStyle="bold"
         android:layout_centerHorizontal="true"/>
 
@@ -31,27 +32,32 @@
     <!-- Button to start CompareActivity -->
     <Button
         android:id="@+id/compareButton"
-        android:layout_width="match_parent"
+        android:layout_width="160dp"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
         android:layout_height="wrap_content"
         android:layout_below="@id/listView"
         android:layout_marginTop="18dp"
+        android:fontFamily="@font/hammersmith_one"
         android:backgroundTint="@color/white"
         android:gravity="center"
-        android:text="View list and Month"
-        android:textColor="@color/green"
-        android:textSize="18sp" />
+        android:text="Monthly Report"
+        android:textColor="@color/green"/>
+
 
     <Button
         android:id="@+id/saveButton"
-        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/compareButton"
         android:layout_marginTop="16dp"
         android:backgroundTint="@color/white"
         android:gravity="center"
         android:text="Add Date"
+        android:fontFamily="@font/hammersmith_one"
         android:textColor="@color/green"
-        android:textSize="18sp" />
+        android:layout_width="120dp"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true" />
 
 
 
