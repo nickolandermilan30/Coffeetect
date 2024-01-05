@@ -341,6 +341,7 @@ public class MonthlyReport extends AppCompatActivity {
         ArrayList<PieEntry> entries = new ArrayList<>();
         float totalPercentage = 0;
 
+
         // Create a map to store the count for each base disease and its corresponding color
         HashMap<String, Integer> baseDiseaseCountMap = new HashMap<>();
         HashMap<String, Integer> baseDiseaseColorMap = new HashMap<>();
@@ -387,10 +388,16 @@ public class MonthlyReport extends AppCompatActivity {
             }
         }
 
-        // If the total percentage is less than 120, add a dummy entry to make up the difference
+        // If the total percentage is less than 100, adjust the entries to make up the difference
         if (totalPercentage < TOTAL_PERCENTAGE) {
-            float difference = TOTAL_PERCENTAGE - totalPercentage;
-            entries.add(new ColoredPieEntry(difference, "Dummy Entry", android.graphics.Color.TRANSPARENT));
+            // Distribute the remaining percentage equally among existing entries
+            float remainingPercentage = TOTAL_PERCENTAGE - totalPercentage;
+            float percentagePerEntry = remainingPercentage / entries.size();
+
+            // Update the percentage for each existing entry
+            for (PieEntry entry : entries) {
+                entry.setY(entry.getY() + percentagePerEntry);
+            }
         }
 
 

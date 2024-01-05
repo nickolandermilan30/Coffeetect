@@ -125,7 +125,7 @@ public class CameraPage extends AppCompatActivity {
         calbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(CameraPage.this, Geo_Location_Maker.class);
+                Intent intent = new Intent(CameraPage.this,StorageActivity.class);
                 startActivity(intent);
                 overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             }

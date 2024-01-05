@@ -320,9 +320,7 @@ public class Capture extends AppCompatActivity {
 
     private Map<String, Boolean> getButtonStates() {
         Map<String, Boolean> states = new HashMap<>();
-        // Retrieve button states from SharedPreferences
-        // For each button, get its state and add it to the map
-        // states.put("button_t1", sharedPreferences.getBoolean("button_t1", false));
+
         states.put("button_t1", sharedPreferences.getBoolean(PREF_HIGHLIGHTED_BUTTON + "button_t1", false));
         states.put("button_t2", sharedPreferences.getBoolean(PREF_HIGHLIGHTED_BUTTON + "button_t2", false));
         states.put("button_t3", sharedPreferences.getBoolean(PREF_HIGHLIGHTED_BUTTON + "button_t3", false));
@@ -336,10 +334,6 @@ public class Capture extends AppCompatActivity {
         return states;
     }
 
-    // ... (existing code)
-
-    // Method to restore button states from SharedPreferences
-    // Inside restoreButtonStates() method
     private void restoreButtonStates() {
         sharedPreferences = getApplicationContext().getSharedPreferences("ButtonStates", Context.MODE_PRIVATE);
         for (Map.Entry<String, Boolean> entry : buttonStates.entrySet()) {
