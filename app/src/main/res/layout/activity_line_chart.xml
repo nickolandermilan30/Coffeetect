@@ -38,14 +38,14 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="7dp"
         android:textColor="@color/white"
         android:text="Monthly Report"
         android:fontFamily="@font/hammersmith_one"
         android:textStyle="bold"
         android:gravity="center"
         android:layout_centerHorizontal="true"
-        android:textSize="18sp" />
+        android:textSize="25sp" />
 
     <TextView
         android:id="@+id/monthYearTextView"
@@ -92,7 +92,7 @@
 
     <Button
         android:id="@+id/saveImageButton"
-        android:layout_width="125dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:textColor="@color/green"
@@ -100,6 +100,7 @@
         android:backgroundTint="@color/white"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
+        android:textStyle="bold"
         android:layout_marginBottom="100dp"
         android:text="Save Chart" />
 
@@ -107,7 +108,7 @@
 
     <Button
         android:id="@+id/resetButton"
-        android:layout_width="120dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:textColor="@color/white"
@@ -115,7 +116,21 @@
         android:fontFamily="@font/hammersmith_one"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
+        android:textStyle="bold"
         android:layout_marginBottom="30dp"
         android:text="Reset" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/white"
+        android:text="Line Chart"
+        android:fontFamily="@font/hammersmith_one"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="20sp"/>
 
 </RelativeLayout>

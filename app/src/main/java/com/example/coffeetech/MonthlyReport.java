@@ -192,7 +192,7 @@ public class MonthlyReport extends AppCompatActivity {
     private void showAddDiseaseDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Add Disease");
-        builder.setMessage("The Pie chart is empty, add disease first on Tree Report Visualization");
+        builder.setMessage("The Pie chart is empty, add disease first on Tree Report Visualization.");
 
         // Add positive button (OK)
         builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {

@@ -16,8 +16,7 @@
         android:layout_height="wrap_content"
         android:text="List of Diseases Detected"
         android:textColor="@color/white"
-        android:fontFamily="@font/hammersmith_one"
-        android:textSize="17sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         android:layout_centerHorizontal="true"/>
 
@@ -27,37 +26,39 @@
         android:layout_height="520dp"
         android:layout_below="@id/textViewHeader"
         android:layout_marginTop="16dp"
+
         android:padding="8dp" />
 
     <!-- Button to start CompareActivity -->
     <Button
         android:id="@+id/compareButton"
-        android:layout_width="160dp"
-        android:textSize="15sp"
-        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/listView"
         android:layout_marginTop="18dp"
-        android:fontFamily="@font/hammersmith_one"
         android:backgroundTint="@color/white"
+        android:layout_centerHorizontal="true"
         android:gravity="center"
-        android:text="Monthly Report"
-        android:textColor="@color/green"/>
-
+        android:text="Add to Chart"
+        android:fontFamily="@font/hammersmith_one"
+        android:textStyle="bold"
+        android:textColor="@color/green"
+        android:textSize="15sp" />
 
     <Button
         android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/compareButton"
         android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
         android:backgroundTint="@color/white"
         android:gravity="center"
         android:text="Add Date"
-        android:fontFamily="@font/hammersmith_one"
         android:textColor="@color/green"
-        android:layout_width="120dp"
-        android:textSize="15sp"
-        android:layout_centerHorizontal="true" />
+        android:fontFamily="@font/hammersmith_one"
+        android:textStyle="bold"
+        android:textSize="15sp" />
 
 
 

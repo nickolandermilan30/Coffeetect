@@ -455,7 +455,7 @@ public class Line_chart extends AppCompatActivity {
     private void showResetConfirmationDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Reset Chart");
-        builder.setMessage("Are you sure you want to delete the chart?");
+        builder.setMessage("Are you sure you want to reset the chart?");
         builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {

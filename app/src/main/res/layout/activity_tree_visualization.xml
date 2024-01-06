@@ -102,14 +102,13 @@
         android:backgroundTint="@color/white"
         android:fontFamily="@font/hammersmith_one"
         android:text="Save Text"
-        android:textStyle="bold"
         android:textColor="@color/green"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.83"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.8"
+        app:layout_constraintVertical_bias="0.76"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -119,14 +118,13 @@
         android:backgroundTint="@color/white"
         android:fontFamily="@font/hammersmith_one"
         android:text="Other Tree"
-        android:textStyle="bold"
         android:textColor="@color/green"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/saveButton"
-        app:layout_constraintHorizontal_bias="0.359"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.8"
+        app:layout_constraintVertical_bias="0.84000003"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -173,7 +171,7 @@
         app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.17000002" />
+        app:layout_constraintVertical_bias="0.16000003" />
 
     <View
         android:id="@+id/view6"
@@ -218,7 +216,7 @@
         app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.17000002" />
+        app:layout_constraintVertical_bias="0.16000003" />
 
     <View
         android:id="@+id/view7"
@@ -266,7 +264,7 @@
         app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.42000002" />
+        app:layout_constraintVertical_bias="0.41000003" />
 
     <View
         android:id="@+id/view"
@@ -311,7 +309,7 @@
         app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.42000002" />
+        app:layout_constraintVertical_bias="0.41000003" />
 
     <View
         android:id="@+id/view4"
@@ -355,7 +353,7 @@
         app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.64" />
+        app:layout_constraintVertical_bias="0.63" />
 
     <View
         android:id="@+id/view3"
@@ -400,7 +398,7 @@
         app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.64" />
+        app:layout_constraintVertical_bias="0.63" />
 
     <View
         android:id="@+id/view5"

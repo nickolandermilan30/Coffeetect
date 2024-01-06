@@ -55,7 +55,7 @@
 
     <Button
         android:id="@+id/okButton"
-        android:layout_width="158dp"
+        android:layout_width="wrap_content"
         android:layout_height="55dp"
         android:layout_gravity="center"
         android:layout_marginTop="48dp"
@@ -73,7 +73,7 @@
 
     <Button
         android:id="@+id/leafRecommendationButton"
-        android:layout_width="170dp"
+        android:layout_width="wrap_content"
         android:layout_height="55dp"
         android:layout_gravity="center"
         android:backgroundTint="@color/green"
@@ -90,7 +90,7 @@
 
     <TextView
         android:id="@+id/diseaseTextView"
-        android:layout_width="180dp"
+        android:layout_width="100dp"
         android:layout_height="25dp"
         android:layout_marginTop="312dp"
         android:background="@drawable/login_white_backg17"

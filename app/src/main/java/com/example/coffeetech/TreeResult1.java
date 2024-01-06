@@ -37,7 +37,7 @@ public class TreeResult1 extends AppCompatActivity {
         if (intent != null) {
             diseaseName = SavedResultsManager.getMostFrequentDisease();
 
-            diseaseTextView.setText("Tree 1 Major Disease");
+            diseaseTextView.setText("Tree 1 Result");
 
             Bitmap mostFrequentImage = SavedResultsManager.getImageForMostFrequentDisease();
             if (mostFrequentImage != null) {

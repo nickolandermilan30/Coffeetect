@@ -40,8 +40,8 @@ public class ChartDetailActivity extends AppCompatActivity {
             public void onClick(View view) {
                 // Build an AlertDialog for confirmation
                 new AlertDialog.Builder(ChartDetailActivity.this)
-                        .setTitle("Delete Image")
-                        .setMessage("Are you sure you want to delete this image?")
+                        .setTitle("Delete Yearly Report")
+                        .setMessage("Are you sure you want to delete this yearly report?")
                         .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
                                 // Retrieve the image path from the intent
