@@ -162,7 +162,7 @@
         android:layout_height="wrap_content"
         android:backgroundTint="@color/white"
         android:fontFamily="@font/hammersmith_one"
-        android:text="Save Text"
+        android:text="Save Name"
         android:textColor="@color/green"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

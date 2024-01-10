@@ -34,7 +34,7 @@
         android:gravity="center"
         android:text="Most Disease"
         android:textColor="@color/green"
-        android:textSize="20dp"
+        android:textSize="30dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -89,13 +89,24 @@
         app:layout_constraintVertical_bias="0.83"
         tools:ignore="MissingConstraints" />
 
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/mostFrequentTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mostFrequentImageView"
+        app:layout_constraintVertical_bias="0.656"
+        app:srcCompat="@drawable/login_white_backg17" />
+
     <TextView
         android:id="@+id/diseaseTextView"
         android:layout_width="100dp"
         android:layout_height="25dp"
         android:layout_marginTop="312dp"
-        android:background="@drawable/login_white_backg17"
         android:fontFamily="@font/hammersmith_one"
+        android:autoSizeTextType="uniform"
         android:text="Disease:"
         android:textAlignment="center"
         android:textColor="@color/white"

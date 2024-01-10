@@ -99,7 +99,7 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="413dp"
+        android:layout_width="420dp"
         android:layout_height="350dp"
         android:layout_centerHorizontal="true"
         android:background="@drawable/coffeetect_bgicon"

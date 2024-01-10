@@ -71,6 +71,6 @@ public class TreeResult4 extends AppCompatActivity {
 
         TextView mostFrequentTextView = findViewById(R.id.mostFrequentTextView);
         if (diseaseName != null) {
-            mostFrequentTextView.setText("Result: " + diseaseName);
+            mostFrequentTextView.setText("" + diseaseName);
         }
     }}

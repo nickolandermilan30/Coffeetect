@@ -13,7 +13,7 @@
   <ListView
       android:id="@+id/listview"
       android:layout_width="match_parent"
-      android:layout_height="500dp"
+      android:layout_height="450dp"
       android:layout_marginTop="60dp"
       android:layout_marginBottom="120dp"
        />
@@ -23,7 +23,7 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_centerHorizontal="true"
-      android:layout_marginTop="590dp"
+      android:layout_marginTop="550dp"
       android:backgroundTint="@color/white"
       android:text="Monthly Report"
       android:textStyle="bold"
@@ -35,8 +35,8 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_centerHorizontal="true"
-      android:text="Delete Lists"
-      android:layout_marginTop="650dp"
+      android:text="Delete List"
+      android:layout_marginTop="625dp"
       android:fontFamily="@font/hammersmith_one"
       android:textStyle="bold"
       android:backgroundTint="#FF1100"
