@@ -17,7 +17,7 @@
 
     <!-- Image with Color Filter -->
     <item
-        android:drawable="@drawable/baseline_view_day_24"
+        android:drawable="@drawable/baseline_analytics_24"
         android:left="16dp"
         android:top="16dp"
         android:right="16dp"
