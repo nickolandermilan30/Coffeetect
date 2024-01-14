@@ -221,6 +221,18 @@
         app:layout_constraintVertical_bias="0.972"
         tools:ignore="MissingConstraints" />
 
+    <View
+        android:id="@+id/view8"
+        android:layout_width="117dp"
+        android:layout_height="39dp"
+        android:background="@drawable/login_white_backgd22"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.528" />
+
     <TextView
         android:id="@+id/result"
         android:layout_width="224dp"
@@ -240,6 +252,36 @@
         app:layout_constraintVertical_bias="0.98"
         tools:ignore="MissingConstraints" />
 
+
+    <ImageView
+        android:id="@+id/temperatureImageView"
+        android:layout_width="34dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view8"
+        app:layout_constraintEnd_toEndOf="@+id/view8"
+        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintStart_toStartOf="@+id/view8"
+        app:layout_constraintTop_toTopOf="@+id/view8"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/temperatureTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:fontFamily="@font/hammersmith_one"
+        android:text="Tempt"
+        android:textColor="@color/green"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view8"
+        app:layout_constraintEnd_toEndOf="@+id/view8"
+        app:layout_constraintHorizontal_bias="0.693"
+        app:layout_constraintStart_toStartOf="@+id/temperatureImageView"
+        app:layout_constraintTop_toTopOf="@+id/view8"
+        tools:ignore="MissingConstraints" />
 
     <LinearLayout
         android:id="@+id/linearLayout6"

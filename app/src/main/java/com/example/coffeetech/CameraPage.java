@@ -1,9 +1,11 @@
 package com.example.coffeetech;
 
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.graphics.Bitmap;
 import android.media.ThumbnailUtils;
 import android.net.Uri;
+import android.os.BatteryManager;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
@@ -26,13 +28,18 @@ import java.nio.ByteOrder;
 
 public class CameraPage extends AppCompatActivity {
 
+    private static final float THRESHOLD_HIGH = 50.0f;
+    private static final float THRESHOLD_LOW = 10.0f;
+
     ImageButton camera, gallery,  home, leaf, cam, history, cal,  calbtn;
-    ImageView imageView;
-    TextView result;
+    ImageView imageView, temperatureImageView;
+    TextView result, temperatureTextView; // Add TextView for temperature
     int imageSize = 32;
 
     private static final int CAMERA_PERMISSION_REQUEST_CODE = 100;
     private static final int CAMERA_REQUEST_CODE = 3;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,7 +61,11 @@ public class CameraPage extends AppCompatActivity {
         gallery = findViewById(R.id.button2);
         result = findViewById(R.id.result);
         imageView = findViewById(R.id.imageView);
+        temperatureTextView = findViewById(R.id.temperatureTextView); // Initialize TextView for temperature
+        temperatureImageView = findViewById(R.id.temperatureImageView); // Idagdag ito
 
+        // You might want to update the temperature at regular intervals or when the user interacts with the app.
+        updateTemperature();
 
         camera.setOnClickListener(new View.OnClickListener() {
              @Override
@@ -131,7 +142,46 @@ public class CameraPage extends AppCompatActivity {
             }
         });
 
+
+
     }
+
+
+    // Method to update the temperature TextView and ImageView
+    private void updateTemperature() {
+        // TODO: Implement logic to read the temperature from the device's sensors or other available sources.
+        // For example, you can use the battery temperature as a placeholder.
+        float temperature = getBatteryTemperature();
+
+        // Update the TextView with the temperature
+        temperatureTextView.setText(String.format("%.2f°C", temperature));
+
+
+        // Update the ImageView based on temperature
+        if (temperature > THRESHOLD_HIGH) {
+            temperatureImageView.setImageResource(R.drawable.high);
+        } else if (temperature < THRESHOLD_LOW) {
+            temperatureImageView.setImageResource(R.drawable.low);
+        } else {
+            temperatureImageView.setImageResource(R.drawable.mid);
+        }
+    }
+
+
+
+
+    // Method to get the battery temperature as a placeholder
+    private float getBatteryTemperature() {
+        Intent intent = this.registerReceiver(null, new IntentFilter(Intent.ACTION_BATTERY_CHANGED));
+        if (intent != null) {
+            int temperature = intent.getIntExtra(BatteryManager.EXTRA_TEMPERATURE, 0);
+            return temperature / 10.0f; // The temperature is returned in tenths of a degree Celsius
+        } else {
+            return 0.0f; // Default value if the temperature is not available
+        }
+    }
+
+
     public void classifyImage(Bitmap image) {
 
         try {
