@@ -8,7 +8,7 @@
     android:paddingRight="16dp"
     android:paddingBottom="16dp"
     android:background="@color/green"
-    tools:context=".Line_chart">
+    tools:context=".LineChart">
 
     <ImageButton
         android:id="@+id/backButton"

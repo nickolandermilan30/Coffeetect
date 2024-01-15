@@ -4,7 +4,7 @@ import android.app.Application;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-public class SavedPref extends Application {
+public class SavedPreference extends Application {
 
     private static final String PREF_HIGHLIGHTED_BUTTON = "highlighted_button";
     private static SharedPreferences sharedPreferences;

@@ -1,0 +1,94 @@
+<!-- activity_cercospora_mild.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00704a"
+    tools:context=".CercosporaMod">
+
+    <!-- ImageView for the picture -->
+
+    <ImageView
+        android:id="@+id/imageView26"
+        android:layout_width="449dp"
+        android:layout_height="430dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/whitebg2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="327dp"
+        android:layout_height="351dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="340dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.936">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="600dp"
+            android:fontFamily="@font/hammersmith_one"
+            android:justificationMode="inter_word"
+            android:text="Moderate coffee leaf cercospora disease, caused by the fungus Cercospora coffeicola, is a fungal infection that affects coffee plants. Here is a description of the moderate form of the disease:\n\nIdentification:\n\nLesion Appearance: Moderate cercospora infection is characterized by the development of circular or angular lesions on the leaves of coffee plants. These lesions typically start as small, yellowish spots that gradually enlarge and turn brown.\nLesion Characteristics: The lesions may have distinct borders, often reddish or purplish in color, and can coalesce to form larger irregular-shaped spots.\n\nSymptoms:\n\nLeaf Distortion: As the disease progresses, the infected leaves may become distorted, and the affected areas may dry out.\nLeaf Drop: In more severe cases, severe infections can lead to defoliation, where the leaves may eventually fall off. This can result in reduced photosynthesis and negatively impact the overall health of the coffee plant.\n\nSpread and Conditions:\n\nTransmission: The fungus Cercospora coffeicola can survive on infected plant debris, and the disease can spread through various means such as wind, rain splashes, or contaminated tools.\nFavorable Conditions: Moderate cercospora infection thrives under conditions of high humidity, frequent rainfall, and warm temperatures.\n\nManagement:\n\nCultural and Chemical Control: Effective management of moderate cercospora involves a combination of cultural and chemical control measures.\nPruning: Pruning and removal of infected leaves are essential to reduce the disease's spread.\nFungicides: Application of appropriate fungicides can be part of the control strategy.\nCultural Practices: Improving cultural practices to reduce humidity, enhance air circulation, and maintaining overall plant health through proper nutrition and care are crucial.\n\nMonitoring and Early Detection:\n\nRegular monitoring of coffee plants is essential to detect the disease early.\nEarly detection allows for prompt action, reducing the impact of the disease on plant health and yield.\n\nConsultation:\n\nSeeking advice from agricultural specialists or plant pathologists can provide further guidance on specific control strategies based on the severity of the infection and local conditions.\n\nModerate cercospora infection, if left unmanaged, can escalate to more severe levels, impacting the health and productivity of coffee plants. Therefore, timely intervention and proper management practices are critical for minimizing the disease's impact on coffee crops."
+            android:textColor="@color/green"
+            android:textStyle="bold" />
+
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageViewMild"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:src="@drawable/cercosporamoderate"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="70dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- TextView for the description -->
+
+
+
+    <!-- Back Button -->
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:fontFamily="@font/hammersmith_one"
+        android:text="Moderate Cercospora"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:fontFamily="@font/hammersmith_one"
+        android:text="Description"
+        android:textColor="@color/green"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

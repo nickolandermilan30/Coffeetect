@@ -15,7 +15,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 import java.util.ArrayList;
 
-public class Geo_Location_Maker extends FragmentActivity implements OnMapReadyCallback {
+public class GeoLocation extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
     private ArrayList<LatLng> locationArrayList;

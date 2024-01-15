@@ -19,7 +19,6 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.github.mikephil.charting.animation.Easing;
-import com.github.mikephil.charting.charts.LineChart;
 import com.github.mikephil.charting.components.AxisBase;
 import com.github.mikephil.charting.components.Legend;
 import com.github.mikephil.charting.components.MarkerView;
@@ -46,11 +45,11 @@ import java.util.Map;
 
 // ... (Iba pang imports)
 
-public class Line_chart extends AppCompatActivity {
+public class LineChart extends AppCompatActivity {
 
     private TextView diseaseTextView;
 
-    private LineChart lineChart;
+    private com.github.mikephil.charting.charts.LineChart lineChart;
     private static final String PREF_KEY = "saved_data";
 
     private NumberPicker yearPicker;
@@ -105,10 +104,11 @@ public class Line_chart extends AppCompatActivity {
                 saveChartAsImage();
 
                 // Start StorageActivity
-                Intent storageIntent = new Intent(Line_chart.this, StorageActivity.class);
+                Intent storageIntent = new Intent(LineChart.this, StorageActivity.class);
                 storageIntent.putExtra("imagePath", getLastSavedImagePath());
                 storageIntent.putExtra("selectedYear", selectedYear);
                 startActivity(storageIntent);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             }
         });
 
@@ -561,7 +561,7 @@ public class Line_chart extends AppCompatActivity {
         return percentages;
     }
 
-    private void setupLineChart(LineChart lineChart) {
+    private void setupLineChart(com.github.mikephil.charting.charts.LineChart lineChart) {
         lineChart.getDescription().setEnabled(false);
         lineChart.setTouchEnabled(true);
         lineChart.setDragEnabled(true);

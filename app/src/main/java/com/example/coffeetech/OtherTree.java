@@ -16,7 +16,7 @@ public class OtherTree extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_other_tree);
+        setContentView(R.layout.activity_other_trees);
 
         // Hide the action bar
         if (getSupportActionBar() != null) {

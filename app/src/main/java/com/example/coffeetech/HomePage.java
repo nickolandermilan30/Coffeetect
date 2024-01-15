@@ -91,7 +91,7 @@ public class HomePage extends AppCompatActivity {
         btnNext5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(HomePage.this, AboutUs.class);
+                Intent intent = new Intent(HomePage.this, AboutSection.class);
                 startActivity(intent);
                 overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             }

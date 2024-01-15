@@ -92,7 +92,7 @@ public class Capture extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         // Use the Application Context for SharedPreferences
-        sharedPreferences = SavedPref.getSharedPreferences();
+        sharedPreferences = SavedPreference.getSharedPreferences();
         buttonStates = getButtonStates();
         // Other initializations and setup
         setContentView(R.layout.activity_capture);

@@ -20,7 +20,7 @@ public class DiseasesInformation extends AppCompatActivity {
             getSupportActionBar().hide();
         }
 
-        ImageButton home, leaf, cam, history, cal ;
+        ImageButton home, leaf, cam, history, cal;
 
         home = findViewById(R.id.home);
         leaf = findViewById(R.id.leaf);
@@ -32,10 +32,9 @@ public class DiseasesInformation extends AppCompatActivity {
 
         cercospora = findViewById(R.id.cercospora);
         phoma = findViewById(R.id.phoma);
-        sootymold = findViewById(R.id. sootymold);
+        sootymold = findViewById(R.id.sootymold);
         leafrust = findViewById(R.id.leafrust);
         leafminer = findViewById(R.id.leafminer);
-
 
 
         cercospora.setOnClickListener(new View.OnClickListener() {
@@ -127,21 +126,5 @@ public class DiseasesInformation extends AppCompatActivity {
                 overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             }
         });
-
-
-        ImageButton backButton = findViewById(R.id.backButton);
-        backButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onBackPressed();
-                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
-            }
-        });
-    }
-
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
     }
 }

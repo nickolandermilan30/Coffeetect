@@ -6,7 +6,7 @@ import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class AboutUs extends AppCompatActivity {
+public class AboutSection extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

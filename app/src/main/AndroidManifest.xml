@@ -20,7 +20,7 @@
     <uses-feature android:name="android.hardware.camera.flash" />
 
     <application
-        android:name=".SavedPref"
+        android:name=".SavedPreference"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -41,7 +41,7 @@
             android:exported="false" />
 
         <activity
-            android:name=".Line_chart"
+            android:name=".LineChart"
             android:exported="false" />
 
         <provider
@@ -55,7 +55,7 @@
         </provider>
 
         <activity
-            android:name=".Geo_Location_Maker"
+            android:name=".GeoLocation"
             android:exported="false" />
         <activity
             android:name=".ResultActivity2"
@@ -121,7 +121,7 @@
             android:name=".Capture"
             android:exported="false" />
         <activity
-            android:name=".AboutUs"
+            android:name=".AboutSection"
             android:exported="false" />
         <activity
             android:name=".ResultActivity"
@@ -176,6 +176,15 @@
             android:exported="false" />
         <activity
             android:name=".Cercospora"
+            android:exported="false" />
+        <activity
+            android:name=".CercosporaMild"
+            android:exported="false" />
+        <activity
+            android:name=".CercosporaMod"
+            android:exported="false" />
+        <activity
+            android:name=".CercosporaCrit"
             android:exported="false" />
         <activity
             android:name=".MonthlyReport"

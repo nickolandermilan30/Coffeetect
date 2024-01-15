@@ -244,6 +244,7 @@ public class MonthlyReport extends AppCompatActivity {
                         intent.putExtra(entry.getLabel() + "_percentage", entry.getValue());
                     }
                     startActivity(intent);
+                    overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                 } else {
                     // Kung wala pang data, ipakita ang error message o gawin ang ibang action
                     Toast.makeText(this, "No data available.", Toast.LENGTH_SHORT).show();

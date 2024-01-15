@@ -72,10 +72,11 @@ public class MonthlyReport2 extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         int currentMonth = Calendar.getInstance().get(Calendar.MONTH);
-                        Intent compareIntent = new Intent(MonthlyReport2.this, Line_chart.class);
+                        Intent compareIntent = new Intent(MonthlyReport2.this, LineChart.class);
                         compareIntent.putExtra("diseasePercentageMap", finalDiseasePercentageMap);
                         compareIntent.putExtra("currentMonth", currentMonth);
                         startActivity(compareIntent);
+                        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                     }
                 });
 

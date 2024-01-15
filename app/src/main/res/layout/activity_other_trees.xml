@@ -95,67 +95,6 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <ImageButton
-        android:id="@+id/home2"
-        android:layout_width="40dp"
-        android:layout_height="33dp"
-        android:layout_marginTop="4dp"
-        android:background="@drawable/home_icon"
-        android:backgroundTint="#00704a"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.45999998" />
-
-    <ImageButton
-        android:id="@+id/leaf2"
-        android:layout_width="40dp"
-        android:layout_height="33dp"
-        android:background="@drawable/leaf_icon"
-        android:backgroundTint="#eac784"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.28"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageButton
-        android:id="@+id/cam2"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/capture_ic"
-        android:backgroundTint="#00704a"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageButton
-        android:id="@+id/monthly2"
-        android:layout_width="40dp"
-        android:layout_height="33dp"
-        android:background="@drawable/monthly_icon"
-        android:backgroundTint="#00704a"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageButton
-        android:id="@+id/tree2"
-        android:layout_width="40dp"
-        android:layout_height="33dp"
-        android:background="@drawable/treevisual_icon"
-        android:backgroundTint="#00704a"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.72"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
         android:id="@+id/saveButton2"
         android:layout_width="wrap_content"
@@ -169,7 +108,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.74"
+        app:layout_constraintVertical_bias="0.57"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -186,7 +125,7 @@
         app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.050000012" />
+        app:layout_constraintVertical_bias="0.00999999" />
 
     <ImageButton
         android:id="@+id/backButton"
@@ -199,24 +138,25 @@
         app:layout_constraintHorizontal_bias="0.9"
         app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.04000002"
+        app:layout_constraintVertical_bias="0.00999999"
         tools:ignore="MissingConstraints" />
 
     <ImageButton
         android:id="@+id/t7"
         android:layout_width="161dp"
         android:layout_height="127dp"
-        android:layout_marginTop="32dp"
         android:background="@drawable/btn1"
         android:contentDescription="CERCOSPORA"
         android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.64" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.120000005" />
 
     <View
+        android:id="@+id/view9"
         android:layout_width="120dp"
         android:layout_height="73dp"
         android:background="@drawable/login_white_backg5"
@@ -246,9 +186,6 @@
         app:layout_constraintVertical_bias="0.514" />
 
 
-
-
-
     <ImageButton
         android:id="@+id/t8"
         android:layout_width="161dp"
@@ -257,10 +194,12 @@
         android:background="@drawable/btn3"
         android:contentDescription="CERCOSPORA"
         android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.936"
+        app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06999999" />
 
     <View
         android:layout_width="120dp"
@@ -300,10 +239,10 @@
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/t7"
-        app:layout_constraintVertical_bias="0.141" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.36" />
 
     <View
         android:layout_width="120dp"
@@ -344,12 +283,13 @@
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.936"
+        app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/t7"
-        app:layout_constraintVertical_bias="0.141" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.36" />
 
     <View
+        android:id="@+id/view8"
         android:layout_width="120dp"
         android:layout_height="73dp"
         android:background="@drawable/login_white_backg5"

@@ -208,15 +208,6 @@ public class TreeVisualization extends AppCompatActivity {
             }
         });
 
-
-        ImageButton backButton = findViewById(R.id.backButton);
-        backButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onBackPressed();
-                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
-            }
-        });
     }
 }
 
