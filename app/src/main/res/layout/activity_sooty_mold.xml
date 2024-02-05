@@ -7,8 +7,8 @@
     android:background="#00704a"
     tools:context=".SootyMolds">
 
-    <ImageView
-        android:id="@+id/imageView6"
+    <ImageButton
+        android:id="@+id/crit"
         android:layout_width="80dp"
         android:layout_height="30dp"
         android:background="@drawable/critical_bg"
@@ -20,8 +20,8 @@
         app:layout_constraintVertical_bias="0.57"
         tools:ignore="MissingConstraints" />
 
-    <ImageView
-        android:id="@+id/imageView16"
+    <ImageButton
+        android:id="@+id/mod"
         android:layout_width="80dp"
         android:layout_height="30dp"
         android:background="@drawable/moderate_bg"
@@ -33,7 +33,7 @@
         tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/imageView38"
+        android:id="@+id/mild"
         android:layout_width="80dp"
         android:layout_height="30dp"
         android:background="@drawable/mild_box"

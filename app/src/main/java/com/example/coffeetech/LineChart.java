@@ -14,7 +14,6 @@ import android.widget.LinearLayout;
 import android.widget.NumberPicker;
 import android.widget.TextView;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -49,6 +48,8 @@ public class LineChart extends AppCompatActivity {
 
     private TextView diseaseTextView;
 
+    private ArrayList<Entry> entries;
+
     private com.github.mikephil.charting.charts.LineChart lineChart;
     private static final String PREF_KEY = "saved_data";
 
@@ -56,12 +57,24 @@ public class LineChart extends AppCompatActivity {
     private int selectedYear;
     private Map<String, Integer> baseDiseaseColorMap;
     ImageButton legendButton;
+    private String jsonAsString;
+
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_line_chart);
 
+        lineChart = findViewById(R.id.lineChart);
+        entries = new ArrayList<>();
 
+        // Load line chart data when activity is created
+        loadLineChartData();
+
+        // Set up LineChart
+        setupLineChart(lineChart);
+
+        // Update LineChart with loaded data
+        updateLineChart();
 
         // Initialize your baseDiseaseColorMap
         baseDiseaseColorMap = new HashMap<>();
@@ -313,6 +326,47 @@ public class LineChart extends AppCompatActivity {
                 });
             }
         }
+    }
+
+    private void updateLineChart() {
+    }
+
+    // Method to load line chart data from SharedPreferences
+    private void loadLineChartData() {
+        SharedPreferences preferences = getSharedPreferences("LineChartPrefs", MODE_PRIVATE);
+        String lineChartData = preferences.getString("lineChartData", null);
+        if (lineChartData != null) {
+            // Convert JSON string to entries and set to the line chart
+            entries = convertJsonToEntries(lineChartData);
+        }
+
+    }
+
+    // Method to save line chart data to SharedPreferences
+    private void saveLineChartData() {
+        // Convert entries to JSON string and save to SharedPreferences
+        String lineChartData = convertEntriesToJson(entries);
+        SharedPreferences preferences = getSharedPreferences("LineChartPrefs", MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putString("lineChartData", lineChartData);
+        editor.apply();
+    }
+
+
+    // Method to convert entries to JSON string
+    private String convertEntriesToJson(ArrayList<Entry> entries) {
+        // Implement your logic to convert entries to JSON string
+        // ...
+
+        return jsonAsString; // Replace with the actual JSON string
+    }
+
+    // Method to convert JSON string to entries
+    private ArrayList<Entry> convertJsonToEntries(String jsonString) {
+        // Implement your logic to convert JSON string to entries
+        // ...
+
+        return entries; // Replace with the actual entries
     }
 
     private void showLegendDialog() {
@@ -577,7 +631,7 @@ public class LineChart extends AppCompatActivity {
 
         XAxis xAxis = lineChart.getXAxis();
         xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
-        xAxis.setValueFormatter(new YearAxisValueFormatter());
+        xAxis.setValueFormatter(new MonthAxisValueFormatter());
         xAxis.setTextColor(Color.BLACK);
         xAxis.setAxisLineColor(Color.BLACK);
 
@@ -602,7 +656,7 @@ public class LineChart extends AppCompatActivity {
     }
 
 
-    static class YearAxisValueFormatter extends ValueFormatter {
+    static class MonthAxisValueFormatter extends ValueFormatter {
         private final String[] months = {"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};
 
         @Override
@@ -615,8 +669,12 @@ public class LineChart extends AppCompatActivity {
         }
     }
 
-
-
+    @Override
+    protected void onDestroy() {
+        // Save line chart data when the activity is destroyed
+        saveLineChartData();
+        super.onDestroy();
+    }
 
     @Override
     public void onBackPressed() {

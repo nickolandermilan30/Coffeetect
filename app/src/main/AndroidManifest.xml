@@ -166,13 +166,49 @@
             android:name=".LeafMiner"
             android:exported="false" />
         <activity
+            android:name=".LeafMinerMild"
+            android:exported="false" />
+        <activity
+            android:name=".LeafMinerMod"
+            android:exported="false" />
+        <activity
+            android:name=".LeafMinerCrit"
+            android:exported="false" />
+        <activity
             android:name=".LeafRust"
+            android:exported="false" />
+        <activity
+            android:name=".LeafRustMild"
+            android:exported="false" />
+        <activity
+            android:name=".LeafRustMod"
+            android:exported="false" />
+        <activity
+            android:name=".LeafRustCrit"
             android:exported="false" />
         <activity
             android:name=".SootyMolds"
             android:exported="false" />
         <activity
+            android:name=".SootyMoldMild"
+            android:exported="false" />
+        <activity
+            android:name=".SootyMoldMod"
+            android:exported="false" />
+        <activity
+            android:name=".SootyMoldCrit"
+            android:exported="false" />
+        <activity
             android:name=".Phoma"
+            android:exported="false" />
+        <activity
+            android:name=".PhomaMild"
+            android:exported="false" />
+        <activity
+            android:name=".PhomaMod"
+            android:exported="false" />
+        <activity
+            android:name=".PhomaCrit"
             android:exported="false" />
         <activity
             android:name=".Cercospora"

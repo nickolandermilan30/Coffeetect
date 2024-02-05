@@ -50,15 +50,31 @@
 
     </ScrollView>
 
-    <ImageView
-        android:id="@+id/imageViewMild"
-        android:layout_width="300dp"
-        android:layout_height="200dp"
-        android:src="@drawable/cercosporamoderate"
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:scaleType="centerCrop"
-        android:layout_marginTop="70dp"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="48dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ExtraText">
+
+        <!-- White border -->
+        <View
+            android:layout_width="320dp"
+            android:layout_height="220dp"
+            android:background="@android:color/white"/> <!-- Adjust the width to control the border size -->
+        <!-- Adjust the height to control the border size -->
+
+
+        <!-- Original ImageView with content -->
+        <ImageView
+            android:id="@+id/imageViewMild"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cercosporamoderate" />
+    </FrameLayout>
 
     <!-- TextView for the description -->
 
@@ -71,7 +87,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="26dp"
+        android:layout_marginTop="9dp"
         android:fontFamily="@font/hammersmith_one"
         android:text="Moderate Cercospora"
         android:textColor="@color/white"

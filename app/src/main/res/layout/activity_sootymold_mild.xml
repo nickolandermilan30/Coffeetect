@@ -1,11 +1,10 @@
-<!-- activity_cercospora_mild.xml -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#00704a"
-    tools:context=".CercosporaMild">
+    tools:context=".SootyMoldMild">
 
     <!-- ImageView for the picture -->
 
@@ -43,7 +42,7 @@
             android:layout_height="600dp"
             android:fontFamily="@font/hammersmith_one"
             android:justificationMode="inter_word"
-            android:text="Mild Coffee Leaf Cercospora Disease, caused by the fungus Cercospora coffeicola, is a common fungal infection affecting coffee plants. Here is a description of the mild form of the disease:\n\nSymptoms:\n\nLesions: The disease typically starts with small, yellowish lesions on the leaves of coffee plants.\nCircular Spots: As the infection progresses, these lesions develop into circular or angular brown spots on the leaves.\nReddish Borders: The spots may have reddish or purplish borders, creating a distinctive appearance.\nLeaf Distortion: Severe infections can lead to the distortion of leaves, making them dry out and eventually fall off.\n\nProgression:\n\nEnlargement: The lesions gradually enlarge, and in some cases, they may coalesce, forming larger irregular-shaped spots.\nDefoliation: In severe cases, the disease can cause significant defoliation, reducing the plant's ability to carry out photosynthesis and impacting overall coffee yield.\n\nSpread and Survival:\n\nSpread: The fungus Cercospora coffeicola can be spread through various means, including wind, rain splashes, or contaminated tools.\nSurvival: The fungus can survive on infected plant debris, contributing to the persistence of the disease.\n\nFavorable Conditions:\n\nHumidity: High humidity is favorable for the development of Coffee Leaf Cercospora Disease.\nRain: Frequent rain can contribute to the spread of the disease.\nTemperature: Warm temperatures also play a role in the progression of the infection.\n\nManagement and Control:\n\nCultural Measures: Management involves a combination of cultural and chemical control measures.\nPruning: Pruning and removing infected leaves help control the spread of the disease.\nFungicides: Applying appropriate fungicides can be effective in managing the disease.\nCultural Practices: Improving cultural practices, such as reducing humidity and improving air circulation, is crucial.\nOverall Plant Health: Maintaining overall plant health through proper nutrition and care is essential for disease resistance.\nRegular Monitoring: Regular monitoring and early detection are crucial for effective control.\n\nConsultation:\n\nSpecialists: Consulting with agricultural specialists or plant pathologists can provide further guidance on specific control strategies based on the severity of the infection and local conditions.\n\nConclusion:\nMild Coffee Leaf Cercospora Disease is a fungal infection that, if left unmanaged, can lead to defoliation and decreased coffee yield. Proper cultural practices, early detection, and targeted control measures are essential for minimizing the impact of this disease on coffee plants."
+            android:text="Mild Coffee Leaf Sooty Molds disease, caused by various sooty mold fungi, is a prevalent issue affecting coffee plants. Here is a description of the mild form of the disease:\n\nSymptoms:\n\nSooty Coating: The mild form of Coffee Leaf Sooty Molds disease manifests as a dark, sooty coating on the surfaces of leaves, stems, and other plant parts.\n\nLeaf Discoloration: Affected leaves may exhibit discoloration, appearing darkened or blackened due to the presence of the sooty molds.\n\nReduced Photosynthesis: As the disease progresses, the sooty mold layer interferes with photosynthesis, potentially leading to reduced energy production within the plant.\n\nAnt Presence: The mild infection may attract ants, as they are known to feed on the sugary secretions produced by certain sooty mold fungi.\n\nProgression:\n\nSpread: The sooty molds can spread from plant to plant, especially in conditions where honeydew-producing insects like aphids are present.\n\nEnvironmental Influence: Environmental factors, such as high humidity and the presence of honeydew-producing insects, contribute to the spread and persistence of the disease.\n\nImpact on Plant Health: While the mild form may not cause severe harm, unchecked infections can compromise overall plant health.\n\nSpread and Survival:\n\nTransmission: The primary mode of transmission is through honeydew-producing insects, such as aphids, which carry fungal spores from plant to plant.\n\nSurvival: The sooty molds can survive on the sugary excretions and plant surfaces, providing a continuous source for new infections.\n\nFavorable Conditions:\n\nInsect Presence: The presence of honeydew-producing insects, which serve as vectors, creates favorable conditions for the establishment and spread of Coffee Leaf Sooty Molds.\n\nEnvironmental Factors: High humidity and warm temperatures further enhance the suitability of the environment for the disease.\n\nManagement and Control:\n\nInsect Control: Controlling honeydew-producing insects through insecticides or biological control measures is a fundamental aspect of disease management.\n\nAnt Control: Managing ant populations, which protect honeydew-producing insects, contributes to the control of sooty mold spread.\n\nPruning: Removing heavily affected plant parts, such as leaves and stems, aids in reducing the disease's impact.\n\nFungicides: In severe cases, targeted fungicides may be considered to control the sooty mold fungi.\n\nCultural Practices: Implementing cultural practices that discourage honeydew-producing insects and promote a healthy plant environment is essential for long-term disease control.\n\nRegular Monitoring:\n\nVisual Inspection: Regularly inspecting plants for signs of sooty mold growth, honeydew-producing insects, and ant activity allows for early detection.\n\nPrompt Action: Swift action upon detecting mild infections helps prevent the escalation of the disease and minimizes its impact on coffee plants.\n\nConclusion:\n\nMild Coffee Leaf Sooty Molds disease, although less damaging in its initial stages, requires proactive management to prevent widespread infection. Control measures targeting honeydew-producing insects, ant populations, and environmental factors contribute to preserving the health and productivity of coffee plants. Regular monitoring and timely interventions are crucial components of an effective strategy against this fungal disease."
             android:textColor="@color/green"
             android:textStyle="bold" />
 
@@ -75,7 +74,7 @@
             android:layout_height="200dp"
             android:layout_gravity="center"
             android:scaleType="centerCrop"
-            android:src="@drawable/cercosporamild" />
+            android:src="@drawable/sootymoldmild" />
     </FrameLayout>
 
 
@@ -91,7 +90,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="9dp"
         android:fontFamily="@font/hammersmith_one"
-        android:text="Mild Cercospora"
+        android:text="Mild Sooty Molds"
         android:textColor="@color/white"
         android:textSize="25sp"
         android:textStyle="bold" />

@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00704a"
+    tools:context=".SootyMoldMod">
+
+    <!-- ImageView for the picture -->
+
+    <ImageView
+        android:id="@+id/imageView26"
+        android:layout_width="449dp"
+        android:layout_height="430dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/whitebg2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="327dp"
+        android:layout_height="351dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="340dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.936">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="600dp"
+            android:fontFamily="@font/hammersmith_one"
+            android:justificationMode="inter_word"
+            android:text="Moderate Coffee Leaf Sooty Molds disease, resulting from various species of fungi in the genera Capnodium and Paracapnodium, manifests as a fungal infection affecting coffee plants. Here is a description of the moderate form of the disease:\n\nSymptoms:\n\nSooty Mold Growth: Moderate Coffee Leaf Sooty Molds disease is characterized by the presence of black sooty mold growth on the surfaces of leaves and other plant parts. This mold is often accompanied by a dark, powdery appearance, creating an undesirable aesthetic on the affected foliage.\n\nLeaf Discoloration: Infected leaves exhibit discoloration, with a noticeable darkening or browning of the leaf surfaces. This discoloration is often more pronounced around the areas where sooty mold is present.\n\nSticky Residue: The disease is commonly associated with the excretion of honeydew, a sticky substance produced by sap-feeding insects such as aphids or scales. The honeydew serves as a substrate for the growth of sooty mold, further contributing to the visual impact on the plant.\n\nSpread and Survival:\n\nInsect Vectors: Sooty mold fungi are often indirectly transmitted by sap-feeding insects, with the insects acting as vectors for the fungal spores. The fungi utilize the honeydew excreted by these insects as a nutrient source.\n\nContaminated Surfaces: The spores of the sooty mold fungi can spread through contact with contaminated surfaces, including leaves, stems, and equipment used in agricultural practices.\n\nFavorable Conditions:\n\nInsect Presence: The prevalence of sap-feeding insects, such as aphids or scales, creates favorable conditions for the development and spread of Moderate Coffee Leaf Sooty Molds disease.\n\nHumidity: High humidity levels contribute to the growth and persistence of the sooty mold, as the fungi thrive in moist environments.\n\nEnvironmental Factors: Warm temperatures and suitable environmental conditions play a role in the progression of the disease, influencing both the activity of sap-feeding insects and the growth of sooty mold.\n\nManagement and Control:\n\nCultural Measures: Implementing cultural control measures involves addressing the underlying causes, such as managing insect populations and promoting overall plant health.\n\nInsect Control: Effectively controlling sap-feeding insects through the application of appropriate insecticides or biological control methods is crucial for mitigating the spread of the disease.\n\nAnticipation and Prevention: Regular monitoring for the presence of sap-feeding insects and early detection of sooty mold development enable timely intervention and prevention.\n\nIntegrated Pest Management: An integrated pest management approach, combining biological, cultural, and chemical control measures, is recommended for comprehensive disease management.\n\nConsultation:\n\nExperts: Consulting with agricultural specialists, entomologists, or plant pathologists is advisable to obtain tailored guidance on specific control strategies based on the severity of the infection and local conditions.\n\nConclusion:\n\nModerate Coffee Leaf Sooty Molds disease poses a threat to coffee plants, impacting their aesthetic appeal and potentially hindering photosynthetic processes. Implementing integrated pest management strategies, focusing on insect control and environmental management, is essential for minimizing the adverse effects of this disease on coffee crops. Regular monitoring and collaboration with experts contribute to effective disease management and overall plant health."
+            android:textColor="@color/green"
+            android:textStyle="bold" />
+
+
+    </ScrollView>
+
+    <!-- TextView for the description -->
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ExtraText">
+
+        <!-- White border -->
+        <View
+            android:layout_width="320dp"
+            android:layout_height="220dp"
+            android:background="@android:color/white"/> <!-- Adjust the width to control the border size -->
+        <!-- Adjust the height to control the border size -->
+
+
+        <!-- Original ImageView with content -->
+        <ImageView
+            android:id="@+id/imageViewMild"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sootymoldmod" />
+    </FrameLayout>
+
+
+    <!-- Back Button -->
+
+
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:fontFamily="@font/hammersmith_one"
+        android:text="Moderate Sooty Molds"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:fontFamily="@font/hammersmith_one"
+        android:text="Description"
+        android:textColor="@color/green"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

@@ -24,8 +24,12 @@ import java.util.Locale;
 
 public class MonthlyReport2 extends AppCompatActivity {
 
-    private MyAdapter adapter; // Add this line
+    private MyAdapter adapter;
     private Button compareButton;
+    private SharedPreferences monthSharedPreferences;
+
+    private String sharedPreferencesName; // Variable para sa pangalan ng SharedPreferences
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,29 +49,22 @@ public class MonthlyReport2 extends AppCompatActivity {
                 }
 
                 ListView listView = findViewById(R.id.listView);
-                // Baguhin ang ArrayAdapter na gumamit ng custom layout
                 adapter = new MyAdapter(this, new ArrayList<>(diseasePercentageMap.keySet()), diseasePercentageMap);
                 listView.setAdapter(adapter);
-                // Initialize the compareButton
                 compareButton = findViewById(R.id.compareButton);
                 compareButton.setVisibility(View.GONE);
 
-                // Button to save the data
                 Button saveButton = findViewById(R.id.saveButton);
                 saveButton.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        // Perform save operation here
                         saveData();
                         compareButton.setVisibility(View.VISIBLE);
                     }
                 });
 
-                // Button to start another activity with line chart
-                // Inside the onCreate method of MonthlyReport2 activity
                 Button compareButton = findViewById(R.id.compareButton);
                 HashMap<String, Float> finalDiseasePercentageMap = diseasePercentageMap;
-                // Button to start another activity with line chart (compareButton)
                 compareButton.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -80,31 +77,42 @@ public class MonthlyReport2 extends AppCompatActivity {
                     }
                 });
 
+                // I-set ang pangalan ng SharedPreferences base sa buwan
+                int currentMonth = getCurrentMonthFromIntent();
+                sharedPreferencesName = getCurrentMonthSharedPreferencesName(currentMonth);
 
+                // Gumawa ng instance ng SharedPreferences gamit ang pangalan ng buwan
+                monthSharedPreferences = getSharedPreferences(sharedPreferencesName, MODE_PRIVATE);
             }
         }
     }
 
-    private void saveData() {
-        // Save data using SharedPreferences
-        SharedPreferences sharedPreferences = getSharedPreferences("SavedData", MODE_PRIVATE);
-        SharedPreferences.Editor editor = sharedPreferences.edit();
+    private String getCurrentMonthSharedPreferencesName(int currentMonth) {
+        String[] monthNames = new String[]{
+                "January", "February", "March", "April", "May", "June",
+                "July", "August", "September", "October", "November", "December"
+        };
+        return monthNames[currentMonth];
+    }
 
-        // Save date and time
+    private int getCurrentMonthFromIntent() {
+        return 0; // Dapat maayos ang logic mo dito para makuha ang tamang buwan
+    }
+
+    private void saveData() {
+        SharedPreferences.Editor editor = monthSharedPreferences.edit();
+
         String dateTime = getCurrentDateTime();
         editor.putString("DateTime", dateTime);
 
-        // Save disease percentages with date and time
         for (String diseaseName : adapter.diseasePercentageMap.keySet()) {
             float percentage = adapter.diseasePercentageMap.get(diseaseName);
             editor.putFloat(diseaseName, percentage);
-            // Update the date and time for each disease
             adapter.updateDateTime(diseaseName, dateTime);
         }
 
         editor.apply();
 
-        // Notify the user that data is saved (you can customize this part)
         Toast.makeText(MonthlyReport2.this, "Data Saved!", Toast.LENGTH_SHORT).show();
     }
 
@@ -113,8 +121,6 @@ public class MonthlyReport2 extends AppCompatActivity {
         return sdf.format(new Date());
     }
 
-
-    // Gumawa ng MyAdapter class na nagmamana sa ArrayAdapter
     private static class MyAdapter extends ArrayAdapter<String> {
         private final HashMap<String, Float> diseasePercentageMap;
         private final HashMap<String, String> diseaseDateTimeMap;
@@ -135,7 +141,7 @@ public class MonthlyReport2 extends AppCompatActivity {
 
             TextView textViewDiseaseName = view.findViewById(R.id.textViewDiseaseName);
             TextView textViewPercentage = view.findViewById(R.id.textViewPercentage);
-            TextView textViewDateTime = view.findViewById(R.id.textViewDateTime); // New TextView
+            TextView textViewDateTime = view.findViewById(R.id.textViewDateTime);
 
             String diseaseName = getItem(position);
             Float percentage = diseasePercentageMap.get(diseaseName);
@@ -144,7 +150,6 @@ public class MonthlyReport2 extends AppCompatActivity {
                 textViewDiseaseName.setText(diseaseName);
                 textViewPercentage.setText(String.format("%.2f%%", percentage));
 
-                // Set the date and time in the textViewDateTime
                 String dateTime = diseaseDateTimeMap.get(diseaseName);
                 if (dateTime == null) {
                     dateTime = getCurrentDateTime();
@@ -163,7 +168,7 @@ public class MonthlyReport2 extends AppCompatActivity {
 
         public void updateDateTime(String diseaseName, String dateTime) {
             diseaseDateTimeMap.put(diseaseName, dateTime);
-            notifyDataSetChanged(); // Refresh the ListView
+            notifyDataSetChanged();
         }
     }
 }

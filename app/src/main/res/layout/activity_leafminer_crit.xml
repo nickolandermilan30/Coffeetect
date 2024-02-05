@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#00704a"
-    tools:context=".CercosporaMild">
+    tools:context=".LeafMinerCrit">
 
     <!-- ImageView for the picture -->
 
@@ -43,10 +43,14 @@
             android:layout_height="600dp"
             android:fontFamily="@font/hammersmith_one"
             android:justificationMode="inter_word"
+            android:text="Critical Coffee Leaf Miner disease, caused by the Coffee Leaf Miner (CLM) insect, represents a severe threat to coffee plants. Here is a comprehensive description of the critical form of the disease:\n\nSymptoms:\n\nLeaf Mining: The primary symptom of Critical Coffee Leaf Miner disease is the presence of irregular, winding tunnels or mines created by the larvae of the Coffee Leaf Miner within the coffee plant leaves.\n\nWhite or Silvery Trails: These tunnels often appear as white or silvery trails on the surface of the leaves, indicating the destructive feeding activity of the larvae.\n\nLeaf Necrosis: As the infestation progresses, affected leaves may exhibit necrotic areas surrounding the tunnels, leading to a decline in the overall health of the plant.\n\nPremature Leaf Drop: Severe infestations can result in premature leaf drop, significantly impacting the plant's ability to photosynthesize and compromising its vitality.\n\nLife Cycle:\n\nEgg Deposition: The adult Coffee Leaf Miner female lays eggs on the undersides of coffee plant leaves.\n\nLarval Feeding: Upon hatching, the larvae tunnel into the leaves, feeding on the inner tissues and creating the characteristic mines.\n\nPupal Stage: Larvae pupate within the mines before emerging as adults, completing the life cycle and perpetuating the infestation.\n\nSpread and Infestation:\n\nFlight: Adult Coffee Leaf Miners are capable of flight, facilitating the spread of the infestation to neighboring coffee plants.\n\nWind Dispersal: Wind can carry the newly emerged adults to new locations, contributing to the wide distribution of the Coffee Leaf Miner.\n\nContaminated Equipment: Infested plant material and contaminated equipment can serve as additional sources of infestation.\n\nEnvironmental Factors:\n\nTemperature: Critical Coffee Leaf Miner disease is favored by moderate temperatures, and its impact can intensify under conditions of optimal warmth.\n\nAltitude: The disease is known to affect coffee plants at various altitudes, posing a challenge to coffee cultivation across diverse regions.\n\nManagement and Control:\n\nBiological Control: Introducing natural predators of the Coffee Leaf Miner, such as parasitoid wasps, can help in biological control.\n\nChemical Control: In severe cases, targeted application of insecticides specifically formulated for Coffee Leaf Miner control may be necessary.\n\nMonitoring: Regular monitoring for early signs of infestation, including leaf mines and adult presence, is crucial for timely intervention.\n\nQuarantine Measures: Implementing quarantine measures to prevent the movement of infested plant material and equipment can aid in disease containment.\n\nConclusion:\n\nCritical Coffee Leaf Miner disease poses a significant threat to coffee plantations worldwide. Effective management strategies, including biological and chemical controls, alongside vigilant monitoring, are essential to mitigate the impact of this destructive insect infestation and safeguard the health of coffee plants. Consultation with entomologists and agricultural experts is advised for tailored control measures based on the severity of the infestation and regional conditions."
             android:textColor="@color/green"
-            android:text="Coffee leaf cercospora, caused by the fungus Cercospora coffeicola, is a significant fungal disease that affects coffee plants. Here's a description of the critical aspects of the coffee leaf cercospora disease:\n\n1. Identification:\n\nSymptoms: Critical infections of coffee leaf cercospora are characterized by the appearance of circular or angular brown spots on the leaves.\nLesion Development: The disease typically starts with small, yellowish lesions that gradually enlarge and turn brown.\nBorder Characteristics: Lesions may have a reddish or purplish border and can coalesce, forming larger irregular-shaped spots.\nLeaf Distortion: As the disease progresses, the affected leaves may become distorted, dry out, and eventually fall off.\n\n2. Severity and Impact:\n\nDefoliation: Severe infections can lead to significant defoliation, impacting the overall health and productivity of coffee plants.\nReduced Photosynthesis: The disease can reduce photosynthesis efficiency, affecting the plant's ability to produce energy and nutrients.\nDecreased Yield: Coffee leaf cercospora can lead to a decrease in coffee yield, affecting the quantity and quality of the harvest.\n\n3. Spread and Survival:\n\nFungal Source: The fungus Cercospora coffeicola survives on infected plant debris.\nTransmission: The disease can be spread through various means, including wind, rain splashes, or contaminated tools.\nFavorable Conditions: Coffee leaf cercospora thrives in conditions of high humidity, frequent rain, and warm temperatures.\n\n4. Management and Control:\n\nCultural Control: Cultural practices such as pruning and removing infected leaves help manage the disease.\nChemical Control: Applying appropriate fungicides can be part of the management strategy.\nEnvironmental Practices: Improving cultural practices to reduce humidity and improve air circulation can contribute to disease control.\nOverall Plant Health: Maintaining the overall health of coffee plants through proper nutrition and care is crucial.\n\n5. Monitoring and Early Detection:\n\nRegular Monitoring: Regular monitoring of coffee plants for symptoms helps in early detection.\nConsultation: Consulting with agricultural specialists or plant pathologists is valuable for effective control strategies.\nAdaptation: Control strategies may need to be adapted based on the severity of infection and local conditions.\n\n6. Prevention:\n\nCleanliness: Keeping the plantation clean by removing infected debris helps prevent the spread of the disease.\nIsolation: Isolating infected plants and avoiding the introduction of contaminated material is essential for prevention.\n\nUnderstanding the characteristics and management strategies for critical coffee leaf cercospora disease is crucial for coffee growers to protect their crops and maintain a healthy and productive coffee plantation."
             android:textStyle="bold" />
+
+
     </ScrollView>
+
+    <!-- TextView for the description -->
 
     <FrameLayout
         android:layout_width="wrap_content"
@@ -71,23 +75,23 @@
             android:layout_height="200dp"
             android:layout_gravity="center"
             android:scaleType="centerCrop"
-            android:src="@drawable/cercosporacritical" />
+            android:src="@drawable/leafminercrit" />
     </FrameLayout>
-
-    <!-- TextView for the description -->
-
 
 
     <!-- Back Button -->
+
+
 
     <TextView
         android:id="@+id/textView43"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="9dp"
         android:fontFamily="@font/hammersmith_one"
-        android:text="Critical Cercospora"
+        android:text="Critical Leaf Miner"
         android:textColor="@color/white"
         android:textSize="25sp"
         android:textStyle="bold" />

@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Cercospora extends AppCompatActivity {
 
-    ImageButton mild,mod, crit;
+    ImageButton mild, mod, crit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

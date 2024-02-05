@@ -49,6 +49,8 @@ public class MonthlyReport extends AppCompatActivity {
     PieChart pieChart;  // Add this line
     ImageButton legendButton;  // Add this line
     Button years;
+    private String jsonAsString;
+    private PieData pieData;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,10 +67,8 @@ public class MonthlyReport extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (diseaseList.isEmpty()) {
-                    // Show a dialog prompting the user to add a disease
                     showAddDiseaseDialog();
                 } else {
-                    // Proceed with the current logic to add disease to EmptyActivity
                     addDiseaseToEmptyActivity();
                 }
             }
@@ -164,8 +164,14 @@ public class MonthlyReport extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 generatePieChart();
+                // Save the updated pie chart data to SharedPreferences
+                savePieChartData();
             }
         });
+
+        // Load pie chart data when activity is created
+        loadPieChartData();
+
 
 
         // Set the adapter to the ListView
@@ -186,6 +192,47 @@ public class MonthlyReport extends AppCompatActivity {
                 saveDiseaseList();
             }
         }
+    }
+    // Add this method to load pie chart data from SharedPreferences
+    private void loadPieChartData() {
+        SharedPreferences preferences = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
+        String pieChartData = preferences.getString("pieChartData", null);
+        if (pieChartData != null) {
+            // Convert JSON string to PieData and set to the pie chart
+            PieData data = convertJsonToPieData(pieChartData);
+            pieChart.setData(data);
+            pieChart.invalidate();
+        }
+    }
+
+    // Add this method to convert JSON string to PieData
+    private PieData convertJsonToPieData(String jsonString) {
+        // Implement your logic to convert JSON string to PieData
+        // ...
+
+        return pieData; // Replace with the actual PieData
+    }
+
+    // Add this method to save pie chart data to SharedPreferences
+    private void savePieChartData() {
+        // Get the current pie chart data
+        PieData data = pieChart.getData();
+        if (data != null) {
+            // Convert PieData to JSON string and save to SharedPreferences
+            String pieChartData = convertPieDataToJson(data);
+            SharedPreferences preferences = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
+            SharedPreferences.Editor editor = preferences.edit();
+            editor.putString("pieChartData", pieChartData);
+            editor.apply();
+        }
+    }
+
+    // Add this method to convert PieData to JSON string
+    private String convertPieDataToJson(PieData data) {
+        // Implement your logic to convert PieData to JSON string
+        // ...
+
+        return jsonAsString; // Replace with the actual JSON string
     }
 
     // Add this method to show a dialog prompting the user to add a disease
