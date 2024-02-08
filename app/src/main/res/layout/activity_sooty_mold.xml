@@ -177,7 +177,7 @@ Regular monitoring of the coffee plants is essential to detect the presence of b
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/sootymolds" />
+        app:srcCompat="@drawable/smold" />
 
     <TextView
         android:id="@+id/textView19"

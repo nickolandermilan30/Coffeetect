@@ -304,7 +304,7 @@
                     android:layout_marginBottom="5dp"
                     android:fontFamily="@font/hammersmith_one"
                     android:justificationMode="inter_word"
-                    android:text="5. Monthly Report"
+                    android:text="5. Monthly and Yearly Report"
                     android:textAlignment="textStart"
                     android:textColor="@color/green"
                     android:textSize="16sp"
