@@ -8,6 +8,7 @@ Coffeetect is our Capstone Project, titled "An Android-based Mobile Application 
 ## Features
 - Disease Detection: Utilizes digital image processing to identify various diseases affecting Arabica coffee leaves.
 - Severity Assessment: Determines the severity level of the detected diseases, providing crucial information for appropriate intervention.
+- Monthly and Yearly Reports: Generates visual reports using pie charts to show the distribution and frequency of detected diseases over time. This helps users understand patterns and trends in coffee leaf diseases.
 - User-Friendly Interface: Built as an Android application, making it accessible and easy to use for farmers and agricultural professionals.
 
 ## Tech Stack
