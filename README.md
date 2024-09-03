@@ -10,7 +10,7 @@ Coffeetect is our Capstone Project, titled "An Android-based Mobile Application 
 - Severity Assessment: Determines the severity level of the detected diseases, providing crucial information for appropriate intervention.
 - User-Friendly Interface: Built as an Android application, making it accessible and easy to use for farmers and agricultural professionals.
 
-##Tech Stack
+## Tech Stack
 The project is developed using the following technologies and tools:
 - Java: For developing the Android application.
 - Python: For implementing machine learning models and image processing.
